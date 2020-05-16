@@ -34,7 +34,7 @@ public class ChatView extends VerticalLayout {
         ui = UI.getCurrent();
 
         message.setPlaceholder("Enter a message...");
-        message.setWidth("100%");
+        message.setSizeFull();
 
         Button send = new Button(VaadinIcon.ENTER.create(), event -> {
             String text = message.getValue();
@@ -56,12 +56,7 @@ public class ChatView extends VerticalLayout {
         HorizontalLayout inputLayout = new HorizontalLayout(message, send);
         inputLayout.setWidth("100%");
 
-        VerticalLayout messagesContainer = new VerticalLayout(messageList);
-        messagesContainer.setPadding(false);
-        messagesContainer.setSizeFull();
-        messagesContainer.getStyle().set("overflow", "auto");
-
-        add(messagesContainer, inputLayout);
+        add(messageList, inputLayout);
         expand(messageList);
         setSizeFull();
     }

@@ -1,16 +1,18 @@
 package com.example.chat.views.main;
 
 import com.vaadin.flow.component.Text;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import org.vaadin.artur.Avataaar;
 
-public class MessageList extends VerticalLayout {
+public class MessageList extends Div {
 
     public MessageList() {
-        getStyle().set("display", "block");
-        setHeight(null);
+        getStyle().set("overflow-y", "scroll");
+        setSizeFull();
     }
 
     public void addMessage(String from, Avataaar avatar, String text, boolean isCurrentUser) {
