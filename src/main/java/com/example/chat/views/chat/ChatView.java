@@ -1,7 +1,6 @@
 package com.example.chat.views.chat;
 
 import com.example.chat.views.main.MainView;
-import com.example.chat.views.main.MessageList;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
