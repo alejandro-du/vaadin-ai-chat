@@ -1,6 +1,5 @@
 package com.example.chat.views.chat;
 
-import com.example.chat.backend.ChatService;
 import com.example.chat.views.main.MainView;
 import com.example.chat.views.main.MessageList;
 import com.vaadin.flow.component.Key;
@@ -14,6 +13,8 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
+import org.alicebot.ab.Bot;
+import org.alicebot.ab.Chat;
 import org.vaadin.artur.Avataaar;
 
 import java.util.Random;
@@ -28,7 +29,8 @@ public class ChatView extends VerticalLayout {
     private final MessageList messageList = new MessageList();
     private final TextField message = new TextField();
 
-    public ChatView(ChatService chatService) {
+    public ChatView(Bot alice2) {
+        Chat chatSession = new Chat(alice2);
         ui = UI.getCurrent();
 
         message.setPlaceholder("Enter a message...");
@@ -42,7 +44,7 @@ public class ChatView extends VerticalLayout {
                 try {
                     Thread.sleep(new Random().ints(1000, 3000).findFirst().getAsInt());
                     ui.access(() -> {
-                        String answer = chatService.answer(text);
+                        String answer = chatSession.multisentenceRespond(text);
                         messageList.addMessage("Alice", new Avataaar("Alice2"), answer, false);
                     });
                 } catch (InterruptedException ignored) {
