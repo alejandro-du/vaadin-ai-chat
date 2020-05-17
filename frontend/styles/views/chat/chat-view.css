@@ -6,6 +6,10 @@
     display: block;
 }
 
+.inputLayout {
+    width: 100%;
+}
+
 .MessageList {
     overflow-y: scroll;
     width: 100%;
