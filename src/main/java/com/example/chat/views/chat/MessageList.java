@@ -3,43 +3,31 @@ package com.example.chat.views.chat;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
-import com.vaadin.flow.component.orderedlayout.FlexLayout;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import org.vaadin.artur.Avataaar;
 
 public class MessageList extends Div {
 
     public MessageList() {
-        getStyle().set("overflow-y", "scroll");
-        setSizeFull();
+        setClassName(getClass().getSimpleName());
     }
 
     public void addMessage(String from, Avataaar avatar, String text, boolean isCurrentUser) {
         Span fromContainer = new Span(new Text(from));
-        fromContainer.getStyle().set("font-weight", "bold");
+        fromContainer.addClassName(getClass().getSimpleName() + "-name");
 
-        FlexLayout textContainer = new FlexLayout(new Text(text));
-        textContainer.getStyle().set("margin", ".5em");
-        textContainer.getStyle().set("padding", "1em");
-        textContainer.getStyle().set("border-radius", "var(--lumo-border-radius-s)");
+        Div textContainer = new Div(new Text(text));
+        textContainer.addClassName(getClass().getSimpleName() + "-bubble");
 
-        VerticalLayout avatarContainer = new VerticalLayout(avatar, fromContainer);
-        avatarContainer.setDefaultHorizontalComponentAlignment(Alignment.CENTER);
-        avatarContainer.setSizeUndefined();
-        avatarContainer.setSpacing(false);
-        avatarContainer.setPadding(false);
+        Div avatarContainer = new Div(avatar, fromContainer);
+        avatarContainer.addClassName(getClass().getSimpleName() + "-avatar");
 
-        FlexLayout line = new FlexLayout(avatarContainer, textContainer);
-        line.setAlignItems(Alignment.CENTER);
+        Div line = new Div(avatarContainer, textContainer);
+        line.addClassName(getClass().getSimpleName() + "-row");
         add(line);
 
         if (isCurrentUser) {
-            line.getStyle().set("flex-direction", "row-reverse");
-            textContainer.getStyle().set("background-color", "var(--lumo-primary-text-color)");
-            textContainer.getStyle().set("color", "var(--lumo-base-color)");
-        } else {
-            textContainer.getStyle().set("background-color", "var(--lumo-shade-20pct)");
+            line.addClassName(getClass().getSimpleName() + "-row-currentUser");
+            textContainer.addClassName(getClass().getSimpleName() + "-bubble-currentUser");
         }
 
         line.getElement().callJsFunction("scrollIntoView");
