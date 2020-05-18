@@ -1,12 +1,13 @@
 package com.example.chat.views.main;
 
 import com.example.chat.views.chat.ChatView;
+import com.example.chat.views.join.JoinView;
 import com.vaadin.flow.component.Text;
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.tabs.Tab;
@@ -14,6 +15,7 @@ import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.tabs.TabsVariant;
 import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.PWA;
+import com.vaadin.flow.server.VaadinSession;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
 import org.alicebot.ab.Bot;
@@ -33,12 +35,18 @@ import java.util.stream.Collectors;
 @Push
 public class MainView extends AppLayout {
 
-    private final Tabs menu;
-    private final Span botNameContainer;
-    private final Map<Tab, String> tabToBotNameMap = new HashMap<>();
-    private final List<Bot> bots;
+    private Tabs menu;
+    private Span botNameContainer;
+    private Map<Tab, String> tabToBotNameMap = new HashMap<>();
+    private List<Bot> bots;
 
     public MainView(List<Bot> bots) {
+        if (VaadinSession.getCurrent().getAttribute("nickname") == null) {
+            UI.getCurrent().navigate(JoinView.class);
+            UI.getCurrent().getPage().reload();
+            return;
+        }
+
         this.bots = bots;
         setPrimarySection(Section.DRAWER);
         botNameContainer = new Span(new Text(""));

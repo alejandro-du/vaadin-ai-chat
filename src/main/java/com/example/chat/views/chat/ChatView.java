@@ -1,6 +1,5 @@
 package com.example.chat.views.chat;
 
-import com.example.chat.views.join.JoinView;
 import com.example.chat.views.main.MainView;
 import com.vaadin.flow.component.AttachEvent;
 import com.vaadin.flow.component.Key;
@@ -44,10 +43,6 @@ public class ChatView extends VerticalLayout implements HasUrlParameter<String> 
     public ChatView(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
         ui = UI.getCurrent();
-
-        if (VaadinSession.getCurrent().getAttribute("nickname") == null) {
-            UI.getCurrent().navigate(JoinView.class);
-        }
 
         message.setPlaceholder("Enter a message...");
         message.setSizeFull();
