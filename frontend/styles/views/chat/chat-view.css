@@ -16,20 +16,12 @@
     height: 100%;
 }
 
+.MessageList-gap {
+    height: 50px;
+}
+
 .MessageList-name {
     font-weight: bold;
-}
-
-.MessageList-bubble {
-    margin: .5em;
-    padding: 1em;
-    border-radius: var(--lumo-border-radius-s);
-    background-color: var(--lumo-shade-20pct);
-}
-
-.MessageList-bubble-currentUser {
-    background-color: var(--lumo-primary-text-color);
-    color: var(--lumo-base-color);
 }
 
 .MessageList-avatar {
@@ -39,6 +31,56 @@
     width: unset;
     height: unset;
     padding: 0;
+}
+
+.MessageList-bubble {
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+}
+
+.MessageList-bubble::before {
+    background-color: var(--lumo-primary-color);
+    color: var(--lumo-base-color);
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform: rotate(29deg) skew(-35deg);
+    -moz-transform: rotate(29deg) skew(-35deg);
+    -ms-transform: rotate(29deg) skew(-35deg);
+    -o-transform: rotate(29deg) skew(-35deg);
+    -webkit-transform: rotate(29deg) skew(-35deg);
+    width: 20px;
+}
+
+.MessageList-bubble-currentUser {
+    background-color: var(--lumo-primary-color);
+    color: var(--lumo-base-color);
+    float: right;
+    margin: 5px 20px 5px 45px;
+}
+
+.MessageList-bubble-currentUser:before {
+    box-shadow: 2px -2px 2px 0 rgba(178, 178, 200, .3);
+    right: -9px;
+}
+
+.MessageList-bubble-otherUser {
+    background-color: var(--lumo-contrast);
+    color: var(--lumo-base-color);
+    float: left;
+    margin: 5px 45px 5px 20px;
+}
+
+.MessageList-bubble-otherUser:before {
+    background-color: var(--lumo-contrast);
+    box-shadow: -2px 2px 2px 0 rgba(178, 178, 200, .3);
+    left: -9px;
 }
 
 .MessageList-row {

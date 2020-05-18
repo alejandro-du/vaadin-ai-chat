@@ -8,61 +8,26 @@ const $_documentContainer = document.createElement('template');
 $_documentContainer.innerHTML = `
 <custom-style>
   <style>
-    html {
-    }
+
+html {
+  --lumo-font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  --lumo-line-height-m: 1.4;
+  --lumo-line-height-s: 1.2;
+  --lumo-line-height-xs: 1.1;
+  --lumo-border-radius: 0.5em;
+}
+
+[theme~="dark"] {
+  --lumo-base-color: hsl(199, 18%, 10%);
+  --lumo-primary-contrast-color: #9498a8;
+  --lumo-primary-text-color: rgb(175, 199, 223);
+  --lumo-primary-color-50pct: rgba(102, 161, 219, 0.5);
+  --lumo-primary-color-10pct: rgba(102, 161, 219, 0.1);
+  --lumo-primary-color: hsl(210, 62%, 63%);
+}
+
   </style>
 </custom-style>
-
-
-<custom-style>
-  <style>
-    html {
-      overflow:hidden;
-    }
-    vaadin-app-layout vaadin-tab a:hover {
-      text-decoration: none;
-    }
-  </style>
-</custom-style>
-
-<dom-module id="chart" theme-for="vaadin-chart">
-  <template>
-    <style include="vaadin-chart-default-theme">
-      :host {
-        --vaadin-charts-color-0: var(--lumo-primary-color);
-        --vaadin-charts-color-1: var(--lumo-error-color);
-        --vaadin-charts-color-2: var(--lumo-success-color);
-        --vaadin-charts-color-3: var(--lumo-contrast);
-      }
-      .highcharts-container {
-        font-family: var(--lumo-font-family);
-      }
-      .highcharts-background {
-        fill: var(--lumo-base-color);
-      }
-      .highcharts-title {
-        fill: var(--lumo-header-text-color);
-        font-size: var(--lumo-font-size-xl);
-        font-weight: 600;
-        line-height: var(--lumo-line-height-xs);
-      }
-      .highcharts-legend-item text {
-        fill: var(--lumo-body-text-color);
-      }
-      .highcharts-axis-title,
-      .highcharts-axis-labels {
-        fill: var(--lumo-secondary-text-color);
-      }
-      .highcharts-axis-line,
-      .highcharts-grid-line,
-      .highcharts-tick {
-        stroke: var(--lumo-contrast-10pct);
-      }
-      .highcharts-column-series rect.highcharts-point {
-        stroke: var(--lumo-base-color);
-      }
-    </style>
-  </template>
-</dom-module>`;
+`;
 
 document.head.appendChild($_documentContainer.content);

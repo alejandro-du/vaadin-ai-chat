@@ -25,7 +25,7 @@ import java.util.Optional;
  */
 @JsModule("./styles/shared-styles.js")
 @PWA(name = "Vaadin chat", shortName = "Vaadin chat")
-@Theme(value = Lumo.class, variant = Lumo.LIGHT)
+@Theme(value = Lumo.class, variant = Lumo.DARK)
 @Push
 public class MainView extends AppLayout {
 

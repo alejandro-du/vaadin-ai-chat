@@ -7,8 +7,12 @@ import org.vaadin.artur.Avataaar;
 
 public class MessageList extends Div {
 
+    private Div gap = new Div();
+
     public MessageList() {
         setClassName(getClass().getSimpleName());
+        gap.addClassName(getClass().getSimpleName() + "-gap");
+        add(gap);
     }
 
     public void addMessage(String from, Avataaar avatar, String text, boolean isCurrentUser) {
@@ -28,9 +32,14 @@ public class MessageList extends Div {
         if (isCurrentUser) {
             line.addClassName(getClass().getSimpleName() + "-row-currentUser");
             textContainer.addClassName(getClass().getSimpleName() + "-bubble-currentUser");
+        } else {
+            line.addClassName(getClass().getSimpleName() + "-row-otherUser");
+            textContainer.addClassName(getClass().getSimpleName() + "-bubble-otherUser");
         }
 
-        line.getElement().callJsFunction("scrollIntoView");
+        remove(gap);
+        add(gap);
+        gap.getElement().callJsFunction("scrollIntoView");
     }
 
 }
