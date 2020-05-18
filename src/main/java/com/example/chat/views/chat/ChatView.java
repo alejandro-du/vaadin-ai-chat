@@ -73,7 +73,7 @@ public class ChatView extends VerticalLayout implements HasUrlParameter<String> 
                 try {
                     Thread.sleep(new Random().ints(1000, 3000).findFirst().getAsInt());
                     String answer = chatSession.multisentenceRespond(text);
-                    ui.access(() -> messageList.addMessage(bot.getName(), new Avataaar(bot.getName()), answer, false));
+                    ui.access(() -> messageList.addMessage(bot.getName(), new Avataaar(bot.getName()), answer.isEmpty() ? "..." : answer, false));
                 } catch (InterruptedException ignored) {
                 }
             }).start();
