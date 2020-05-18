@@ -35,9 +35,9 @@ public class ChatView extends VerticalLayout {
     private final TextField message = new TextField();
     private final Chat chatSession;
 
-    public ChatView(Bot alice2) {
+    public ChatView(Bot alice) {
         ui = UI.getCurrent();
-        chatSession = new Chat(alice2);
+        chatSession = new Chat(alice);
 
         message.setPlaceholder("Enter a message...");
         message.setSizeFull();

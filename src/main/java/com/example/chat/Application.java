@@ -18,7 +18,7 @@ public class Application extends SpringBootServletInitializer {
     }
 
     @Bean
-    public Bot alice2() {
+    public Bot alice() {
         return new Bot(BotConfiguration.builder()
                 .name("alice")
                 .path("src/main/resources")
