@@ -16,11 +16,12 @@ import com.vaadin.flow.spring.scopes.VaadinUIScope;
 import org.alicebot.ab.Bot;
 import org.alicebot.ab.Chat;
 import org.springframework.context.annotation.Scope;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.vaadin.artur.Avataaar;
 
 import java.util.Random;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 @Route(value = "chat", layout = MainView.class)
 @RouteAlias(value = "", layout = MainView.class)
@@ -34,8 +35,10 @@ public class ChatView extends VerticalLayout {
     private final MessageList messageList = new MessageList();
     private final TextField message = new TextField();
     private final Chat chatSession;
+    private final ScheduledExecutorService executorService;
 
-    public ChatView(Bot alice) {
+    public ChatView(Bot alice, ScheduledExecutorService executorService) {
+        this.executorService = executorService;
         ui = UI.getCurrent();
         chatSession = new Chat(alice);
 
@@ -58,14 +61,10 @@ public class ChatView extends VerticalLayout {
         messageList.addMessage("You", new Avataaar("Name"), text, true);
         message.clear();
 
-        new Thread(() -> {
-            try {
-                Thread.sleep(new Random().ints(1000, 3000).findFirst().getAsInt());
-                String answer = chatSession.multisentenceRespond(text);
-                ui.access(() -> messageList.addMessage("Alice", new Avataaar("Alice2"), answer, false));
-            } catch (InterruptedException ignored) {
-            }
-        }).start();
+        executorService.schedule(() -> {
+            String answer = chatSession.multisentenceRespond(text);
+            ui.access(() -> messageList.addMessage("Alice", new Avataaar("Alice2"), answer, false));
+        }, new Random().ints(1000, 3000).findFirst().getAsInt(), TimeUnit.MILLISECONDS);
     }
 
 }

@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+
 /**
  * The entry point of the Spring Boot application.
  */
@@ -24,6 +27,11 @@ public class Application extends SpringBootServletInitializer {
                 .path("src/main/resources")
                 .build()
         );
+    }
+
+    @Bean
+    public ScheduledExecutorService executorService() {
+        return Executors.newScheduledThreadPool(2);
     }
 
 }
