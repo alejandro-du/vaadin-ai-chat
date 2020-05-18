@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: contactfunctions_pand.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: May 28, 2014 -->
+<!--  -->
+<!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+<!--  -->
+<!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<!--  -->
+<category><pattern>CONTACTID *</pattern>
+<template>unknown</template>
+</category>
+<category><pattern>MULTIPLEIDS *</pattern>
+<template>false</template>
+</category>
+<category><pattern>ADDINFO DISPLAYNAME * DIALNUMBER * PHONETYPE * EMAILADDRESS * EMAILTYPE * BIRTHDAY *</pattern>
+<template><think>
+<set var="displayname"><star/></set>
+<set var="dialnumber"><star index="2"/></set>
+<set var="phonetype"><star index="3"/></set>
+<set var="emailaddress"><star index="4"/></set>
+<set var="emailtype"><star index="5"/></set>
+<set var="birthday"><star index="6"/></set>
+<set var="contactid"><srai>CONTACTID <get var="displayname"/></srai></set>
+<condition value="unknown" var="contactid"><set var="contactid"><srai>NEWCONTACTID</srai></set></condition>
+</think>
+
+<condition var="dialnumber">
+<li value="unknown">dialnumber is unknwon</li>
+<li>dialnumber=<get var="dialnumber"/></li>
+</condition>
+
+<learn>
+  <category>
+    <pattern>CONTACTID <eval><get var="displayname"/></eval></pattern>
+    <template><eval><get var="contactid"/></eval></template>
+  </category>
+</learn>
+
+<learn>
+  <category>
+    <pattern>DISPLAYNAME <eval><get var="contactid"/></eval></pattern>
+    <template><eval><get var="displayname"/></eval></template>
+  </category>
+</learn>
+
+<condition var="dialnumber">
+<li value="unknown"/>
+<li><learn>
+  <category>
+    <pattern>DIALNUMBER <eval><get var="phonetype"/> <get var="contactid"/></eval></pattern>
+    <template><eval><get var="dialnumber"/></eval></template>
+  </category>
+</learn></li>
+</condition>
+
+
+<condition var="emailaddress">
+<li value="unknown"/>
+<li><learn>
+  <category>
+    <pattern>EMAILADDRESS <eval><get var="emailtype"/> <get var="contactid"/></eval></pattern>
+    <template><eval><get var="emailaddress"/></eval></template>
+  </category>
+</learn>
+</li>
+</condition>
+<condition var="birthday">
+<li value="unknown"/>
+<li>
+<learn>
+  <category>
+    <pattern>CONTACTBIRTHDAY <eval><get var="contactid"/></eval></pattern>
+    <template><eval><get var="birthday"/></eval></template>
+  </category>
+</learn>
+</li>
+</condition>
+Saved new contact.</template>
+</category>
+<category><pattern>DISPLAYNAME *</pattern>
+<template>unknown</template>
+</category>
+<category><pattern>DIALNUMBER * *</pattern>
+<template>unknown</template>
+</category>
+<category><pattern>DIALNUMBER *</pattern>
+<template>unknown</template>
+</category>
+<category><pattern>CONTACTBIRTHDAY *</pattern>
+<template>unknown</template>
+</category>
+<category><pattern>EMAILADDRESS * *</pattern>
+<template>unknown</template>
+</category>
+<category><pattern>EMAILADDRESS *</pattern>
+<template>unknown</template>
+</category>
+</aiml>

@@ -1,0 +1,40 @@
+.JoinView-title {
+    overflow: hidden;
+    border-right: .15em solid var(--lumo-primary-color);
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--lumo-primary-color); }
+}
+
+.JoinView {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.JoinView-form {
+    margin-top: -5em;
+    width: 30em;
+    padding: 2em;
+    background: var(--lumo-contrast-5pct);
+}
+
+.JoinView-nickname {
+    width: 100%;
+}
+
+.JoinView-enter {
+    align-self: flex-end;
+}

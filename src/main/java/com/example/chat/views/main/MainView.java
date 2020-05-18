@@ -1,24 +1,28 @@
 package com.example.chat.views.main;
 
 import com.example.chat.views.chat.ChatView;
-import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.HasComponents;
+import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.dependency.JsModule;
+import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.tabs.Tab;
 import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.tabs.TabsVariant;
-import com.vaadin.flow.router.RouteConfiguration;
 import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
+import org.alicebot.ab.Bot;
+import org.vaadin.artur.Avataaar;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * The main view is a top-level placeholder for other views.
@@ -30,56 +34,55 @@ import java.util.Optional;
 public class MainView extends AppLayout {
 
     private final Tabs menu;
+    private final Span botNameContainer;
+    private final Map<Tab, String> tabToBotNameMap = new HashMap<>();
+    private final List<Bot> bots;
 
-    public MainView() {
+    public MainView(List<Bot> bots) {
+        this.bots = bots;
         setPrimarySection(Section.DRAWER);
-        addToNavbar(true, new DrawerToggle());
+        botNameContainer = new Span(new Text(""));
+        addToNavbar(true, new DrawerToggle(), botNameContainer);
         menu = createMenuTabs();
-        addToDrawer(menu);
+        VerticalLayout menuContainer = new VerticalLayout(new Text("Bots:"), menu);
+        menuContainer.getStyle().set("margin-top", "2em");
+        addToDrawer(menuContainer);
     }
 
-    private static Tabs createMenuTabs() {
+    private Tabs createMenuTabs() {
         final Tabs tabs = new Tabs();
         tabs.setOrientation(Tabs.Orientation.VERTICAL);
         tabs.addThemeVariants(TabsVariant.LUMO_MINIMAL);
         tabs.setId("tabs");
         tabs.add(getAvailableTabs());
+        tabs.addSelectedChangeListener(event -> setBotName(tabToBotNameMap.get(event.getSelectedTab())));
         return tabs;
     }
 
-    private static Tab[] getAvailableTabs() {
-        final List<Tab> tabs = new ArrayList<>();
-        tabs.add(createTab("Chat", ChatView.class));
-        return tabs.toArray(new Tab[tabs.size()]);
+    private void setBotName(String botName) {
+        botNameContainer.removeAll();
+        botNameContainer.add(new Text("Chat with " + botName));
     }
 
-    private static Tab createTab(String title, Class<? extends Component> viewClass) {
-        return createTab(populateLink(new RouterLink(null, viewClass), title));
+    private Tab[] getAvailableTabs() {
+        return bots.stream()
+                .map(bot -> createTab(bot.getName()))
+                .collect(Collectors.toList()).toArray(new Tab[bots.size()]);
     }
 
-    private static Tab createTab(Component content) {
+    private Tab createTab(String botName) {
         final Tab tab = new Tab();
-        tab.add(content);
+        Avataaar avataaar = new Avataaar(botName);
+        tab.add(avataaar, new RouterLink(botName, ChatView.class, botName));
+        tabToBotNameMap.put(tab, botName);
         return tab;
-    }
-
-    private static <T extends HasComponents> T populateLink(T a, String title) {
-        a.add(title);
-        return a;
     }
 
     @Override
     protected void afterNavigation() {
         super.afterNavigation();
-        selectTab();
+        ChatView view = (ChatView) getContent();
+        setBotName(view.getBotName());
     }
 
-    private void selectTab() {
-        String target = RouteConfiguration.forSessionScope().getUrl(getContent().getClass());
-        Optional<Component> tabToSelect = menu.getChildren().filter(tab -> {
-            Component child = tab.getChildren().findFirst().get();
-            return child instanceof RouterLink && ((RouterLink) child).getHref().equals(target);
-        }).findFirst();
-        tabToSelect.ifPresent(tab -> menu.setSelectedTab((Tab) tab));
-    }
 }

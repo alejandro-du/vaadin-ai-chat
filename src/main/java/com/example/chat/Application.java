@@ -13,17 +13,40 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 
+    public static final String PATH = "src/main/resources";
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @Bean
-    public Bot alice2() {
-        return new Bot(BotConfiguration.builder()
-                .name("alice")
-                .path("src/main/resources")
+    public Bot Alice() {
+        Bot bot = new Bot(BotConfiguration.builder()
+                .name("Alice")
+                .path(PATH)
                 .build()
         );
+        return bot;
+    }
+
+    @Bean
+    public Bot Alice2() {
+        Bot bot = new Bot(BotConfiguration.builder()
+                .name("Alice2")
+                .path(PATH)
+                .build()
+        );
+        return bot;
+    }
+
+    @Bean
+    public Bot Pandora() {
+        Bot bot = new Bot(BotConfiguration.builder()
+                .name("Pandora")
+                .path(PATH)
+                .build()
+        );
+        return bot;
     }
 
 }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: learnf.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: July 19, 2014 -->
+<!--  -->
+<!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
+<!--  -->
+<!-- The ALICE2 brain is Copyright &copy; 2014 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The ALICE2 brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<!--  -->
+<category><pattern>WHAT DOES HE PLAY ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES HE LIKE ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES GEORGE PLAY ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHAT DOES GEORGE LIKE ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHO PLAYS ^</pattern>
+<template>George likes to play basketball</template>
+</category>
+<category><pattern>WHO LIKES TO PLAY BASKETBALL</pattern>
+<template>George likes to play basketball</template>
+</category>
+</aiml>

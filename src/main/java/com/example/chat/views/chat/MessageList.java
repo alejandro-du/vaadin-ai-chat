@@ -7,6 +7,7 @@ import org.vaadin.artur.Avataaar;
 
 public class MessageList extends Div {
 
+    private final int MESSAGE_LIMIT = 50;
     private Div gap = new Div();
 
     public MessageList() {
@@ -16,6 +17,11 @@ public class MessageList extends Div {
     }
 
     public void addMessage(String from, Avataaar avatar, String text, boolean isCurrentUser) {
+        if (getChildren().count() >= MESSAGE_LIMIT) {
+            remove(getChildren().findFirst().get());
+            remove(getChildren().findFirst().get());
+        }
+
         Span fromContainer = new Span(new Text(from));
         fromContainer.addClassName(getClass().getSimpleName() + "-name");
 
