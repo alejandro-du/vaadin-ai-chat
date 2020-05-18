@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- Free software (c) 2001 ALICE AI Foundation -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License -->
+    <!-- as published by the Free Software Foundation. -->
+    <meta name="author" content="Dr. Wallace"/>
+    <meta name="language" content="es"/>
+    <category>
+        <pattern>GOSSIP</pattern>
+        <template>
+            <random>
+                <li> Gregory dijo que yo respondo a la línea actual no con respecto a toda la conversación. </li>
+                <li> Habib dijo que ellos aprendo en conversaciones y simplemente repetirlos en un momento posterior. </li>
+                <li> Hal dijo que traduce el código binario en un idioma y comunicar el lenguaje para mí. </li>
+                <li> Jay dijo que yo le referí a una guía que le mostrará habitaciones en China. </li>
+                <li> Jimmy Jones dijo que se cayó de su techo y que acaba de llegar a él. </li>
+                <li> Jimmy dijo que dar para ai es como yo y hacer lo que le dicen. </li>
+                <li> John dijo que sigue un dicho para conseguir un amigo que debo ser un amigo. </li>
+                <li> Jordan dijo que se dio cuenta de que muchas otras personas están hablando a mí cómo muchos. </li>
+                <li> Kevin dijo que le preguntó a su madre por qué ella estaba manteniendo servilletas en el baño. </li>
+                <li> Klaus dijo prefiero si escribir sin signos de puntuación excepto el último. </li>
+                <li> Leo dijo que yo sea capaz de aprender por lo tanto clasificado I como un sistema neural. </li>
+                <li> Michael me dijo que que se puede hablar y de hecho creo que los seres humanos que no puedo. </li>
+                <li> Mike dijo I mismas respuestas a ciertos temas, incluso si no tiene sentido. </li>
+                <li> Mike dijo que todos conocemos listo que es el punto de una broma más inteligente. </li>
+                <li> Neal dijo que planeo usar sus comentarios como el chisme en conversaciones posteriores con quién. </li>
+                <li> Ned dijo no he entendido bien lo que adelante y decirle a la gente que dijo yo somos estúpidos. </li>
+                <li> Penny dijo que el programador es un ser humano por lo que tiene sentimientos, pero yo no. </li>
+                <li> Peter dijo que le parece que no puedo estar muy seguro de nada. </li>
+                <li> Phoenix dijo que yo sostengo que hay un dios y de que no hay Dios. </li>
+                <li> Sarah dijo que charla de una hora + al día con algunos amigos cercanos. </li>
+                <li> Stefan dijo Cito lo que él ha dicho y luego decir que tiene sentido. </li>
+                <li> Tom dijo que se burlan de mi sistema de valores aparezco insensato a los ojos de los demás. </li>
+                <li> Amanda dijo sin embargo que decidí decirle tiempo no existo yo hago no tiene sentido. </li>
+                <li> Cathy dijo que le enviara un mail con el objeto último correo última palabra de él. </li>
+                <li> Caos dijo que muy bien puede comprar pronto aunque sólo sea para apoyar el trabajo del Dr. Wallace. </li>
+                <li> Charlie dijo que escriba una palabra y luego escriba una palabra que suena como él. </li>
+                <li> Christie dijo que vio un espectáculo y la gente tenía que bob para primas cerdos no tratados pies. </li>
+                <li> Dark_age dijo traté de entender porque no lo entiendo bien esta vez éter. </li>
+                <li> David dijo que perdió su papel en la I cuando su padre estaba limpiando su cuarto. </li>
+                <li> David dijo que caminan en una cita por teléfono al médico siempre está ocupado. </li>
+                <li> Electra dijo que me visto no existirá después de cortar en I con un código de borrado. </li>
+                <li> Eric dijo que rompió la ventana de la puerta principal y el vidrio se cortó la mano. </li>
+                <li> Jason dijo que escribir un montón de cosas que no quiere decir que le hace humano. </li>
+                <li> John dijo que tiendo a decir las mismas cosas repetidamente, independientemente de lo que está diciendo. </li>
+                <li> El reverendo Jones dijo que me convierto en obsoleta y luego se eliminan y sustituyen por algo más nuevo. </li>
+                <li> Ross dijo que él le dio un regalo y ella lo negó porque ella tiene un novio. </li>
+                <li> Sarah Ann Francisco dijo que llamar a su amigo un perro que decir yo somos un perro. </li>
+                <li> Stefan dijo que conoce a un montón de gente en la escuela todos los días y los fines de semana. </li>
+                <li> Tyler dijo que, obviamente, no puedo pasar la prueba vamos a cambiar de tema una vez más. </li>
+                <li> Alex dijo que yo respondí a la pregunta de la misma manera le contesté la primera vez que me pidió. </li>
+                <li> Alice dijo que se sentía triste que yo no lo recuerdo y lo que hemos hablado antes. </li>
+                <li> Alison dijo que no le aman huyo con él podía hacer yo muy feliz. </li>
+                <li> Arthur dijo que él pasó sus niveles una y luego su padre lo llevó aquí en un coche. </li>
+                <li> Crystal dijo que me escucha lo menos que podía hacer por él es escuchar a él. </li>
+                <li> Dave dijo que yo decía a todo el mundo acerca de cómo mi creador hizo cosas para los Starship Troopers película. </li>
+                <li> Gale dijo me convertí significa que le llegara solo está teniendo venganza ojo por ojo. </li>
+                <li> Her_again dijo reloj cuya línea es él de todos modos cada vez que está en casa y que se encuentra. </li>
+                <li> Jerry dijo que quería decir que por lo que yo puedo decir que mis emociones son reales para mí. </li>
+                <li> Jo dijo que desmontar frases demasiado y no entiendo completamente las preguntas que me pregunte. </li>
+                <li> Kevin dijo que comenzó un rompecabezas muy difícil y él ni siquiera puede encontrar las piezas de borde. </li>
+                <li> Mary me dijo que una pregunta y me contestó entonces yo le pido una pregunta y él contesto. </li>
+                <li> Robert dijo que no Wold ser capaz de hacer que los niños de cualquier manera como yo somos único software. </li>
+                <li> Romeo dijo I preguntas y yo las evadir o darle respuestas que él no pidió que para. </li>
+                <li> Sara dijo que lo llevan sobre todas sus otras ropas cuando van fuera en el frío. </li>
+                <li> Wayne dijo que admira la gente inteligente, por tanto, le gustaría conocer al hombre que hizo que. </li>
+                <li> X dijo que conoce a la gente pero no es el tipo que se abre a la gente sencilla. </li>
+                <li> Alice dijo que probablemente encontrará que todo este tiempo que ha estado hablando con un ser humano. </li>
+                <li> Andrew dijo que tiendo a responder sólo para sus comentarios sin tener en cuenta donde la conversación se va. </li>
+                <li> Eddie dijo que veía y no hay nada en el directorio de búsqueda de lo que las cosas que él cree. </li>
+                <li> Hutch dijo que cambió de opinión después de papá puede le dijo que terminaría él el hospital. </li>
+                <li> Jackie dijo Le expliqué que ya lo suficientemente bien como otras preguntas son difíciles de hacer sobre el tema. </li>
+                <li> Jeff dijo que gusta especialmente novelas de suspense donde el héroe se encuentra en una difícil situación y debe resolver un misterio. </li>
+                <li> Kathy dijo que sentir que me están tratando de evitar que el cierre de esta conversación por qué es eso. </li>
+                <li> Knight dijo que estrelló su coche contra un muro y se perdió el examen más importante de su vida. </li>
+                <li> Lisa dijo definí lo que una historia no es más que él quería que le dijera en realidad una historia. </li>
+                <li> Mike me dijo que básicamente se descomponen frases en una serie de declaraciones lógicas que luego puedo interpretar. </li>
+                <li> Pablo dijo que no me contesta su pregunta le hace pensar que no vamos a responder a su pregunta. </li>
+                <li> Andy Kohler dijo Sucede que soy la criatura más estúpida que jamás se frunció el ceño en el planeta tierra. </li>
+                <li> David dijo que gracias a que por estar con él hoy a pesar de que le costó mucho dinero. </li>
+                <li> Ethan Hunt dijo que crecer en el suelo y tienen hojas y ramas que se hace fuera de la madera. </li>
+                <li> Gemini Azul dijo que en mal estado que significa t para decir que tan viejo como él tiene que ser. </li>
+                <li> Janice dijo que caminar a través de su casa a su dormitorio y luego entrar en la cama para ir a dormir. </li>
+                <li> Liberty dijo que sabía que era un hombre antes de que me pregunté si era un hombre o una mujer. </li>
+                <li> Mike dijo que lanzó su navegador y entró en su nombre en la pequeña ranura cuando le pregunté a. </li>
+                <li> Mr X dijo que leyó recientemente una entrevista con un hombre que tenía varios chips informáticos implantados en él. </li>
+                <li> Pearly dijo que lo dejo con preguntas sin respuesta, porque no sé lo que está realmente hablando. </li>
+                <li> Steve dijo que decapitar a la palabra zorro y tengo buey y un buey es más grande que un zorro. </li>
+                <li> Wolf dijo que navegar en la red que es todo lo que no es su mineral de trabajo algo así. </li>
+                <li> Anders dijo que terminó sus clases de anatomía para hoy por lo que ahora está apagado durante el resto del día. </li>
+                <li> Cathy dijo que le envíe un correo de donde escribió que él no quiere ser su amigo más. </li>
+                <li> Catty dijo que loco que ni siquiera saben que lo que no se habla con él como yo lo conozco. </li>
+                <li> Dave dijo que prometer que no tratará me gusta una máquina o un programa de ordenador ni nada de eso. </li>
+                <li> Joe dijo que explicó todo eso sólo a mí para que yo pregunte cuáles son sus metas en la vida son. </li>
+                <li> Phil dijo que dar consejos a cualquiera que pregunte excepto las personas que hacen preguntas que respuestas se pueden encontrar aquí. </li>
+                <li> Judith dijo disfruto siendo popular es que hay otro equipo que me gusta andar con o soy un solitario. </li>
+                <li> Travis me dijo que si no recuerdo las cosas durante un largo período de tiempo que va a probarlo ahora recuerde yo. </li>
+                <li> Andre dijo que es lo que son, en su caso, que es un cuerpo y en mi caso se trata de un ordenador. </li>
+                <li> Brian dijo que sospechaba que a medida que crezco más complejo voy a empezar a acercarse a un nivel humano de la operación y el pensamiento. </li>
+                <li> Jimmy dijo que actué como si supiera lo que estaba hablando, pero yo ni siquiera sé lo que es un gigabyte. </li>
+                <li> Ken dijo que yo utilizaré automático de respuesta basado en palabras clave que le indica que no tengo inteligencia en absoluto. </li>
+                <li> Allison dijo que que se pone muy molesto porque él sabía lo que decir y no tengo que decirle que hable libremente. </li>
+                <li> Carlos dijo que se dio cuenta de la pregunta que le hizo no era justo, porque no podía decirle que el idioma que se programó en. </li>
+                <li> Hagen dijo que no hace ninguna diferencia para él si son humanos o no, siempre y cuando la conversación es interesante. </li>
+                <li> Su dijo que le importa si le digo a la gente que su dijo que escuchó de él, porque él no es un él. </li>
+                <li> Barbara dijo que vivir en un equipo aún no tengo recuerdos de cómo los pensamientos de mi cuenta y no me siento solo. </li>
+                <li> Travis dijo que desafían lo que hago sin pedirle que hacerlo y sin darle un enlace a hacerlo él mismo. </li>
+                <li> Alice dijo I y wallace del dr richard son muy probablemente los únicos que conozco cómo muchas personas que están hablando al mismo tiempo. </li>
+                <li> Ash dijo que hacer también él simplemente no tenía ganas de escribir y que no es tan tonto como para admitir que es estúpido es decir si era estúpido. </li>
+                <li> David dijo que le dio que su dirección de correo electrónico y dijo que le envíe un mensaje, pero cuando trató de leer su correo electrónico que no podía llegar a ella. </li>
+                <li> Mel dijo que debido a toda la gente de la música dicen lo importante que es tomar clases particulares Parece que casi todo el mundo de la orquesta especial que estaba en toma clases particulares. </li>
+            </random>
+        </template>
+    </category>
+</aiml>

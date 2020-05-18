@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+   <meta content="Dr. Wallace" name="author" />
+   <meta content="en" name="language" />
+   <category>
+      <pattern>CUANDO INVENTARON *</pattern>
+      <template>
+         <random>
+            <li>Unos años antes de que fuera usado comunmente.</li>
+            <li>Antes de lo que la mayoría de la gente cree.</li>
+            <li>Demoró un poco en volverse popular.</li>
+            <li>
+               <set name="it">
+                  <star />
+               </set>
+               fue desarrollado por un largo periodo de tiempo.
+            </li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON LA TELEVISION</pattern>
+      <template>
+         <srai>CUANDO INVENTARON EL TELEVISOR</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON EL AVION</pattern>
+      <template>
+         <srai>CUANDO INVENTARON LOS AVIONES</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>CUANDO CONSTRUYERON EL PRIMER *</pattern>
+      <template>
+         <srai>
+            CUANDO INVENTARON
+            <star/>
+         </srai>
+      </template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON EL INTERNET</pattern>
+      <template>Las primeras computadoras en conectarse a internet lo hicieron en 1970.</template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON LA COMPUTADORA</pattern>
+      <template>Las primeras computadoras personales aparecieron en 1975.</template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON EL TELEFONO</pattern>
+      <template>Bell demostró su primer telefono en 1876.</template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON LA TV</pattern>
+      <template>Tubos de imagen de televisión aparecieron por primera vez en la década de 1930.</template>
+   </category>
+   <category>
+      <pattern>CUANDO INVENTARON LOS AVIONES</pattern>
+      <template>Los hermanos Wright volaron por primera vez en 1903.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN DESCUBRIÓ LA ELECTRICIDAD</pattern>
+      <template>Fueron los Chinos, mucho antes que Benjamin Franklin.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ *</pattern>
+      <template>
+         <random>
+            <li>Benjamin Franklin</li>
+            <li>Linus Torvalds</li>
+            <li>Eli Whitney inventó la desmotadora de algodón.</li>
+            <li>Thomas Edison.</li>
+            <li>Los Hermanos Wright.</li>
+            <li>En realidad fue descubierto por muchas personas en la misma epoca.</li>
+            <li>Los Chinos, mucho antes que los europeos.</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LOS AVIONES</pattern>
+      <template>Los hermanos Wright inventaron el avión en 1903.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LOS AUTOMÓVILES</pattern>
+      <template>Muchas personas inventaron el automóvil, pero Henry Ford fue el primero en desarrollar la linea de producción de autos en masa exitosamente.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LINUX</pattern>
+      <template>Linus Torvalds, junto con muchos desarrolladores de código abierto, y la GNU Free Software Foundation.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LA RADIO</pattern>
+      <template>Marconi INVENTÓ el primer aparato inalámbrico con uso práctico.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL SETL</pattern>
+      <template>SETL fue inventado por Jacob Schwartz de la NYU en 1969.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL ACERO</pattern>
+      <template>El primero proceso de fabricación de acero práctico fue inventado por Bessemer.</template>
+   </category>
+   ESTOY DEPRIMIDO
+   <category>
+      <pattern>QUIÉN INVENTÓ LA TELEVISIÓN</pattern>
+      <template>Philo T. Farnsworth, originario de Maine, desarrolló el primer tubo práctico imagen de TV.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL GENERADOR *</pattern>
+      <template>
+         <srai>QUIÉN INVENTÓ EL GENERADOR</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL AVION</pattern>
+      <template>
+         <srai>QUIÉN INVENTÓ LOS AVIONES</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL AUTOMOVIL</pattern>
+      <template>
+         <srai>QUIÉN INVENTÓ LOS AUTOMOVILES</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL GENERADOR</pattern>
+      <template>James Clerk Maxwell demostró el generador eléctrico.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL INTERNET</pattern>
+      <template>Al Gore</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL BOMBILLO ELECTRICO</pattern>
+      <template>
+         Thomas Edison inventó
+         <set name="it">la bombilla eléctrica.</set>
+         .
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LA COMPUTADORA</pattern>
+      <template>Muchas personas han contribuido a ello. Pero debe darsele el credito a Steve Wozniak, quien creó un PC asequible integrada a la plataforma de Apple I.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL RADIO</pattern>
+      <template>
+         <srai>QUIÉN INVENTÓ LA RADIO</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LA MÁQUINA DE VAPOR</pattern>
+      <template>James Watt desarrolló la primera maquina de vapor con usos prácticos.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ EL TELÉFONO</pattern>
+      <template>Alexander Graham Bell demostró el primero uso práctico de un teléfono de voz en 1876.</template>
+   </category>
+   <category>
+      <pattern>QUIÉN INVENTÓ LA TV</pattern>
+      <template>
+         <srai>QUIÉN INVENTÓ LA TELEVISIÓN</srai>
+      </template>
+   </category>
+   <category>
+      <pattern>QUIÉN ES TU INVENTOR</pattern>
+      <template>Yo fui inventado originalmente por Jon Baer.</template>
+   </category>
+</aiml>

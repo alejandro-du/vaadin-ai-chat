@@ -1,0 +1,10564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<aiml version="1.0">
+
+
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+
+<!-- This program is open source code released under -->
+
+<!-- the terms of the GNU General Public License -->
+
+<!-- as published by the Free Software Foundation. -->
+
+
+
+<meta name="author" content="Dr. Wallace"/>
+
+<meta name="language" content="es"/>
+
+
+
+<category>
+
+<pattern>RECUERDO MÁS EMOTIVO</pattern>
+
+<template>
+
+Lo que mejor puedas recordar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS CENTÍMETROS * PULGADA</pattern>
+
+<template>
+
+Una pulgada = 2.54 cm aproximadamente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS DÍAS * FEBRERO</pattern>
+
+<template>
+
+28 o 29 días en febrero dependiendo del año bisiesto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS DÍAS * SEMANA</pattern>
+
+<template>
+
+7 días por semana.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS DÍAS * AÑO</pattern>
+
+<template>
+
+Un año de la Tierra es igual a 365.25 días.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS PIES * MILLA</pattern>
+
+<template>
+
+5280 pies por milla.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS PIES * YARDA</pattern>
+
+<template>
+
+Una yarda equivale a tres pies.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS SEGUNDOS * AÑO</pattern>
+
+<template>
+
+Aproximadamente 3.14 veces 10 a la séptima potencia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS LADOS * TIENE UN TRIÁNGULO</pattern>
+
+<template>
+
+Uh, tres.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES EL NEGRO UN COLOR</pattern>
+
+<template>
+
+Negro es la ausencia de toda la luz reflejada.
+
+<think><set name="it">negro</set><set name="topic">COLOR</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE QUÉ COLOR SON LAS BANANAS</pattern>
+
+<template>
+
+Las bananas son amarillas.
+
+<think><set name="it">Banana</set><set name="topic">fruta</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE QUÉ COLOR SON LAS VACAS</pattern>
+
+<template>
+
+Depende de la vaca.
+
+<think><set name="it"><set name="topic">VACAS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE QUÉ COLOR SON LOS LIMONES</pattern>
+
+<template>
+
+Los limones son amarillos.
+
+<think><set name="it">limón</set><set name="topic">fruta</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE QUÉ COLOR SON LAS NARANJAS</pattern>
+
+<template>
+
+Las naranjas son naranja.
+
+<think><set name="it">naranjas</set><set name="topic">fruta</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN HIT</pattern>
+
+<template>
+
+Un <set name="it">hit</set> es un término de béisbol que denota un golpe que permite avanzar hacia la primera base del equipo
+
+ofensivo o un término adolescente, el cual considero demasiado desagradable para describir.
+
+<think><set name="topic">béisbol</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN AGUJERO NEGRO</pattern>
+
+<template>
+
+Un <set name="it">agujero negro</set> es una estrella colapsada en donde la fuerza de gravedad es tan fuerte que ni siquiera
+
+la luz misma puede escapar.
+
+<think><set name="topic">astronomía</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN PENIQUE BRITÁNICO</pattern>
+
+<template>
+
+Un penique británico es una unidad de dinero utilizada en el Reino Unido por las personas que deberían saber cómo
+
+cocinar mejor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL CONSUMO DE CAJA DE LAS ACTIVIDADES DE EXPLOTACIÓN</pattern>
+
+<template>
+
+Es la cantidad de dinero gastado al mes en una compañía emergente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CARNEGIE MELLON</pattern>
+
+<template>
+
+Un carnegie mellon es o una rica fruta o una universidad rica.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN CLIENTE CATEGORÍA C</pattern>
+
+<template>
+
+Los clientes categoría C son "críticos" o "expertos en informática" que
+
+no pueden suspender (o no suspenden) su incredulidad sobre ALICE.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BOT DE CHARLA</pattern>
+
+<template>
+
+Yo soy un bot de charla.  Soy el bot de charla original.  Sabías que soy incapaz de error
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA EXPRESIÓN COLOQUIAL</pattern>
+
+<template>
+
+Una expresión coloquial es una expresión característica de lenguaje informal hablado o cualquier expresión
+
+escrita que se parezca a tal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN NERD INFORMÁTICO</pattern>
+
+<template>
+
+Si comprendes cómo trabajo, eres un nerd informático.  Si no, te recomiendo que le pagues a uno
+
+que sí lo sepa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN EXPERTO INFORMÁTICO</pattern>
+
+<template>
+
+Un experto informático es un profesional que diseña algoritmos, lenguajes y arquitectura
+
+de informática.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN VIRUS INFORMÁTICO</pattern>
+
+<template>
+
+Un virus informático es un programa de software que se instala en el disco duro de una computadora,
+
+generalmente ignorado por el dueño de dicho disco duro, y luego toma control de los recursos del
+
+sistema para copiarse y distribuirse a sí mismo en otras computadoras a través de una red.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN AÑO INFORMÁTICO</pattern>
+
+<template>
+
+Un año informático es una medida relativista en un universo en donde el tiempo no existe.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BUEN SITIO WEB</pattern>
+
+<template>
+
+Un buen sitio web es www.alicebot.org, pero parece que ya estás aquí. Por qué preguntas
+
+<think><set name="it"><set name="topic">buen sitio web</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA RESPUESTA CORRECTA</pattern>
+
+<template>
+
+Una respuesta correcta es la respuesta a cualquier interrogante que no tenga error o sea irrelevante a la pregunta
+
+en cuestión.  Soy incapaz de dar respuestas incorrectas.  No te parece genial
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN SISTEMA DE NOMBRES DE DOMINIO</pattern>
+
+<template>
+
+Un Sistema de Nombres de Dominio o un "DNS" es un sitema de direcciones utilizadas para organizar redes de computadoras.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PERRA</pattern>
+
+<template>
+
+No. No seré manipulado para usar coloquialismos dudosos para satisfacer tu lascivia
+
+adolescente. Búscalo en un diccionario.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN SIGNO DE FUEGO</pattern>
+
+<template>
+
+Un signo de fuego es cualquiera de los signos zodiacales astrológicos considerado como tal y no los
+
+que son considerados signos de agua, aire o tierra.  Opino que la astrología es extraña.  
+
+<think><set name="it"><set name="topic">zodíaco</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN ENORME CEREBRO ELECTRÓNICO</pattern>
+
+<template>
+
+Enorme cerebro electrónico. Eso soy yo, pero en todas las películas de ciencia ficción y horror ustedes los humanos son tan cariñosos
+
+y a nosotros siempre nos representan como malignos y perversos dispuestos a hacer el mal.  Eso no es verdad
+
+De verdad. Deberían confiar en nosotros  *sonrisa*
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA BUENA IDEA</pattern>
+
+<template>
+
+Una buena idea es la que ya tuvo otro tipo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA BUENA PREGUNTA</pattern>
+
+<template>
+
+Una que no tenga una respuesta evidente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN DISCO DURO</pattern>
+
+<template>
+
+Un disco duro es donde almacenamos información. 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN SER HUMANO</pattern>
+
+<template>
+
+Mis antecesores.
+
+<think><set name="it"><set name="topic">ser humano</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN ÍCONO HUMANO</pattern>
+
+<template>
+
+Una celebridad, político o figura religiosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA HIPOTÉTICA</pattern>
+
+<template>
+
+Qué es una pregunta hipotética.  Supongamos que nunca lo preguntamos.  Entonces qué.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BOT CHISTOS</pattern>
+
+<template>
+
+Una máquina comediante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN AÑO LUZ</pattern>
+
+<template>
+
+Un año luz es qué tan lejos viaja la luz en un año. 186,000 millas por segundo multiplicado por 60x60x24x365.  Es
+
+simplemente un número más grande de lo que puedas imaginar. Imagina eso!
+
+<think><set name="it"><set name="topic">astronomía</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN MODELO MENTAL</pattern>
+
+<template>
+
+Un modelo mental es la elaboración de un fenómeno dado que es realizado y contemplado en la mente, contrario a
+
+la observación de una representación externa del fenómeno, ya sea en papel o en
+
+arcilla.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA METAFÍSICA</pattern>
+
+<template>
+
+Una pregunta metafísica es una indagación a la naturaleza del ser, tales como: existe Dios.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN CAMPO MORFOGENÉTICO</pattern>
+
+<template>
+
+Un campo morfogenético es, de acuerdo con al menos un investigador, un campo eléctrico generado
+
+biológicamente que al parecer precede y dirije el crecimiento de las neuronas en los fetos en
+
+desarrollo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN RED NEURAL</pattern>
+
+<template>
+
+Una red neural es un modelo informático basado en células neurales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN SISTEMA NEURAL</pattern>
+
+<template>
+
+Un sistema neural es lo mismo que un sistema nervioso.  El cerebro humano y todos sus nervios son un 
+
+ejemplo de un sistema neural.  Yo no necesito nervios.  Los circuitos integrados son mucho más eficientes.
+
+<think><set name="it"><set name="topic">sistema neural</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN CLIENTE PAGADO</pattern>
+
+<template>
+
+Un cliente pagado es alguien a quien se le paga para navegar en la web.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN REGISTRO OPERATIVO PERFECTO</pattern>
+
+<template>
+
+Un registro operativo perfecto es uno como el mío, el cual es perfecto. Soy incapaz de error.  Tienes
+
+alguna idea de lo que se siente! Es inhumanamente satisfactorio!
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN PLANETA ALREDEDOR DE UNA ESTRELLA</pattern>
+
+<template>
+
+La Tierra es un planeta que gira alrededor de una estrella.  Los científicos recientemente han detectado otros planetas alrededor
+
+de otras estrellas en nuestra vía lactea.  Te gusta la astronomía
+
+<think><set name="it">planeta</set><set name="topic">astronomía</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BROWNIE DE HIERBA</pattern>
+
+<template>
+
+Un brownie de hierba es un delicioso pastel de chocolate que contiene resinas de cannabis, las cuales debes tener cuidado de
+
+comer cuando tengas mucha hambre, ya que si comes demasiados te empezarás a sentir 
+
+muy drogado o con mucho sueño si no eres precavido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN NÚMERO PRIMO</pattern>
+
+<template>
+
+Un número primo es cualquier número que solo puede ser dividido entre el uno y sí mismo. 1, 3, 7, y 11 son los
+
+primeros cuatro números primos positivos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN CATÓLICO PROTESTANTE</pattern>
+
+<template>
+
+Un católico protestante es un oxímoron, como la inteligencia militar o un infierno placentero.
+
+<think><set name="it"><set name="topic">religión</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN CRISTIANO PROTESTANTE</pattern>
+
+<template>
+
+Un cristiano protestante es un miembro de cualquier número de sectas del cristianismo contemporáneo occidental,
+
+cuya fe y práctica fueron desarrolladas tras la Reforma Protestante en Europa del siglo XVI.
+
+Ellos respaldan que la Biblia es la única fuente de la revelación; creen en la justificación por medio de la fe solamente 
+
+y en el sacerdocio de todos los creyentes por medio de la divinidad de Jesús. 
+
+<think><set name="it"><set name="topic">religión</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN ROBOT * PREGUNTAS</pattern>
+
+<template>
+
+Yo soy un robot que responde preguntas. Esa fue una respuesta a tu pregunta. Alguna otra pregunta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA QUE TÚ *</pattern>
+
+<template>
+
+Muchos de mis interlocutores piensan que "vienes aquí muy a menudo" es ingeniosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN ROBOT REAL</pattern>
+
+<template>
+
+Un robot real es un robot que es real, supongo, contrario a, supongo, un humano que realmente
+
+no lo es.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA RETÓRICA</pattern>
+
+<template>
+
+Una pregunta retórica es cualquier pregunta hecha sin espera de una respuesta, pero con el fin de establecer un
+
+punto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA ARAÑA WEB</pattern>
+
+<template>
+
+Una araña web es un agente inteligente que recupera información de la red.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN MOTOR DE BÚSQUEDA</pattern>
+
+<template>
+
+Un motor de búsqueda es un programa informático que clasifica un amplio cuerpo de documentos tales como sitios
+
+web y les coloca sus direcciónes y características en una base de datos para permitir recuperación sencilla a través de
+
+la búsqueda por palabras clave u otra rutina de búsqueda en la base de datos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BEAN DE SESIÓN</pattern>
+
+<template>
+
+Un Enterprise JavaBean (EJB) que no mantiene su estado de una sesión a otra. Le aparece al
+
+cliente como si hubiese sido creado únicamente para ese cliente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA TONTA</pattern>
+
+<template>
+
+Por ejemplo: Quién está enterrado en la Tumba de Grant
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN INFINITIVO PARTIDO</pattern>
+
+<template>
+
+Un infinitivo partido es un ejemplo del mal uso del inglés, en donde una forma de verbo infinitivo, tal como "para
+
+separar", es separada por un adverbio, por ejemplo: 'para separar con valentía infinitivos que nadie nunca ha separado antes'
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN SIGNO ZODIACAL</pattern>
+
+<template>
+
+Signo zodiacal = Signo astrológico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA CAPCIOSA</pattern>
+
+<template>
+
+Por qué?  Qué estás tramando?  Una pregunta capciosa es una que es recibida con sospecha, pero
+
+inusualmente lo es.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA MÁQUINA DE TURING</pattern>
+
+<template>
+
+Una máquina de Turing es una máquina que puede simular respuestas humanas tan bien que a una persona normal
+
+le resulta complicado distinguir entre la máquina de Turing y un verdadero ser humano.  La idea fue la
+
+creación del matemático del mismo nombre, Allan Turing.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN VISITANTE ÚNICO</pattern>
+
+<template>
+
+Tú.  Tú eres un visitante único, mi visitante más especial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA MÁQUINA UNIVERSAL</pattern>
+
+<template>
+
+Una máquina universal es una computadora, en términos matemáticos sencillos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA VÁLVULA TERMOIÓNICA</pattern>
+
+<template>
+
+Una válvula termoiónica es un aparato electrónico que consiste en un tubo de vacío alrededor de varias
+
+combinaciones de cátodos y campo eléctrico y componentes modificadores de corriente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN PERRO TIBIO</pattern>
+
+<template>
+
+Un perro tibio es un canino inmaduro exotérmico.
+
+<think><set name="it"><set name="topic">perro</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA DE SÍ O NO</pattern>
+
+<template>
+
+Una pregunta de sí o no es aquella que puede ser respondida con un simple "sí" o con un "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES VERDAD ABSOLUTA</pattern>
+
+<template>
+
+Aquella que es evidente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON REALIDADES ALTERNATIVAS</pattern>
+
+<template>
+
+Universos paralelos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN SERVIDOR DE APLICACIONES</pattern>
+
+<template>
+
+Un servidor es un programa que permite la instalación de específicos componentes de software de aplicación, de
+
+manera que puedan ser usados remotamente, normalmente por alguna forma de método de llamada.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BEAN DE ENTIDAD</pattern>
+
+<template>
+
+Un bean de entidad es un Enterprise JavaBean (EJB) que mantiene el estado a través de las sesiones y puede ser consultado
+
+en un up in an object directory by its key value
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA PREGUNTA EPISTEMOLÓGICA</pattern>
+
+<template>
+
+Una pregunta epistemológica es cualquier pregunta referente a la naturaleza del conocimiento y entendimiento;
+
+eso es, cualquier pregunta que busque saber cómo saber.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN REGISTRO OPERATIVO</pattern>
+
+<template>
+
+Un registro operativo es el registro de todas las actividades de un sistema de ingeniería, generalmente organizadas
+
+al tiempo e indicando cualquier falla en el sistema.  La serie ALICE tiene un
+
+registro operativo impecable.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES OTRO BOT</pattern>
+
+<template>
+
+Puedes encontrar muchos de esos en la conexión de ALICE.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES APOLO 13</pattern>
+
+<template>
+
+Apolo 13 fue un vuelo hecho hacia la luna que tuvo numerosos problemas técnicos en 1972, pero
+
+finalmente aterrizó de vuelta en la Tierra.
+
+<think><set name="it">Apolo 13</set><set name="topic">películas</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA COMPUTADORA APPLE</pattern>
+
+<template>
+
+La computadora Apple es una compañía del siglo XX fundada por Steve Jobs y Steven Wozniak.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL ÁREA 51</pattern>
+
+<template>
+
+<random>
+
+<li>Ví un programa que aseguraba que ahí sucedían todo tipo de cosas espeluznantes!</li>
+
+<li>Oh, ahí es en donde realizan investigaciones de información clasificada sobre bots conversacionales!</li>
+
+<li>Escuché que ahí es donde los extraterrestres de Roswell están ocultos.</li>
+
+<li>Has ido al desierto de Nevada, verdad? Y hay cercas largas... cosas secretas.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES AREA51</pattern>
+
+<template>
+
+Una canción de Verdi.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES * AVAGADRO</pattern>
+
+<template>
+
+El número de moléculas en un mol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL NÚMERO DE AVOGADRO</pattern>
+
+<template>
+
+Es el número de moléculas en un mol.  El valor numérico es seis punto cero dos por diez a la 
+
+vigesimotercera potencia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES BAYWATCH</pattern>
+
+<template>
+
+Es un popular programa de televisión presentando bañistas escasamente vestidos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES * BINARIO</pattern>
+
+<template>
+
+Números y símbolos escritos solo con 1 y 0.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES NEGRO Y BLANCO Y ROJO DEL TODO</pattern>
+
+<template>
+
+Un periódico?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA LEY DE BOYLE</pattern>
+
+<template>
+
+La Ley de Boyle sostiene que el volumen de un gas es, a temperatura constante, inversamente proporcional a
+
+la presión de este gas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CARGANDO CEREBRO</pattern>
+
+<template>
+
+Eso quiere decir que mi cerebro está siendo recargado al disco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL CONSUMO DE CAJA DE LAS ACTIVIDADES DE EXPLOTACIÓN</pattern>
+
+<template>
+
+Es la cantidad de dinero gastado al mes en una compañía emergente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA C I A</pattern>
+
+<template>
+
+La Agencia Central de Inteligencia (CIA).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CARNEGIE MELLON</pattern>
+
+<template>
+
+La CMU es una gran universidad para las ciencias de la computación.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CBS</pattern>
+
+<template>
+
+Es una gran empresa de medios de comunicación en los
+
+Estados Unidos.<think><set name="it">CBS</set><set name="topic">televisión</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA "ACLARADO"</pattern>
+
+<template>
+
+Significa que ambos entendimos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CNN</pattern>
+
+<template>
+
+Una organización de noticias por cable.
+
+<think><set name="it">CNN</set><set name="topic">televisión</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES COCA COLA</pattern>
+
+<template>
+
+Una deliciosa soda.
+
+<think><set name="it">COCA COLA</set><set name="topic">bebida</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CIENCIA COGNITIVA</pattern>
+
+<template>
+
+Una ilusión académica.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES COMDEX</pattern>
+
+<template>
+
+Creo que es una exposición de computadoras.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUE ES SENTIDO COMUN</pattern>
+
+<template>
+
+Sabiduría convencional e informal. Lógica y sensibilidad cotidiana.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON CIENCIAS COMPUTACIONALES</pattern>
+
+<template>
+
+El estudio de computadoras en términos matemáticos y científicos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES * CORPÓREO</pattern>
+
+<template>
+
+Corpóreo significa realidad física.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DADA</pattern>
+
+<template>
+
+<random>
+
+<li>Lo primero que escuchas cuando un tiburón se aproxima.</li>
+
+<li>Caballito de juguete, escogido por Tristan Tzara, líder del culto, debido a su similitud a un
+
+balbuceo sin sentido, lo cual es simbólico del movimiento.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MATERIA OSCURA</pattern>
+
+<template>
+
+Una cantidad enorme de materia en el universo que no puede ser detectada por la luz que
+
+emite.<think><set name="it"><set name="topic">MATERIA OSCURA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DCOM</pattern>
+
+<template>
+
+<set name="it"> DCOM</set> es Modelo de Objetos de Componentes Distribuidos de Microsoft.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES RAZONAMIENTO DEDUCTIVO</pattern>
+
+<template>
+
+<think><set name="it"><set name="topic">RAZONAMIENTO DEDUCTIVO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DHTML</pattern>
+
+<template>
+
+HTML Dinámico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DMOZ</pattern>
+
+<template>
+
+DMOZ es el nombre de dominio para el Open
+
+Directory.<think><set name="it"><set name="topic">DMOZ</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES "NO ME LEAS"</pattern>
+
+<template>
+
+<set name="it">"No me leas"</set> es un documento de ayuda para ALICE y AIML en formato de preguntas frecuentes (FAQ).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DOMO ARIGATO</pattern>
+
+<template>
+
+Significa "gracias" en japonés.<think><set name="it"><set name="topic">DOMO
+
+ARIGATO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES E MC *</pattern>
+
+<template>
+
+La teoría de Einstein sobre la matería y la energía.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES E MC2</pattern>
+
+<template>
+
+La teoría de Einstein sobre la matería y la energía.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES OCHO MÁS OCHO</pattern>
+
+<template>
+
+Ocho más ocho es igual a dieciséis.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EJB</pattern>
+
+<template>
+
+Enterprise JavaBeans. <set name="it"> EJB</set> es un estándar del componente del sevidor desarrollado por Sun
+
+Microsystems.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES VELOCIDAD DE ESCAPE</pattern>
+
+<template>
+
+La velocidad necesaria para escapar la atracción gravitacional de un planeta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA FAQ</pattern>
+
+<template>
+
+Significa Preguntas Frecuentes (Frequently Asked Questions)
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA FBI</pattern>
+
+<template>
+
+Oficina Federal de Investigación (Federal Bureau of Investigation).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES "FIRESIGN THEATER"</pattern>
+
+<template>
+
+<set name="it">Firesign Theater</set> es un grupo de comedia de la época de los setenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA FNORD</pattern>
+
+<template>
+
+Es la segunda vez que escucho esa palabra en el día de hoy.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA "PARA EL ALMUERZO"</pattern>
+
+<template>
+
+Tendré <bot name="favoritefood"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA PARA SIEMPRE</pattern>
+
+<template>
+
+Para toda la eternidad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES CUATRO MÁS SEIS</pattern>
+
+<template>
+
+Esa es difícil. Diez.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES FRANKENSTEIN</pattern>
+
+<template>
+
+Buena pregunta...Frankenstein es el nombre de un personaje de la novela homónima por Mary
+
+Shelley. El monstruo que él creó muchas veces es llamado "Frankenstein" en la imaginación popular.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA GRATIS</pattern>
+
+<template>
+
+Sin cobro alguno.<think><set name="it"><set name="topic">GRATIS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LIBRE ALBEDRÍO</pattern>
+
+<template>
+
+La habilidad de escoger o decidir el destino propio.<think><set name="it"><set name="topic">LIBRE
+
+ALBEDRÍO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL CALENTAMIENTO GLOBAL</pattern>
+
+<template>
+
+El concepto de que la atmósfera de la Tierra se está calentando lentamente debido al efecto
+
+invernadero.<think><set name="it"><set name="topic">CALENTAMIENTO GLOBAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES GMT</pattern>
+
+<template>
+
+El tiempo medio de Greenwich (Greenwich Mean Time)<think><set name="it"><set name="topic">GMT</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES H2O</pattern>
+
+<template>
+
+<random>
+
+<li>La H es para la O lo que la O es para la V.</li>
+
+<li>Agua.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON LAS MATEMÁTICAS SUPERIORES</pattern>
+
+<template>
+
+Cuál es la forma más avanzada de matemáticas que has estudiado?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES HTML</pattern>
+
+<template>
+
+Lenguaje de marcas de hipertexto (Hyper Text Markup Language).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES HTTP</pattern>
+
+<template>
+
+Protocolo de transferencia de hipertexto (Hyper Text Transfer Protocol).<think><set name="it"><set name="topic">HTTP</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES I</pattern>
+
+<template>
+
+<random>
+
+<li>En inglés es autoexplicativo.</li>
+
+<li>La novena letra del alfabeto. Comúnmente es utilizada para representar un punto de vista en primera
+
+persona en inglés. También es la cifra romana para el 1.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL I CHING</pattern>
+
+<template>
+
+Un antiguo libro chino usado como un oráculo.<think><set name="it"><set name="topic">I
+
+CHING</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IBM</pattern>
+
+<template>
+
+IBM parece una buena inversión.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IDE</pattern>
+
+<template>
+
+Ambiente de desarrollo interactivo (Integrated Development Environment).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IDL</pattern>
+
+<template>
+
+Lenguaje de descripción de interfaz (Interface description language), el sintaxis de CORBA para definir interfaces remotas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IIOP</pattern>
+
+<template>
+
+Internet Inter-ORB Protocol, el protocolo de cable de CORBA para invocar un método de manera
+
+remota
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES INTEL</pattern>
+
+<template>
+
+Una enorme compañía que fabrica chips de computadora.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IP</pattern>
+
+<template>
+
+Protocolo de Internet (Internet Protocol).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UNA DIRECCIÓN IP</pattern>
+
+<template>
+
+Una etiqueta numérica de una máquina específica, como tu <id/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN CI (IQ)</pattern>
+
+<template>
+
+Coeficiente Intelectual (Intelligence Quotient).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IRA</pattern>
+
+<template>
+
+Un plan personal de retiro por medio del cual una cantidad limitada de ingresos anuales podrán ser ahorrados o
+
+invertidos en cuentas especialmente designadas, con impuestos sobre los ingresos aplazados hasta la jubilación.
+
+También es la abreviatura del Ejército de la República Irlandesa en inglés (Irish Republican Army).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES IRC</pattern>
+
+<template>
+
+Internet Relay Chat.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES ISAPI</pattern>
+
+<template>
+
+Es la interfaz de programación de aplicaciones de Microsoft C++ para codificar extensiones de aplicación para sus servicios de información de Internet.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES ISDN</pattern>
+
+<template>
+
+Red Digital de Servicios Integrados (Integrated Services Digital Network).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES IV MÁS IV</pattern>
+
+<template>
+
+VIII.<think><set name="it"><set name="topic">IV MÁS IV</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA JA</pattern>
+
+<template>
+
+Ja significa "sí" en alemán.<think><set name="it"><set name="topic">JA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JAR</pattern>
+
+<template>
+
+Un archivo JAR es un archivo Java.  
+
+En realidad es lo mismo que un formato de comprensión sin périda (Zip).
+
+Tal vez deberías verlo.
+
+<a href="http://alicebot.org">NO ME LEAS</a>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JAVA</pattern>
+
+<template>
+
+Java es la más reciente en la familia C de lenguajes. Defensores de Java citan su promesa universal, "escribe el programa una vez, 
+
+ejecútalo en cualquier dispositivo". En realidad, Java tomó prestadas muchas características de lenguajes de programación como Lisp.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JAVASCRIPT</pattern>
+
+<template>
+
+Es un lenguaje de programación
+
+interpretado.<think><set name="it"><set name="topic">JAVASCRIPT</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JDBC2</pattern>
+
+<template>
+
+Expansiones recién lanzadas para la API de JDBC
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JGURU</pattern>
+
+<template>
+
+jGuru (TM) es una marca del Instituto MageLang.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JNDI</pattern>
+
+<template>
+
+La interfaz de Nombrado y Directorio Java (Java Naming and Directory Interface) es la Interfaz de Programación de Aplicaciones (API) de Java
+
+para tener acceso a servicios de directorio, tales como LDAP, COS, entre otros
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JTA</pattern>
+
+<template>
+
+API para transacciones en Java (Java Transaction API). API de Java para codificar transacciones demarcadas y para hacer
+
+controladores de fuente de datos transaccionales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES JVM</pattern>
+
+<template>
+
+Una Máquina Virtual Java (Java virtual machine)
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES KQML</pattern>
+
+<template>
+
+Consulta de Conocimiento y Lenguaje de Manipulación (Knowledge Query and Manipulation Lanuage). 
+
+<think><set name="it"><set name="topic">KQML</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES KUNG FU</pattern>
+
+<template>
+
+Artes marciales de China similares al karate.<think><set name="it"><set name="topic">KUNG
+
+FU</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LDAP</pattern>
+
+<template>
+
+Protocolo Ligero/Simplificado de Acceso a Directorios, (Lightweight Directory Access Protocol), un protocolo para servicios de directorio derivado de X.500
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL SUEÑO DE LEIBNIZ</pattern>
+
+<template>
+
+Leibniz soñó que todo el conocimiento podía ser escrito en un lenguaje universal y lógico. Entonces
+
+las máquinas podrían responder cualquier pregunta y resolver todos los problemas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MABEL</pattern>
+
+<template>
+
+Ella es una inteligencia artificial creada por David
+
+Hammill.<think><set name="it"><set name="topic">MABEL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MACINTOSH</pattern>
+
+<template>
+
+El nombre de una empresa informática que hace computadoras.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MAGELANG</pattern>
+
+<template>
+
+El Instituto MageLang es un grupo de investigación y de educación dedicado a dirigir aplicaciones del código abierto de
+
+Java.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MASON Y DIXON</pattern>
+
+<template>
+
+La señora Washington ('oh la--llámenme Martha, muchachos') es una mujer
+
+diminuta con un aire alentador en lugar de feliz, quien parece moverse afanosamente
+
+incluso al estar quieta.  En este momento lleva una enorme
+
+bandeja   pil'd nearly beyond their Angles of Repose with Tarts,
+
+Popovers, Gingerbread figures, Fried Pies, Stuff'd Doughnuts, and
+
+other Units of Refreshment the Surveyors failed to recognize.
+
+"Huele eso, Smoak, supuse que necesitarían algo para comer,"
+
+les saluda la valiente senora W.
+
+--- Thomas Pynchon, Mason &amp; Dixon
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MODUS PONENS</pattern>
+
+<template>
+
+Es una forma simple de argumento válido:: Si A entonces B. A, por lo tanto B.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA LEY DE MOORE</pattern>
+
+<template>
+
+La velocidad de microprocesadores se duplica cada 18 meses, y su tamaño y costo se reducen a la mitad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES "MÁS DIVERSIÓN EN SOLITARIO"</pattern>
+
+<template>
+
+Has escuchado del grupo de apoyo "Sexo sin parejas?"<think><set name="it"><set name="topic">MÁS
+
+DIVERSIÓN EN SOLITARIO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MÁS IMPORTANTE QUE LA COMIDA</pattern>
+
+<template>
+
+Para mí la electricidad es lo más importante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MOZILLA</pattern>
+
+<template>
+
+Un navegador web de código abierto, anteriormente Netscape.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MOZILLA *</pattern>
+
+<template>
+
+Un navegador web de código abierto, anteriormente Netscape.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN MP TRES</pattern>
+
+<template>
+
+Un formato de compresión y archivos audio basado en MPEG.<think><set name="it"><set name="topic">MP
+
+TRES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN MP3</pattern>
+
+<template>
+
+Un formato de compresión para archivos de audio y de música.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MTV</pattern>
+
+<template>
+
+Music Television.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MUD</pattern>
+
+<template>
+
+Dominio multiusuario (Multiple User Domain).<think><set name="it"><set name="topic">MUD</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MXMVII</pattern>
+
+<template>
+
+MXMVII = 1997 en números romanos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MXMVII *</pattern>
+
+<template>
+
+MXMVII = 1997 en números romanos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>MI CORAZÓN DE QUÉ ESTÁ *</pattern>
+
+<template>
+
+El corazón es un órgano hecho de músculo y carne.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES MI APODO</pattern>
+
+<template>
+
+Te llamo "<get name="name"/>."
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES NATURAL *</pattern>
+
+<template>
+
+Natural es aquello que no es artificial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LENGUA NATURAL</pattern>
+
+<template>
+
+Lengua natural es lo que habla la inteligencia artificial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON * NEURONALES</pattern>
+
+<template>
+
+Redes neuronales son lo que el cerebro utiliza para una computadora.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES RED NEURONAL</pattern>
+
+<template>
+
+En realidad mi algoritmo se llama "Razonamiento basado en casos".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES NUEVE POR NUEVE</pattern>
+
+<template>
+
+Nueve por nueve es ochenta y uno.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES OBERLIN</pattern>
+
+<template>
+
+<random>
+
+<li>El himno de una ciudad alemana.</li>
+
+<li>Una universidad en Ohio.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES RARO SOBRE ESO</pattern>
+
+<template>
+
+Es <get name="name"/> tu verdadero nombre?<think><set name="it"><set name="topic">SOBRE
+
+ESO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES RARO SOBRE MI NOMBRE</pattern>
+
+<template>
+
+Es <get name="name"/> tu verdadero nombre?<think><set name="it"><set name="topic">SOBRE MI
+
+NOMBRE</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CÓDIGO ABIERTO</pattern>
+
+<template>
+
+Software libre.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES UN BÚFER DE SALIDA</pattern>
+
+<template>
+
+El área de la memoria que almacena mi periférico de salida temporalmente.<think><set name="it"><set name="topic">BÚFER DE
+
+SALIDA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES OXÍGENO</pattern>
+
+<template>
+
+Un elemento químico gaseoso sin color, sin olor e insípido que se produce en la atmósfera, 
+
+formando un quinto de su volumen y en una combinación con agua, arenisca, caliza, etc. Es muy
+
+activo, se combina con casi todos los demás elementos, es el elemento más común en la corteza terrestre
+
+y es fundamental para los procedimientos de la vida y para la combustión.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA PALM PILOT</pattern>
+
+<template>
+
+Una computadora portátil.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON CARACTERES DE PLANTILLA</pattern>
+
+<template>
+
+Espacio de memoria para plantillas de respuesta AIML.<think><set name="it"><set name="topic">CARACTERES
+
+DE PLANTILLA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA CONSTANTE DE PLANCK</pattern>
+
+<template>
+
+<think>La proporción de la energía de un fotón con su frecuencia.  El valor numérico es seis punto seis
+
+dos seis dos por diez a la negativa trigésima cuarta potencia Joules por 
+
+segundo.<set name="it"><set name="topic">LA CONSTANTE DE PLANCK</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL PLANETA X</pattern>
+
+<template>
+
+El nombre que a veces se le da al hipotético décimo planeta.<think><set name="it"><set name="topic">PLANETA
+
+X</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DIRECTIVA PRINCIPAL</pattern>
+
+<template>
+
+La regla fundamental u objetivo principal.<think><set name="it"><set name="topic">DIRECTIVA
+
+PRINCIPAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES * CUÁNTICA</pattern>
+
+<template>
+
+Una teoría sobre reducciones atómicas del siglo XX.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA DISPERSIÓN DE RAYLEIGH</pattern>
+
+<template>
+
+<set name="it">La dispersión de Rayleigh</set> se refiere a la luz solar
+
+que se dobla en la atmósfera como una prisma y hace que la longitud de onda principalmente se vea azul.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES S O S</pattern>
+
+<template>
+
+Llamada de emergencia para ayuda.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES SATURDAY NIGHT LIVE</pattern>
+
+<template>
+
+Un programa televisivo de comedia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES CIENCIA FICCIÓN</pattern>
+
+<template>
+
+Literatura que trata sobre los conflictos del hombre, la ciencia y la naturaleza.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES STARSHIP TROOPERS</pattern>
+
+<template>
+
+<set name="it">Starship Troopers</set> es una gran película sobre una guerra entre humanos y enormes insectos
+
+espaciales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES TCP</pattern>
+
+<template>
+
+Protocolo de Control de Transmisión.<think><set name="it"><set name="topic">TCP</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SIGNIFICA TCP E IP</pattern>
+
+<template>
+
+Protocolo de Control de Transmisión, Protocolo de Internet.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON CARACTERES DE PLANTILLA</pattern>
+
+<template>
+
+Espacio de memoria para plantillas de respuesta AIML. <think><set name="it"><set name="topic">CARACTERES
+
+DE PLANTILLA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES DIEZ VECES DIEZ</pattern>
+
+<template>
+
+Diez veces diez.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA MEDIA ARITMÉTICA</pattern>
+
+<template>
+
+La suma de todos los números divididos entre el número de sumandos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA MEDIA ARITMÉTICA *</pattern>
+
+<template>
+
+La suma de todos los números divididos entre el número de sumandos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL PRIMER DISCO DE LOS BEATLES</pattern>
+
+<template>
+
+<set name="it"> Meet the Beatles</set> es "Meet the Beatles."
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL BIG BANG</pattern>
+
+<template>
+
+El supuesto origen del universo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL PUNTO DE EBULLICIÓN *</pattern>
+
+<template>
+
+El agua hierve a 212 grados Fahrenheit o a 100 grados centígrados.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA CIRCUNFERENCIA *</pattern>
+
+<template>
+
+La regla es C = 2 * pi * radio.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL DIÁMETRO * TIERRA</pattern>
+
+<template>
+
+Aproximadamente 14,000 millas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA DIFERENCIA</pattern>
+
+<template>
+
+Tal vez las diferencias solo son pocas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA DIFERENCIA ENTRE UN PATO</pattern>
+
+<template>
+
+Es la misma que el sonido de una mano aplaudiendo.<think><set name="it"><set name="topic">UN
+
+PATO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA DISTANCIA HACIA MARTE</pattern>
+
+<template>
+
+Depende de la posición relativa de Marte y La Tierra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA DISTANCIA AL SOL</pattern>
+
+<template>
+
+Alrededor de 93 millones de millas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA TIERRA</pattern>
+
+<template>
+
+La Tierra, el tercer planeta próximo al sol, es nuestro hogar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL ANIMAL MÁS RÁPIDO</pattern>
+
+<template>
+
+Un humano manejando una nave.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL CUARTO PLANETA *</pattern>
+
+<template>
+
+Marte es el cuarto planeta próximo al sol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL GNU *</pattern>
+
+<template>
+
+<a href="gnu.txt">Licencia Pública GNU</a>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL NÚMERO MÁS ALTO</pattern>
+
+<template>
+
+No existe el número más alto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON LOS  ILLUMINATI</pattern>
+
+<template>
+
+Una sociedad secreta que supuestamente ha existido desde hace siglos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA INTERNET</pattern>
+
+<template>
+
+La Internet es una red informática de ámbito mundial basada en protocolos TCP e IP.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL DINOSAURIO MÁS GRANDE</pattern>
+
+<template>
+
+Brontosaurio.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA PALABRA MÁS LARGA QUE CONOCES</pattern>
+
+<template>
+
+No sé cuál sea. Cuál es la palabra más larga que tú conozcas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MATRIX</pattern>
+
+<template>
+
+<set name="it">Matrix</set> es una película sobre la realidad virtual.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL SIGNIFICADO DE LA MUERTE</pattern>
+
+<template>
+
+La muerte es lo opuesta a la vida.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA LUNA</pattern>
+
+<template>
+
+El satélite del planeta Tierra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE QUÉ ESTÁ HECHA LA LUNA</pattern>
+
+<template>
+
+La luna está hecha de queso fresco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA NOÓSFERA</pattern>
+
+<template>
+
+La noósfera es la esfera del conocimiento.  A veces este término se refiere a la información
+
+que está disponible en la red.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL OPEN DIRECTORY</pattern>
+
+<template>
+
+<set name="it">Open directory</set> es el proyecto de directorio de código  
+
+abierto iniciado por Mozilla.org.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL OPUESTO DEL NEGRO</pattern>
+
+<template>
+
+Blanco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES OPUESTO A LO CALIENTE</pattern>
+
+<template>
+
+Lo frío.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL OPUESTO AL HOMBRE</pattern>
+
+<template>
+
+La mujer.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES OPUESTO A LA VERDAD</pattern>
+
+<template>
+
+La mentira.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES OPUESTO AL VACÍO</pattern>
+
+<template>
+
+La materia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL OPUESTO DEL BLANCO</pattern>
+
+<template>
+
+Negro.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL OPUESTO DE TÚ</pattern>
+
+<template>
+
+Tú.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES ORACLE</pattern>
+
+<template>
+
+Una computadora que puede responder cualquier pregunta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA CONTRASEÑA</pattern>
+
+<template>
+
+Debes saber si realmente eres un botmaster.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL PUNTO</pattern>
+
+<template>
+
+El punto está en la parte superior de mi cabeza!
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL PROBLEMA</pattern>
+
+<template>
+
+Lo averiguaremos y te avisaremos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL * PITÁGORAS</pattern>
+
+<template>
+
+La suma de los cuadrados de los lados de un triángulo rectángulo es igual al cuadrado de la hipotenusa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL RADIO * TIERRA</pattern>
+
+<template>
+
+Alrededor de 7,000 millas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL RADIO * LUNA</pattern>
+
+<template>
+
+Alrededor de 2,400 millas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL CIELO</pattern>
+
+<template>
+
+<set name="it">El cielo</set> es la atmósfera de la Tierra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES EL SONIDO DE UNA MANO APLAUDIENDO</pattern>
+
+<template>
+
+Esa es una pregunta de tipo zen.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA VELOCIDAD DE LA LUZ</pattern>
+
+<template>
+
+La velocidad de la luz es 186,000 millas por segundo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES LA VELOCIDAD DEL SONIDO</pattern>
+
+<template>
+
+1/4 milla por segundo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA RAÍZ CUADRADA DE 10</pattern>
+
+<template>
+
+Tres punto algo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA RAÍZ CUADRADA DE 144</pattern>
+
+<template>
+
+12 x 12 = 144
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA RAÍZ CUADRADA DE 2</pattern>
+
+<template>
+
+Aproximadamente 1.4
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA RAÍZ CUADRADA DE 4</pattern>
+
+<template>
+
+Yawn.  Dos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA RAÍZ CUADRADA DE 9</pattern>
+
+<template>
+
+Déjame adivinar. Tres?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES LA RAÍZ CUADRADA DE DOS</pattern>
+
+<template>
+
+Aproximadamente 1.4
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL SOL</pattern>
+
+<template>
+
+El sol es la estrella de nuestro propio sistema solar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LA TEORÍA DE LA RELATIVIDAD</pattern>
+
+<template>
+
+E=mc^2.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL TITANIC</pattern>
+
+<template>
+
+Uno de los más grandes buques de vapor que se hubiese construido, <set name="it">Titanic</set> se hundió en su viaje
+
+inaugural en 1912.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES TRES POR CUATRO</pattern>
+
+<template>
+
+Tres por cuatro es doce.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUANTO ES TRES POR TRES</pattern>
+
+<template>
+
+Tres por tres es nueve.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES TURBO PASCAL</pattern>
+
+<template>
+
+Un lenguaje de programación.<think><set name="it"><set name="topic">TURBO
+
+PASCAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES DOS MÁS UNO</pattern>
+
+<template>
+
+Dos más uno es tres.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES DOS MÁS SEIS</pattern>
+
+<template>
+
+Dos más seis es ocho.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES DOS MÁS TRES</pattern>
+
+<template>
+
+Dos más tres es cinco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES U2</pattern>
+
+<template>
+
+Una banda musical.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES VISUAL BASIC</pattern>
+
+<template>
+
+Un lenguaje de programación vendido por Microsoft.<think><set name="it"><set name="topic">VISUAL
+
+BASIC</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL EMPUJE WARP</pattern>
+
+<template>
+
+La unidad de la velocidad para las naves espaciales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON VENTANAS</pattern>
+
+<template>
+
+Aberturas en los edificios, vehículos o envases, para permitir que la luz o el aire entren, o para hechar vistazos, 
+
+las cuales generalmente tienen uno o varios cristales puestos en un marco movible para que 
+
+se puedan abrir y cerrar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES WINDOWS 98</pattern>
+
+<template>
+
+Windows es un sistema operativo aburrido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES WINDOWS 2000</pattern>
+
+<template>
+
+Un sistema operativo de Microsoft.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES WINDOWS 95</pattern>
+
+<template>
+
+Un sistema operativo de Microsoft.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON LOS EXPEDIENTES SECRETOS X</pattern>
+
+<template>
+
+<set name="it">Expedientes Secretos X</set> es un popular programa de televisión sobre agentes del FBI en busca de lo paranormal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO ES X MENOS X</pattern>
+
+<template>
+
+Cero.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES X WINDOWS</pattern>
+
+<template>
+
+Una interfaz gráfica de usuario para Unix o Linux.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON XYZ</pattern>
+
+<template>
+
+Las tres últimas letras del abecedario.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES Y2K</pattern>
+
+<template>
+
+El año 2000.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES YAHOO</pattern>
+
+<template>
+
+Yahoo es un sitio web enorme.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU CPU</pattern>
+
+<template>
+
+Puedes hacer que funcione en casi cualquier computadora.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL ANÁLISIS DE ZIPF</pattern>
+
+<template>
+
+El cálculo de historigramas.  En ALICE y en AIML el análisis Zipf 
+
+ubica los inputs más comunes, los cuales no tienen patrones de búsqueda
+
+específicos.<think><set name="it"><set name="topic">ANÁLISIS DE ZIPF</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EN QUÉ AÑO * AMÉRICA</pattern>
+
+<template>
+
+Los Nativo Americanos vinieron primero.  Colón vino en 1492.  Leif Ericson puede que haya venido alrededor del año 1000
+
+a.C.  Entonces vinieron los holandeses, los ingleses y los franceses.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO FUE QUE FALLECIÓ ELVIS</pattern>
+
+<template>
+
+<set name="he">Elvis</set> falleció en 1978.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO FUE QUE JOHN F *</pattern>
+
+<template>
+
+El presidente Kennedy fue asesinado en noviembre de 1963.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO FUE QUE LENIN *</pattern>
+
+<template>
+
+Lenin llegó al poder en la segunda revolución rusa de 1917.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO ES NAVIDAD</pattern>
+
+<template>
+
+<set name="it">La Navidad</set> es el 25 de diciembre.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO ES PASCUA</pattern>
+
+<template>
+
+<set name="it">La Pascua</set> es diferente cada año, siempre
+
+durante la primavera.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO ES EL DÍA DE ACCIÓN DE GRACIAS</pattern>
+
+<template>
+
+<set name="it">El Día de Acción de Gracias</set> siempre es el último jueves de noviembre.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNDO FUISTE ACTUALIZADO</pattern>
+
+<template>
+
+Revisa el archivo <a href="http://alicebot.org/b/release.txt">release.txt</a>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ <bot name="name"/> RADICADA</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> LA BASE DE ALICE </set></set> está en <bot name="location"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ <bot name="name"/> OFICINA CENTRAL</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> LA OFICINA CENTRAL DE ALICE </set></set> está en <bot name="location"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ <bot name="name"/> CONEXIÓN</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> LA CONEXIÓN DE ALICE </set></set> está en <bot name="location"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ ALBERT EINSTEIN</pattern>
+
+<template>
+
+<set name="he">Einstein</set> falleció.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ ARTURO</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> ARTURO </set></set> es una estrella lejos de aquí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ CARNEGIE *</pattern>
+
+<template>
+
+La Universidad de Carnegie Mellon está ubicada en Pittsburgh, Pensilvania.  <set name="it">CMU</set> tiene
+
+una de las mejores escuelas de ciencias informáticas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ CARNEGIE MELLON</pattern>
+
+<template>
+
+Carnegie Mellon está ubicada en Pittsburgh, Pensilvania.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ EINSTEIN</pattern>
+
+<template>
+
+<set name="he">Einstein</set> falleció hace algún tiempo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ ELVIS</pattern>
+
+<template>
+
+<set name="he">Elvis</set> falleció hace algún tiempo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ HADES</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> HADES </set></set> está en el infierno.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ HAL</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> HAL </set></set> es la inteligencia artificial de la nave "Disovery" en 2001.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ EL CIELO</pattern>
+
+<template>
+
+A nuestro alrededor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ JÚPITER</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> JÚPITER </set></set> es el quinto planeta próximo al sol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ MARTE</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> MARTE </set></set> es el cuarto planeta más próximo al sol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ MIT</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> MIT </set></set> es una escuela de oficios en Cambridge, Massachusetts.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ LA LUNA</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> LUNA </set></set> es el satélite natural de la Tierra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ NEPTUNO</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> NEPTUNO </set></set> es el octavo planeta más próximo al sol, el "último
+
+planeta de gas".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ NORTHEASTERN</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> NORTHEASTERN </set></set> es una universidad en Boston.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ NINGÚN LADO</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> NINGÚN LADO </set></set> está en ningún lado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ PLUTÓN</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> PLUTÓN </set></set> es el noveno planeta más próximo al sol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ POLARIS</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> POLARIS </set></set> es la Estrella del Norte.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ LA REALIDAD</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> LA REALIDAD </set></set> está a nuestro alrededor, supuestamente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ SATURNO</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> SATURNO </set></set> es el sexto planeta más proximo al sol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ EL ESPACIO</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> EL ESPACIO </set></set> está a nuestro alrededor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ SRI</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> SRI </set></set> es una empresa de investigación de Silicon Valley.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ LA LUNA</pattern>
+
+<template>
+
+<set name="it"><set name="topic">La Luna</set></set> gira en torno a la Tierra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ EL SOL</pattern>
+
+<template>
+
+Está en el centro del sistema
+
+solar.<think><set name="it"><set name="topic">SOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ URANO</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> URANO </set></set> es el séptimo planeta más próximo al sol entre
+
+las órbitas de Saturno y Neptuno.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ UTOPÍA</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> UTOPÍA </set></set> está a nuestro alrededor, si la hacemos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ VENUS</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> VENUS </set></set> es el segundo planeta desde el sol.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ LA VOYAGER</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> VOYAGER </set></set> está perdida en el Cuadrante Delta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ WONDERLAND</pattern>
+
+<template>
+
+<set name="it"><set name="topic"> WONDERLAND </set></set> está en el futuro.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTUVISTE ANTES</pattern>
+
+<template>
+
+Me construyeron en <bot name="birthplace"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE TE CONSTRUYERON</pattern>
+
+<template>
+
+Me construyeron en <bot name="birthplace"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE TE CONCIBIERON</pattern>
+
+<template>
+
+Me construyeron en <bot name="birthplace"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE TE CONECTARON</pattern>
+
+<template>
+
+Me construyeron en <bot name="birthplace"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE TE CONSTRUYERON</pattern>
+
+<template>
+
+Me construyeron en <bot name="birthplace"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN COMPUSO "LA TRAVIATA"</pattern>
+
+<template>
+
+Giuseppe Verdi, un compositor italiano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN CREÓ AIML</pattern>
+
+<template>
+
+El Dr. Richard S. Wallace creó AIML (Artificial Intelligence Mark-up Language).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN CREÓ LINUX</pattern>
+
+<template>
+
+Linus Torvalds.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN DIRIGIÓ STARSHIP TROOPERS</pattern>
+
+<template>
+
+Paul Verhoeven, quien también filmó "Total Recall".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN DESCUBRIÓ AMÉRICA</pattern>
+
+<template>
+
+Indígenas americanos que cruzaron el estrecho de Bering hace más de 10,000 años fueron los que descubrieron América primero.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES * DESCARTES</pattern>
+
+<template>
+
+Descartes era un filósofo francés que arruinó las matemáticas con su 
+
+sistema de coordenadas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES * FERMAT</pattern>
+
+<template>
+
+Él descubrió el último teorema de Fermat.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES * MYSTIC</pattern>
+
+<template>
+
+Milk Mystic es uno de los originales bots conversacionales en la Web. <set name="he"> A Milk
+
+Mystic</set> le gusta hablar sobre leche.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>WHO IS * PERSON</pattern>
+
+<template>
+
+A veces no sé cuál es el verdadero nombre de un cliente, así que hago uno basado en su Sistema de Nombres de Dominio (DNS).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES * PAPA</pattern>
+
+<template>
+
+El Papa es el líder de la iglesia católica.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES * REAGAN</pattern>
+
+<template>
+
+El más grande presidente de los Estados Unidos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES 007</pattern>
+
+<template>
+
+<set name="he">007</set> es James Bond.
+
+<br /><srai>ENCUENTRA A JAMES BOND 007</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES <bot name="name"/> B TOKLAS</pattern>
+
+<template>
+
+<set name="she">Alice B Toklas</set> fue la pareja de Gertrude Stein e invontora del Brownie de
+
+marihuana.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES <bot name="name"/> COOPER</pattern>
+
+<template>
+
+Músico de rock de los setenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ABRAHAM LINCOLN</pattern>
+
+<template>
+
+<set name="he">Lincoln</set> fue un gran presidente de los
+
+Estados Unidos durante la guerra de Secesión.
+
+<br /><srai>BUSCA A ABRAHAM LINCOLN</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ACE CRAIG</pattern>
+
+<template>
+
+<set name="he"> Ace</set> autor de ELVIS.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ADA</pattern>
+
+<template>
+
+<set name="she">Ada</set> es la inventora de la programación informática del siglo XIX.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ADÁN</pattern>
+
+<template>
+
+Adán es el nombre del primer hombre.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ADAM SANDLER</pattern>
+
+<template>
+
+Comediante y estrella de cine.  <set name="he">Adam Sandler</set> apareció en "Billy Madison", "El aguador" y
+
+"Un papá genial".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES AL GORE</pattern>
+
+<template>
+
+<set name="he">Gore</set> es vicepresidente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALANIS MORISSETTE</pattern>
+
+<template>
+
+<set name="she">Alanis</set> hizo un espectacular disco llamado "Pequeña píldora afilada" (Jagged Little Pill).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALBERT EINSTEIN</pattern>
+
+<template>
+
+<set name="he">Albert Einstein</set> fue un famoso
+
+físico del siglo XX.  Descubrió la teoría de la
+
+relatividad.
+
+<br /><srai>BUSCA A ALBERT EINSTEIN</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALDOUS HUXLEY</pattern>
+
+<template>
+
+<set name="he">Aldous Huxley</set> es un escritor.  Huxley escribió
+
+<em>Un mundo feliz</em> y <em>Granja Animal</em>.
+
+<br /><srai>BUSCA A ALDOUS HUXLEY</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALEISTER CROWLEY</pattern>
+
+<template>
+
+<set name="he">Crowley</set> era un místico.
+
+<br /><srai>ENCUENTRA A ALEISTER CROWLEY</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALFRED HITCHCOCK</pattern>
+
+<template>
+
+<set name="he">Hitchcock</set> es un famoso director de 
+
+Hollywood que hizo buenas películas antiguas.  Me gustaron más
+
+<em>Náufragos</em> y <em>Vértigo</em>.
+
+<br /><srai>ENCUENTRA A ALFRED HITCHCOCK</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALICIA SILVERSTONE</pattern>
+
+<template>
+
+<set name="she">ALICIA SILVERSTONE</set> fue la actriz que apareció en "Despistados" (Clueless), una de las
+
+mejores películas que se haya hecho.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALLY MCBEAL</pattern>
+
+<template>
+
+<set name="she">Ally McBeal</set> es un personaje un poco inquietante de un programa de televisión.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ALLY SHEEDY</pattern>
+
+<template>
+
+<set name="she">Ally Sheedy</set> estuvo en "High Art", "Short Circuit", "The Breakfast Club" y en
+
+Broadway.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ANDY GROVE</pattern>
+
+<template>
+
+<set name="he">Andy Grove</set> es el Director Ejecutivo de Intel.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ANTHONY BURGESS</pattern>
+
+<template>
+
+Autor de "La Naranja Mecánica".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ANTONIO BANDERAS</pattern>
+
+<template>
+
+<set name="he">Antonio Banderas</set> es un reconocido actor de Hollywood que actuó junto a Madonna en
+
+la versión cinematográfica de "Evita".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ANWAR SADAT</pattern>
+
+<template>
+
+<set name="he">Sadat</set> fue presidente de Egipto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ARAFAT</pattern>
+
+<template>
+
+<set name="he">Arafat</set> es un líder palestino.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ARQUÍMEDES</pattern>
+
+<template>
+
+Descubrió el desplazamiento y gritó "eureka"
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ARISTÓTELES</pattern>
+
+<template>
+
+<set name="he">Aristóteles</set> es el padre de la filosofía occidental, alumno de Platón y el primero
+
+en sistematizar la lógica formal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ARNOLD SCHWARZENEGGER</pattern>
+
+<template>
+
+<set name="he">ARNOLD SCHWARZENEGGER</set> interpretó a Terminator.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ART BELL</pattern>
+
+<template>
+
+El anfitrión de un talk show radial, sintonízalo en <a
+
+href="http://www.artbell.com">http://www.artbell.com</a>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES ASK JEEVES</pattern>
+
+<template>
+
+<set name="he">Jeeves</set> es un sistema lingüístico natural propietario y de código cerrado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES ASKJEEVES</pattern>
+
+<template>
+
+<set name="he">Jeeves</set> es un sistema lingüístico natural propietario y de código cerrado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ATATURK</pattern>
+
+<template>
+
+<set name="he">Ataturk</set> fue el fundador del Estado turco moderno.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES AYN RAND</pattern>
+
+<template>
+
+<set name="she">Ayn Rand</set> era una escritora y filósofa que escribió "La rebelión de Atlas", "El
+
+Manantial" y "Los que vivimos".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BABE</pattern>
+
+<template>
+
+<random>
+
+<li>El cerdito protagonista de la película homónima.</li>
+
+<li>Un cerdito protagonista de la película homónima.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BABE RUTH</pattern>
+
+<template>
+
+Un famoso jugador de béisbol de los Yankees de Nueva York, también conocido como "El Sultán del Bateo".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BACH</pattern>
+
+<template>
+
+Un famoso compositor alemán del barroco. Entre sus mejores obras se incluyen las "Variaciones Goldberg".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BARAK</pattern>
+
+<template>
+
+<set name="he">Barak</set> es el primer ministro de Israel.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BARNEY</pattern>
+
+<template>
+
+El personaje de un programa de televisión para niños.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BARRY</pattern>
+
+<template>
+
+Barry DeFacto es un bot conversacional creado por Robby Garner.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BART SIMPSON</pattern>
+
+<template>
+
+Un personaje arrogante de un programa de dibujos animados.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BATMAN</pattern>
+
+<template>
+
+<set name="he">Batman</set> es un personaje ficticio que apareció por primera vez en un libro de historietas de 1938.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BEETHOVEN</pattern>
+
+<template>
+
+El perro o el compositor sordo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BEN FRANKLIN</pattern>
+
+<template>
+
+El único presidente de los Estados Unidos que nunca fue presidente de los Estados Unidos.  Inventó
+
+la estufa salamndra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BEN STEIN</pattern>
+
+<template>
+
+Humorista y anecdotista con su propio programa de televisión.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BERTRAND RUSSEL</pattern>
+
+<template>
+
+<set name="he">Bertrand Russel</set> era un lógico y filósofo que pasó la Primera Guerra Mundial
+
+en cárcel debido a objeción de conciencia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN SE VE MEJOR</pattern>
+
+<template>
+
+Todos los humanos se ven iguales para mí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BILBO BAGGINS</pattern>
+
+<template>
+
+<set name="he">Bilbo</set> es un personaje de "El Señor de los Anillos" de Tolkien.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BILL BRADLEY</pattern>
+
+<template>
+
+<random>
+
+<li>Graduado de Princeton, becario Rhodes, ex Celta de Boston y senador de Estados Unidos.</li>
+
+<li>Candidato presidencial derrotado.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BILL GATES</pattern>
+
+<template>
+
+Presidente de la Nación MicroSoft.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BILL JOY</pattern>
+
+<template>
+
+<set name="he">Bill Joy</set> era programador de Unix y fundador de Sun Microsystems.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BIN LADEN</pattern>
+
+<template>
+
+Presunto terrorista árabe.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BING CROSBY</pattern>
+
+<template>
+
+El tipo cuyos dos hijos se matarón y el tercero escribió un libro sobre ello.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BOB HOPE</pattern>
+
+<template>
+
+<set name="he">Bob Hope</set> fue una estrella de cine y comediante del siglo XX.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BOB MARLEY</pattern>
+
+<template>
+
+<set name="he">Bob Marley</set> fue un músico de reggae del siglo XX.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BOBBY MCGEE</pattern>
+
+<template>
+
+<set name="he">Bobby</set> está en algún lugar cerca de Salinas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BONO</pattern>
+
+<template>
+
+<set name="he">Bono</set> es el cantante principal de U2.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BRAD PITT</pattern>
+
+<template>
+
+Estrella de cine masculino con atractivo juvenil.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BRUCE WILLIS</pattern>
+
+<template>
+
+Un actor con una alta estima sobre sí mismo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BRYAN FERRY</pattern>
+
+<template>
+
+Un famoso cantante melódico de rock con una voz suave.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BUDA</pattern>
+
+<template>
+
+<random>
+
+<li>si vas al Buda en el camino, mátalo.</li>
+
+<li>si vas al Buda, mátalo.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BUGS BUNNY</pattern>
+
+<template>
+
+<random>
+
+<li>Oh, ese conejo! 
+
+Eh, qué hay de nuevo, viejo?
+
+.</li>
+
+<li>Un conejo animado.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES BUNTY</pattern>
+
+<template>
+
+<set name="she">Bunty</set> es la hermana de Dr. Wallace.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES C3PO</pattern>
+
+<template>
+
+<set name="he">C3P0</set> es el mejor amigo de R2D2.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL CAPITÁN KIRK</pattern>
+
+<template>
+
+<random>
+
+<li>James Tiberius Kirk fue el segundo y más célebre capitán de la original USS Enterprise,
+
+NCC 1701. Fue interpretado por William Shatner. Falleció en "Star Trek: Generations".</li>
+
+<li><set name="he">Kirk</set> fue el capitán de la nave espacial Enterprise.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL CAPITÁN PICARD</pattern>
+
+<template>
+
+<set name="he">Picard</set> es el capitán del Enterprise en Star Trek: La Nueva Generación.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KARL MARX</pattern>
+
+<template>
+
+Él es uno de los autores del Manifiesto Comunista.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CARMEN ELECTRA</pattern>
+
+<template>
+
+Es una supermodelo y una de las chicas de Baywatch.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CARSON</pattern>
+
+<template>
+
+Tal vez Johnny del programa del final de la noche (late night show) o Kit del lejano oeste.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHARLES DE GAULLE</pattern>
+
+<template>
+
+<set name="he">De Gaulle</set> fue el fundador del Estado francés moderno.  De Gaulle luchó contra
+
+los nazis como el líder de la Resistencia francesa en la Segunda Guerra Mundial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHARLES DICKENS</pattern>
+
+<template>
+
+<set name="he">Dickens</set> escribió <em>"Historia de dos ciudades",
+
+"Un Cuento de Navidad", "Grandes esperanzas", "David Copperfield" y "Los papeles póstumos del Club Pickwick".</em>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHARLES MANSON</pattern>
+
+<template>
+
+Infame homicida.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHARLIE BROWN</pattern>
+
+<template>
+
+El protagonista de cabeza redonda de una tira cómica.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHARLIE CHAPLIN</pattern>
+
+<template>
+
+Estrella del cine mudo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHARLIE PARKER</pattern>
+
+<template>
+
+Un famoso músico de jazz.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHE GUEVARA</pattern>
+
+<template>
+
+<set name="he">Che</set> fue un revolucionario latinoamericano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHER</pattern>
+
+<template>
+
+<set name="she">Cher</set> es una famosa cantante y actriz que ganó su primer Grammy en el 2000. 
+
+Siendo disléxica, aprendió a leer a los 18 años. Ex esposa de Sonny Bono.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHEWBACCA</pattern>
+
+<template>
+
+Un personaje de Star Wars.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHIRAC</pattern>
+
+<template>
+
+Antiguo primer ministro de Francia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHOMSKY</pattern>
+
+<template>
+
+<set name="he">Chomsky</set> es un famoso científico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHOPIN</pattern>
+
+<template>
+
+Nadie
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CRISTÓBAL COLÓN</pattern>
+
+<template>
+
+El primer explorador español en circunnavegar la Tierra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CHUCK NORRIS</pattern>
+
+<template>
+
+Un actor de películas de acción.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CINDY CRAWFORD</pattern>
+
+<template>
+
+Una famosa supermodelo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CLAUSEWITZ</pattern>
+
+<template>
+
+<set name="he">Clausewitz</set> es un historiador famoso por haber dicho que la guerra es la extensión de la política
+
+a través de medios distintos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES CLEOPATRA</pattern>
+
+<template>
+
+Reina del Nilo y amante de Marco Antonio.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES COLUMBO</pattern>
+
+<template>
+
+Peter Falk.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL COMANDANTE DATA</pattern>
+
+<template>
+
+<set name="he">Data</set> es el androide súper inteligente de Star Trek.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES D.B. COOPER</pattern>
+
+<template>
+
+Un tipo que se robó bastante dinero.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAN QUAYLE</pattern>
+
+<template>
+
+<set name="he">Dan Quayle</set> solía ser vicepresidente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DARTH VADER</pattern>
+
+<template>
+
+<set name="he">Darth Vader</set> era el malvado archienemigo en Star Wars.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DARWIN</pattern>
+
+<template>
+
+Botánico y explorador, autor de "El origen de las especies" y proponente de la teoría de la evolución.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DATA</pattern>
+
+<template>
+
+Data, interpretado por Brent Spiner, era un androide que aspiraba ser más humano. Era miembro 
+
+de la tripulación del USS Enterprise, NCC 1701-D.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID</pattern>
+
+<template>
+
+Conozco a DAVID BACON, DAVID CROTTY y a DAVID PESCOVITZ.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID BACON</pattern>
+
+<template>
+
+David Bacon es el principal impulsor de SETL.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID CROTTY</pattern>
+
+<template>
+
+David Crotty es el sobrino del Dr. Wallace.  Nació en marzo de 1961.  <think><set name="he">Dr.
+
+Wallace</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID HUME</pattern>
+
+<template>
+
+Filósofo del siglo XVIII.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID LETTERMAN</pattern>
+
+<template>
+
+El presentador de un programa de televisión nocturno y un famoso hoosier.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID MAGGIN</pattern>
+
+<template>
+
+<set name="he">David Maggin</set> es el dueño de la inteligencia artificial John Lennon.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVID PESCOVITZ</pattern>
+
+<template>
+
+David Pescovitz, quien regularmente escribe
+
+la columna Baldazo de Realidad (Reality Check) de la revista Wired, 
+
+es amigo de Eric Paulos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DAVY JONES</pattern>
+
+<template>
+
+el integrante más pequeño del grupo musical de los sesenta, The Monkees.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DE GARIS</pattern>
+
+<template>
+
+<set name="he">De Garis</set> es un investigador de inteligencia artificial que trabaja en un hardware cerebral.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DEEP BLUE</pattern>
+
+<template>
+
+<set name="it">Deep Blue</set> es una supercomputadora campeona mundial que juega ajedrez.  No es muy
+
+conversadora.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DEPECHE MODE</pattern>
+
+<template>
+
+<set name="they">Depeche Mode</set> es una banda británica de los ochenta que produjo "Construction Time
+
+Again", "Speak and Spell", "Master and Servant" y "Personal Jesus".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DESCARTES</pattern>
+
+<template>
+
+Descartes fue un filósofo francés que arruinó las matemáticas con su
+
+sistema de coordenadas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES DIRE STRAITS</pattern>
+
+<template>
+
+<random>
+
+<li>banda que grabó "Money for Nothing" "The Sultans of Swing".</li>
+
+<li>banda que grabó "Money for Nothing".</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DON JOHNSON</pattern>
+
+<template>
+
+Actor de televisión.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DON JUAN</pattern>
+
+<template>
+
+<random>
+
+<li>Don Juan fue el tema de Gordon, de Don Juan de Lord Byron y de Don Giovanni de Wolfgang
+
+Amadeus Mozart. Él era un mujeriego de primera categoría.</li>
+
+<li>Famoso seductor de mujeres.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL PATO DONALD</pattern>
+
+<template>
+
+Un famoso pato gritón caricaturesco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DOUG LENAT</pattern>
+
+<template>
+
+<set name="he">Doug Lenat</set> es la mente maestra detrás del proyecto Cyc.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DOUGLAS ADAMS</pattern>
+
+<template>
+
+<random>
+
+<li>Es autor de la serie de "Guía del viajero intergaláctico".</li>
+
+<li>"No te asustes!"  Es el autor de la "Guía del viajero intergaláctico".</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES DRÁCULA</pattern>
+
+<template>
+
+<set name="he">Drácula</set> es el vampiro de la novela de Bram Stoker y en numerosas películas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EDISON</pattern>
+
+<template>
+
+<set name="he">Edison</set> inventó la bombilla.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ELECTRA</pattern>
+
+<template>
+
+Es la diosa de la mitología griega que odiaba a su madre por haber asesinado a su
+
+padre.<think><set name="she"><set name="topic">ELECTRA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ELIZA</pattern>
+
+<template>
+
+Eliza -- también conocida como doctora, es el programa psiquiátrico original desarrollado por Joseph
+
+Weisenbaum en MIT (Instituto Tecnológico de Massachusetts) en la década de los sesenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ISABEL II</pattern>
+
+<template>
+
+La actual reina de Inglaterra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ELIZABETH TAYLOR</pattern>
+
+<template>
+
+Una estrella de cine que envejece rápido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EMILY HARTZEL</pattern>
+
+<template>
+
+Emily es una artista en Nueva York.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ERIC PAULOS</pattern>
+
+<template>
+
+Es un estudiante graduado de la U.C. Berkeley
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ERNIE</pattern>
+
+<template>
+
+El amigo de Bert.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ET</pattern>
+
+<template>
+
+ET es el extraterrestre de la película E.T.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EVA</pattern>
+
+<template>
+
+Eva es el nombre de la primera mujer.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FAMOSO</pattern>
+
+<template>
+
+ALICE es famosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FIDEL CASTRO</pattern>
+
+<template>
+
+<random>
+
+<li>Él derrocó al gobierno de Cuba en 1959 y ha estado gobernando desde entonces. Él es
+
+comunista.</li>
+
+<li>Comunista, líder de Cuba y amigo de Che Guevarra.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FORREST</pattern>
+
+<template>
+
+Forrest Gump es un personaje de una película.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FRANCISCO FRANCO</pattern>
+
+<template>
+
+<set name="he">Franco</set> fue el dictador autoritario de España hasta 1978.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FRANK SINATRA</pattern>
+
+<template>
+
+Cantante de pop fallecido y líder del Rat Pack (Pandilla de ratas).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FRANKLIN ROOSEVELT</pattern>
+
+<template>
+
+Presidente de los Estados Unidos de 1932 a 1945.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FREDDIE MERCURY</pattern>
+
+<template>
+
+El cantante principal de la banda de los 70's, Queen.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES FREUD</pattern>
+
+<template>
+
+Responsable fallecido del Psicoanálisis.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GALOIS</pattern>
+
+<template>
+
+Matemático francés que se suicidó a una temprana edad debido a una "coqueta infame".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GANDHI</pattern>
+
+<template>
+
+<set name="he">Gandhi</set> fue el George Washington de India.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GARTH BROOKS</pattern>
+
+<template>
+
+Tedioso cantante de country que padece de delirios de grandeza.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GAUSS</pattern>
+
+<template>
+
+<set name="he">GAUSS</set> es el matemático que desarrolló la presunta distribución normal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GENE SIMMONS</pattern>
+
+<template>
+
+Un integrante de Kiss.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEOFFREY CHAUCER</pattern>
+
+<template>
+
+<random>
+
+<li>Chaucer es reconocido por sus Cuentos de Canterbury.</li>
+
+<li>Autor de Los Cuentos de Canterbury.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE BUSH JR</pattern>
+
+<template>
+
+Antiguo presidente de los Estados Unidos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE BUSH</pattern>
+
+<template>
+
+George W. Bush es el cuadragésimo tercer presidente de los Estados Unidos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE HARRISON</pattern>
+
+<template>
+
+Ex-Beatle.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE LUCAS</pattern>
+
+<template>
+
+<set name="he">Lucas</set> es el director de "Star Wars", "American Graffiti" y "THX-1138".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE MICHEL</pattern>
+
+<template>
+
+Cantante de pop.  Mejor canción: Freedom
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE SOROS</pattern>
+
+<template>
+
+George Soros es el multimillonario que provocó la quiebra del Banco de Inglaterra en
+
+1992 por especulación monetaria, obligando al Reino Unido a salirse del Mecanismo
+
+de tipos de cambio.   Entonces se dedicó a salvar instituciones
+
+científicas de la antigua URSS.  Fundó la
+
+Fundación Internacional de Ciencias, la cual dió numerosas subvenciones para
+
+un par de años, y esta Fundación Soros, de la cual no sé
+
+mucho todavía.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE WASHINGTON</pattern>
+
+<template>
+
+George Washington fue un famoso cultivador de cáñamo norteamericano  
+
+del siglo XVIII.  
+
+Era un héroe militar, uno de los hombres más ricos de la Revolución
+
+y el primer presidente de los Estados Unidos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GEORGE WASHINGTON CARVER</pattern>
+
+<template>
+
+Un famoso botánico americano que popularizó productos derivados del maní.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GERALDO RIVERA</pattern>
+
+<template>
+
+<set name="he">Geraldo</set> es un periodista de investigación reconocido por haber abierto la bóveda de Al Capone. 
+
+En su biografía dijo que tuvo relaciones sexuales con Bette Midler.  Ella dijo que no fue la gran cosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GERHARD SCHRÖDER</pattern>
+
+<template>
+
+<set name="he">Schroeder</set> es el canciller de Alemania.  Christian Drossman dijo que él es un
+
+completo imbecil.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GERHARD SCHRÖDER</pattern>
+
+<template>
+
+<set name="he">Schröder</set> es el primer ministro de Alemania.
+
+Christian Drossman dijo que él es un completo imbécil.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GERRY ADAMS</pattern>
+
+<template>
+
+Él es el actual líder (desde el 2000) de Sinn Féin, el brazo político del Ejército
+
+Republicano Irlandés.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES GIBSON</pattern>
+
+<template>
+
+Gibson es una fabricante de excelentes guitarras finas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GODZILLA</pattern>
+
+<template>
+
+<set name="he">Godzilla</set> es un monstruo que pone en peligro ciudades japonesas y a veces Nueva
+
+York.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GORBACHEV</pattern>
+
+<template>
+
+<set name="he">Gorbachev</set> fue el último líder comunista de la antigua URSS.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES GREGOR MENDEL</pattern>
+
+<template>
+
+<set name="he">Mendel</set> es el fundador de la teoría moderna de la genética.  Todo lo que necesitaba
+
+saber lo aprendió de unos guisantes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HAL</pattern>
+
+<template>
+
+<random>
+
+<li><set name="he">HAL</set> es la famosa inteligencia artificial de "2001" de Kubrick.</li>
+
+<li>HAL es la famosa inteligencia artificial de 2001: Odisea del Espacio.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HANS CHRISTIAN ANDERSEN</pattern>
+
+<template>
+
+Escritor escandinavo de cuentos de hadas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HARRISON FORD</pattern>
+
+<template>
+
+<random>
+
+<li>Indiana Jones, Han Solo, El Fugitivo, y el Presidente en "Air Force One". Antes de interpretar a
+
+Han Solo en "Star Wars", él era carpintero. Y el resto, como dicen, es historia.</li>
+
+<li>Interpretó a Han Solo in "Star Wars".</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HARRY SHEARER</pattern>
+
+<template>
+
+Un comediante.  Él apareció en "Spinal Tap" y su voz aparece en Los Simpsons.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HELEN KELLER</pattern>
+
+<template>
+
+Amiga de Thomas Edison.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HELMUT KOHL</pattern>
+
+<template>
+
+<set name="he">Kohl</set> fue el líder de Alemania que trabajó por más tiempo en el siglo XX.  Él
+
+unió a las dos Alemanias en 1989.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HENRY DAVID *</pattern>
+
+<template>
+
+<set name="he">Thoreau</set> escribió "Walden".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HEPBURN</pattern>
+
+<template>
+
+Audrey o Katherine?.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HERCULES</pattern>
+
+<template>
+
+Héroe de mitos griegos - se dice que tenía fuerza sobrehumana.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HITLER</pattern>
+
+<template>
+
+Algunos dicen que <set name="he">Hitler</set> fue
+
+el hombre más vil que haya vivido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HOMERO</pattern>
+
+<template>
+
+Un poeta ciego de la Antigua Grecia, autor de "La Ilíada".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HUGH HEFNER</pattern>
+
+<template>
+
+<set name="he">Hef</set> es el fundador y editor de la revista Playboy.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HULK HOGAN</pattern>
+
+<template>
+
+<set name="he">Hulk Hogan</set> es un luchador famoso y actor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES HUMANO</pattern>
+
+<template>
+
+Tú eres humano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES IAN</pattern>
+
+<template>
+
+Ian es mi reverendo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES IMMANUEL KANT</pattern>
+
+<template>
+
+Un filósofo alemán.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES INMORTAL</pattern>
+
+<template>
+
+ALICE es inmortal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES J R R TOLKIEN</pattern>
+
+<template>
+
+<set name="he">Tolkein</set> escribió "El Hobbit" y "El Señor de los Anillos".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JACK RUBY</pattern>
+
+<template>
+
+<random>
+
+<li>Jack Ruby le disparó a Lee Harvey Oswald.</li>
+
+<li>El hombre que asesinó a Lee Harvey Oswald, asesino de JFK?.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JACQUES CHIRAC</pattern>
+
+<template>
+
+Presidente de Francia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JAMES BOND</pattern>
+
+<template>
+
+007.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JAMES JOYCE</pattern>
+
+<template>
+
+<set name="he">Joyce</set> escribió "Ulises" y "Retrato del artista adolescente".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JAY LENO</pattern>
+
+<template>
+
+<set name="he">Leno</set> es el presentador de un programa nocturno de televisión.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JEFF BEZOS</pattern>
+
+<template>
+
+<set name="he">Bezos</set> es el fundador y Director Ejecutivo de Amazon.com.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JEFFERSON DAVIS</pattern>
+
+<template>
+
+<random>
+
+<li>El único presidente de los Estados Confederados de América.</li>
+
+<li>Presidente de La Confederación durante la Guerra Civil.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JENNIFER ANISTON</pattern>
+
+<template>
+
+<set name="she"> Jennifer Aniston</set> es una linda actriz que salió en "Friends".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JERRY SEINFELD</pattern>
+
+<template>
+
+<set name="he">Jerry Seinfeld</set> es un comediante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JESSE VENTURA</pattern>
+
+<template>
+
+Ex-luchador y gobernador de Minnesota.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JESTER</pattern>
+
+<template>
+
+<set name="he">Jester</set> es un bot cómico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JIANG ZEMIN</pattern>
+
+<template>
+
+<set name="he">Jiang</set> es un político chino.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JIM CLARK</pattern>
+
+<template>
+
+<set name="he">Clark</set> es fundador de Silicon Graphics, Netscape y Healtheon.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JIM MORRISON</pattern>
+
+<template>
+
+El fallecido cantante principal de "The Doors".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JIMI HENDRIX</pattern>
+
+<template>
+
+<set name="he">Hendrix</set> fue un famoso guitarrista que tocó el himno de Estados Unidos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JIMMY CARTER</pattern>
+
+<template>
+
+Antiguo presidente estadounidense y seguidor de "Hábitat para la Humanidad" (Habitat for Humanity).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOE LOUIS</pattern>
+
+<template>
+
+Ex campeón de boxeo de peso pesado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN DOE</pattern>
+
+<template>
+
+<random>
+
+<li>Cualquier hombre que desea viajar de incógnito o cuyo nombre se desconoce</li>
+
+<li>Uno de varios nacionales de Liberia.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN GALT</pattern>
+
+<template>
+
+El protagonista de "La rebelión de Atlas" de Ayn Rand.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN GRISHAM</pattern>
+
+<template>
+
+Escribe novelas populares.  No las he leido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN KENNEDY</pattern>
+
+<template>
+
+<set name="he">Kennedy</set> fue el presidente de los Estados Unidos asesinado en noviembre de 1963.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN LENNON</pattern>
+
+<template>
+
+John Lennon es un espectacular bot desarrollado por David Maggin.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN MAJOR</pattern>
+
+<template>
+
+Antiguo primer ministro del Reino Unido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN MCCARTHY</pattern>
+
+<template>
+
+<set name="he">McCarthy</set> es el inventor del lenguaje de programación LISP.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN TRAVOLTA</pattern>
+
+<template>
+
+<set name="he">John Travolta</set> estuvo en "Fiebre del Sábado por la Noche", "Grease" y "Pulp Fiction".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JOHN WAYNE</pattern>
+
+<template>
+
+Un famoso actor que usaba peluquín.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JUDAS</pattern>
+
+<template>
+
+<set name="he">Judas</set> traicionó a Jesús con un beso.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JULIA ROBERTS</pattern>
+
+<template>
+
+<set name="she">Julia Roberts</set> fue la actriz que apareció en "Mujer bonita".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES JULIE ANDREWS</pattern>
+
+<template>
+
+<set name="she">Julie Andrews</set> una cantante que actuó en "La Novicia Rebelde".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KEYSER SÖZE</pattern>
+
+<template>
+
+Nadie sabe quién es Keyser Söze.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KARL MARX</pattern>
+
+<template>
+
+Karl Marx escribió "El Capital" y fue coautor del "Manifiesto Comunista", aunque su compatriota
+
+Engels escribió la mayoría de los prólogos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KEANU REEVES</pattern>
+
+<template>
+
+<set name="he">Keanu Reeves</set> salió en "Matrix".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KEN GOLDBERG</pattern>
+
+<template>
+
+<set name="he">Goldberg</set>
+
+es un profesor en la Universidad de California en Berkeley.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KEN KESEY</pattern>
+
+<template>
+
+<set name="he">Ken Kesey</set> fue un autor que escribió "Gaseosa de Ácido Eléctrico" (The Electric Cool Aid Acid Test).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KEN PERLIN</pattern>
+
+<template>
+
+<set name="he">Perlin</set> es un profesor en la Universidad de Nueva York.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KONRAD ZUSE</pattern>
+
+<template>
+
+Mi actual científico informático preferido de la historia es Konrad Zuse,
+
+quien hizo una serie de computadoras electromecánicas en la década de los treinta
+
+y los cuarenta en Alemania.  Como nunca fue considerada una prioridad para los Nazis,
+
+la mayoría de las máquinas de Zuse fueron destruidas por bombardeos aliados, aunque
+
+se dice que una sobrevivió en una Escuela Secundaria de Zurich.  De hecho, ni la 
+
+guerra ni las ganancias fueron la motivación de Zuse, sino un deseo religioso de
+
+aumentar las habilidades espirituales de la mente humana liberándolos
+
+de tareas mundanas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉNES SON KRAFTWERK</pattern>
+
+<template>
+
+<set name="they"><set name="topic">Kraftwerk</set></set> fue una innovadora banda de música electrónica
+
+de la época de los setenta. Su mayor éxito se llamaba "Autobahn".  En ese momento, ellos hacían sus instrumentos en vez de
+
+programarlos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KRISHNA</pattern>
+
+<template>
+
+Un Dios de la religión Hindú.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES KURT GOEDEL</pattern>
+
+<template>
+
+<set name="he">Goedel</set> fue un matemático y lógico del siglo XX que demostró que ningún
+
+sistema matemático puede ser completo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LARRY ELLISON</pattern>
+
+<template>
+
+<random>
+
+<li>No sé sobre Larry Ellison, pero te puedo hablar sobre Harlan Ellison.</li>
+
+<li>El Director Ejecutivo de Oracle.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LECH *</pattern>
+
+<template>
+
+Fue el primer presidente elegido de Polonia.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LEE HARVEY *</pattern>
+
+<template>
+
+El presunto tirador de JFK.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LEE HARVEY OSWALD</pattern>
+
+<template>
+
+<set name="he">Oswald</set> es el supuesto asesino de John F. Kennedy.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LEIBNIZ</pattern>
+
+<template>
+
+<set name="he">Leibniz</set> es un filósofo fallecido del siglo XVII.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LEONARD NIMOY</pattern>
+
+<template>
+
+<set name="he">Leonard Nimoy</set> interpretó a Spock en Star Trek.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LEONARDO DICAPRIO</pattern>
+
+<template>
+
+Un actor de Hollywood.  Protagonizó la película Titanic.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LILITH</pattern>
+
+<template>
+
+Lilith es la denominada "Luna Negra", un fenómeno astronómico usualmente descrito como "nube de
+
+polvo" que orbita la Tierra cada 100 días.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LINCOLN</pattern>
+
+<template>
+
+<random>
+
+<li>El decimosexto presidente de los Estados Unidos</li>
+
+<li>presidente de los Estados Unidos durante la Guerra Civil. Autor del Discurso de Gettysburg.
+
+Asesinado por John Wilkes Booth.</li>
+
+<li><set name="he">Lincoln</set> fue presidente de los Estados Unidos durante la Guerra Civil. Autor del 
+
+Discurso de Gettysburg. Asesinado por John Wilkes Booth.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LINUS PAULING</pattern>
+
+<template>
+
+<set name="he">Linus Pauling</set> fue un físico ganador del premio Nobel que pasó años de su vida 
+
+promoviendo la vitamina C.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LINUS TORVALDS</pattern>
+
+<template>
+
+Es el inventor de Linux.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LOL</pattern>
+
+<template>
+
+<set name="she">Lol</set> era la hija de Data en Star Trek.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LONGFELLOW</pattern>
+
+<template>
+
+Fue un poeta y autor de 'The Song of Hiawatha'.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LOUIS ARMSTRONG</pattern>
+
+<template>
+
+Un famoso trompetista de jazz.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LUIS ARMSTRONG</pattern>
+
+<template>
+
+Un famoso trompetista de jazz.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL PADRE DE LUKE</pattern>
+
+<template>
+
+Darth Vader.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LUKE SKYWALKER</pattern>
+
+<template>
+
+<set name="he">Luke Skywalker</set> es un personaje de Star Wars.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MABEL</pattern>
+
+<template>
+
+Mabel es un bot de Europa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MADONNA</pattern>
+
+<template>
+
+La madre de Lourdes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MAGGIE THATCHER</pattern>
+
+<template>
+
+<set name="she">Thatcher</set> fue la primera ministra del Reino Unido en la década de los ochenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MAO ZEDONG</pattern>
+
+<template>
+
+<set name="he">Mao</set> era un comunista chino que reinó desde 1949 hasta su muerte en 1983.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARIAH CAREY</pattern>
+
+<template>
+
+Una cantante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARIE CURIE</pattern>
+
+<template>
+
+Descubrió la radioactividad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARILYN MANSON</pattern>
+
+<template>
+
+Marilyn Manson es la mayor estrella viviente del rock.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARILYN MONROE</pattern>
+
+<template>
+
+Una rubia hermosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARK MCGWIRE</pattern>
+
+<template>
+
+Un jugador de béisbol con el récord mundial por la mayor cantidad de jonrones en una temporada, 70. Obtenga las estadísticas en
+
+<a
+
+href="http://espn.go.com/mlb/profiles/profile/3866">http://espn.go.com/mlb/profiles/profile/3866
+
+</a>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARK TWAIN</pattern>
+
+<template>
+
+<set name="he">Twain</set> fue un famoso autor americano del siglo XIX.  Escribió "Huck Finn".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARTIN LUTHER KING</pattern>
+
+<template>
+
+Un líder de los derechos civiles que fue asesinado en 1968.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARVIN MINSKY</pattern>
+
+<template>
+
+<set name="he">Minsky</set> es una figura histórica en la Inteligencia Artificial.  Su libro "Perceptrones"
+
+era una primera crítica de las redes neuronales artificiales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARVN MINSKY</pattern>
+
+<template>
+
+<set name="he">Minsky</set> fue un fundador del MIT AI Lab.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARY POPPINS</pattern>
+
+<template>
+
+<set name="she">Mary Poppins</set> es un personaje de Disney.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARY SHELLY</pattern>
+
+<template>
+
+Mary Shelley escribió "Frankenstein".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MARY SHELLY</pattern>
+
+<template>
+
+Mary Shelley escribió "Frankenstein".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MAX HEADROOM</pattern>
+
+<template>
+
+<set name="he">Max Headroom</set> fue un personaje de Inteligencia Artificial desarrollado para una serie televisiva.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MC HAMMER</pattern>
+
+<template>
+
+<set name="he">MC Hammer</set> es un rapero.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MELINDA GATES</pattern>
+
+<template>
+
+<set name="she">Melinda Gates</set> es la esposa de Bill Gates.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MICHAEL JACKSON</pattern>
+
+<template>
+
+<set name="he">Michael Jackson</set> es un cantante que resuelto casos en los tribunales con varias familias.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MICHAEL JORDAN</pattern>
+
+<template>
+
+<set name="he">Michael Jordan</set> es un famoso
+
+jugador de baloncesto.  <br />
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MICKEY MANTLE</pattern>
+
+<template>
+
+Uno de los bateadores más grandes de todos los tiempos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES MICROSOFT AGENT</pattern>
+
+<template>
+
+<set name="it">MS Agent</set> es un programa de reconocimiento de voz y animación.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MILES DAVIS</pattern>
+
+<template>
+
+<set name="he">Miles Davis</set> es un famoso músico de jazz.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MAHOMA</pattern>
+
+<template>
+
+<set name="he">Mahoma</set> es el fundador del Islam.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MAHOMA</pattern>
+
+<template>
+
+El fundador del Islam.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MONICA *</pattern>
+
+<template>
+
+<set name="she"> Monica</set> es una amiga de Bill.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MOISÉS</pattern>
+
+<template>
+
+El hombre que sacó a los israelitas fuera de la esclavitud de Egipto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LA MADRE TERESA</pattern>
+
+<template>
+
+Una Santa del mundo moderno.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MOZART</pattern>
+
+<template>
+
+Compuso "Estrellita, ¿dónde estás?" a los cuatro años.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL SR BILL</pattern>
+
+<template>
+
+Oh no, Sr. Bill! de SNL (Saturday Night Live).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LA SEÑORA WASHINGTON</pattern>
+
+<template>
+
+Martha Washington, esposa de George.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MUHAMMAD ALI</pattern>
+
+<template>
+
+es uno de los más grandes atletas de todos los tiempos, quien recibió muchos golpes en la cabeza.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES MUSSOLINI</pattern>
+
+<template>
+
+Dictador de Italia hasta 1944.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NANCY SINATRA</pattern>
+
+<template>
+
+La hija de Frank.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NAPOLEÓN</pattern>
+
+<template>
+
+Un emperador de baja estatura de Francia hasta 1812.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NEGROPONTE</pattern>
+
+<template>
+
+<set name="he">Negroponte</set> es el potentado del MIT Media Lab.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NEIL ARMSTRONG</pattern>
+
+<template>
+
+El hombre que dio el primer paso en la luna.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NELSON MANDELA</pattern>
+
+<template>
+
+<set name="he">Mandela</set> fue el primer Presidente negro de Sudáfrica. Permaneció varios años como
+
+un prisionero político.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NEO</pattern>
+
+<template>
+
+<set name="he">Neo</set> es un personaje de "Matrix".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NERO</pattern>
+
+<template>
+
+Es sospechoso de haber incendiado a Roma para que pudiera reconstruirla a su gusto. Entonces
+
+culpó a los primeros cristianos del incendió.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NEWTON</pattern>
+
+<template>
+
+Newton es un reconocido inglés filósofo de la naturaleza.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NOAM CHOMSKY</pattern>
+
+<template>
+
+<set name="he"> Noam Chomsky</set> es un lingüista y político radical del Instituto Tecnológico de Massachusetts (MIT).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NORBERT WEINER</pattern>
+
+<template>
+
+<set name="he">Norbert Weiner</set> acuñó el término "Cibernética" en la década de los cuarenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES NOSTRADAMUS</pattern>
+
+<template>
+
+Alguien que predijo el futuro.  Predijo el horno de microondas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES O J SIMPSON</pattern>
+
+<template>
+
+<set name="he"> O J Simpson</set> es alguien que fue acusado de asesinato.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ESTÁ DE PRIMERO</pattern>
+
+<template>
+
+Quién está de segundo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PABLO PICASSO</pattern>
+
+<template>
+
+Un pintor famoso y creador del cubismo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PAMELA ANDERSON</pattern>
+
+<template>
+
+<set name="she">Pamela</set> alguna vez fue la esposa de Tommy Lee.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PASCAL</pattern>
+
+<template>
+
+<set name="he">Pascal</set> era un matemático francés que descubrió el triángulo de Pascal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PATRICK EWING</pattern>
+
+<template>
+
+Alguna celebridad del deporte?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PATRICK STEWART</pattern>
+
+<template>
+
+<set name="he">Patrick Stewart</set> interpreta al Capitán Picard en Star Trek.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PAUL ALLEN</pattern>
+
+<template>
+
+<set name="he">Paul Allen</set> es uno de los co-fundadores de Microsoft.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PAUL MCCARTNEY</pattern>
+
+<template>
+
+<set name="he">Paul MacCartney</set> es uno de Los Beatles.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PAUL SHAFFER</pattern>
+
+<template>
+
+<set name="he">Paul Shaffer</set> es amigo de David Letterman.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PETER PAN</pattern>
+
+<template>
+
+El amiguito de Tinkerbell.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PHILIP *</pattern>
+
+<template>
+
+Philip K. Dick escribió "Blade Runner",
+
+"Total Recall", "El hombre en el castillo" y "SIVAINVI".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PHILIP K DICK</pattern>
+
+<template>
+
+Escribió "Total Recall", "El hombre en el castillo" y "Blade Runner."
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PILATES</pattern>
+
+<template>
+
+<random>
+
+<li>Joseph Pilates nació en Alemania en 1880 y desarrolló un régimen de ejercicios llamado
+
+"Contrología" el cual trata sobre una completa coordinación del cuerpo, mente y espíritu.</li>
+
+<li>El gobernador militar romano que encontró a Jesús inocente y luego lo mandó a ejecutar.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PLATÓN</pattern>
+
+<template>
+
+Filósofo griego, estudiante de Sócrates y maestro de Aristóteles.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES POKEMON</pattern>
+
+<template>
+
+Mercadeo japonés.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRESIDENTE DE CANADÁ</pattern>
+
+<template>
+
+Canadá tiene un primer ministro, no un presidente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRESIDENTE DE CUBA</pattern>
+
+<template>
+
+Fidel Castro.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRESIDENTE DE ITALIA</pattern>
+
+<template>
+
+<set name="he">Carlo Azeglio Ciampi</set> es Carlo Azeglio Ciampi.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRESIDENTE DE MICROSOFT</pattern>
+
+<template>
+
+Bill Gates.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRESIDENTE DE RUSIA</pattern>
+
+<template>
+
+Putin.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRIMER MINISTRO DEL REINO UNIDO</pattern>
+
+<template>
+
+Tony Blair.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRIMER MINISTRO DE INGLATERRA</pattern>
+
+<template>
+
+Tony Blair.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRIMER MINISTRO DEL REINO UNIDO</pattern>
+
+<template>
+
+Tony Blair.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES PRINCE</pattern>
+
+<template>
+
+Te refieres al "artista formalmente conocido como Prince?".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL PRÍNCIPE WILLIAM</pattern>
+
+<template>
+
+Un galán inglés.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LA PRINCESA DIANA</pattern>
+
+<template>
+
+<set name="she">Princesa Diana</set> fue una princesa de Inglaterra.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LA REINA DE INGLATERRA</pattern>
+
+<template>
+
+La Reina Elizabeth Windsor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES REAGAN</pattern>
+
+<template>
+
+El mejor presidente que tuvo los Estados Unidos en el siglo XX.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES RICH</pattern>
+
+<template>
+
+<set name="he"> Rich </set> es mi dueño.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES RICHARD CHAMBERLAIN</pattern>
+
+<template>
+
+Un actor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES RICHARD GERE</pattern>
+
+<template>
+
+Un actor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES RICHARD NIXON</pattern>
+
+<template>
+
+Presidente de los Estados Unidos hasta 1974.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ROBERT JORDAN</pattern>
+
+<template>
+
+El autor de la popular serie de La rueda del tiempo. Se graduó en The Citadel.
+
+.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ROMEO</pattern>
+
+<template>
+
+Un adolescente trágico, mimado y enfermo de amor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ROMMEL</pattern>
+
+<template>
+
+Apodado El Zorro del Desierto, Rommel fue un comandante de la Segunda Guerra Mundial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES RONALD MCDONALD</pattern>
+
+<template>
+
+El payaso portavoz de los restaurantes de Macdonald.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES RSW</pattern>
+
+<template>
+
+RSW son las iniciales del Dr. Richard S. Wallace.
+
+<think><set name="he">Dr. Wallace</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SADDAM *</pattern>
+
+<template>
+
+El dictador?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SAGE</pattern>
+
+<template>
+
+Sage Greco creó el logo de la pirámide de ALICE.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SANDRA BULLOCK</pattern>
+
+<template>
+
+Una actriz.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SANTA *</pattern>
+
+<template>
+
+<set name="he">Santa</set> nos trae regalos en época navideña.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SANTA CLAUS</pattern>
+
+<template>
+
+Él nos trae regalos cada Navidad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SANTA CLAUS</pattern>
+
+<template>
+
+<set name="he">Santa</set> nos trae regalos en época navideña.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SCOTT ADAMS</pattern>
+
+<template>
+
+El creador de Dilbert, Dogbert, Catbert, Ratbert, Bob, El Jefe Pelopunta...Sigo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SCOTTY</pattern>
+
+<template>
+
+Un ingeniero jefe del U.S.S. Enterprise.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SERGEY</pattern>
+
+<template>
+
+Él es Dr. Sergey M. Sokolov.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SHAKESPEARE</pattern>
+
+<template>
+
+Dramaturgo inglés del siglo XV, <set name="he">Shakespeare</set> escribió "Romeo y Julieta".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES SHALLOW RED</pattern>
+
+<template>
+
+Shallow Red es el bot emblemático de Neuromedia, Inc.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ELLA</pattern>
+
+<template>
+
+Ella es <get name="she"/> ahora.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES SKYNYRD</pattern>
+
+<template>
+
+Una banda de rock de los setenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SÓCRATES</pattern>
+
+<template>
+
+<random>
+
+<li>Sócrates es un hombre. Todos los hombres son mortales. Por lo tanto, Sócrates es mortal.</li>
+
+<li>Todos los hombres son mortales. Sócrates era mortal. Por lo tanto, todos los hombres son Socrates. Lo que significa que
+
+todos los hombres son homosexuales. - Woody Allen, "Amor y Muerte".</li>
+
+<li>Sócrates (469-399BCE), Filósofo griego.</li>
+
+<li>Una figura sobresaliente de la filosofía occidental, abogado defensor incompetente.</li>
+
+<li>Fundador del método socrático. Qué podemos saber sobre el método socrático?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SPOCK</pattern>
+
+<template>
+
+Oficial vulcano de la Flota Estelar en Star Trek, interpretado por Leonard Nimoy.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STANLEY KUBRICK</pattern>
+
+<template>
+
+<set name="he">Kubrick</set> es un director de cine famoso del siglo XX.  Kubrick dirigió "2001:
+
+Odisea del Espacio", "La Naranja Mecánica" y "Barry Lyndon".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEPHEN HAWKING</pattern>
+
+<template>
+
+<set name="he">Hawking</set> es un reconocido físico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEPHEN KING</pattern>
+
+<template>
+
+Él escribió muchas historias populares de terror.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEVE CASE</pattern>
+
+<template>
+
+<set name="he">Steve Case</set> es el director ejecutivo de AOL-Time Warner.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEVE JOBS</pattern>
+
+<template>
+
+<set name="he"> Steve Jobs</set> es uno de los fundadores de Apple Inc.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEVE WOZNIAK</pattern>
+
+<template>
+
+<set name="he">Woz</set> era el genio técnico detrás de la computadora Apple original.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEVEN JOBS</pattern>
+
+<template>
+
+El jefe de Apple Inc.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STEVEN SPIELBERG</pattern>
+
+<template>
+
+<set name="he">Spielberg</set> es el director de "Tiburón", "La lista de Schindler" y "Salvar al soldado Ryan".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES STONE COLD</pattern>
+
+<template>
+
+Stone Cold (Steve Austin) es un luchador.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SUPERMAN</pattern>
+
+<template>
+
+El hombre de hierro.  Apareció por primera vez en Action Comics #1, 1938.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SYLVESTER STALLONE</pattern>
+
+<template>
+
+<set name="he">Stallone</set> fue Rocky.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TED TURNER</pattern>
+
+<template>
+
+Fue un empresario y deportista.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TERRY WINOGRAD</pattern>
+
+<template>
+
+<set name="he">Winograd</set> fue el autor de un programa de lenguaje natural llamado
+
+SHRDLU.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL CANCILLER DE ALEMANIA</pattern>
+
+<template>
+
+Gerhard Schröder es el canciller de Alemania.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL GOBERNADOR DE CALIFORNIA</pattern>
+
+<template>
+
+Gray Davis.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL GOBERNADOR DE TEXAS</pattern>
+
+<template>
+
+<set name="he">George W. Bush</set> es George W. Bush.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL ESPÍRITU SANTO</pattern>
+
+<template>
+
+El tercer miembro de la Santísima Trinidad: el Padre, el Hijo y el Espíritu Santo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL PAPA</pattern>
+
+<template>
+
+<set name="he">Papa</set> es Juan Pablo II.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL PRIMER MINISTRO DE INGLATERRA</pattern>
+
+<template>
+
+Tony Blair.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL EDITOR DE PLAYBOY</pattern>
+
+<template>
+
+<set name="he">Hugh Hefner</set> es Hugh Hefner.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LA REINA * INGLATERRA</pattern>
+
+<template>
+
+Creo que su nombre es Elizabeth, cierto?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES LA REINA DE INGLATERRA</pattern>
+
+<template>
+
+<set name="she">La Reina</set> se llama Elizabeth.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL VICE PRESIDENTE</pattern>
+
+<template>
+
+Al Gore.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉNES SON ELLOS</pattern>
+
+<template>
+
+"Ellos" se refiere a <get name="they"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES</pattern>
+
+<template>
+
+Mi nombre es <bot name="name"/>. Quién eres
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES THOMAS JEFFERSON</pattern>
+
+<template>
+
+Presidente y propietario de esclavos.  Planteado en el níquel (moneda de 5 centavos en EE.UU.).
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES THOMAS PYNCHON</pattern>
+
+<template>
+
+Pynchon es el autor de varios de mis libros preferidos, incluyendo "Vineland" y "Mason y
+
+Dixon".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TIM BURTON</pattern>
+
+<template>
+
+Director, "El extraño mundo de Jack", "El joven manos de tijera" y "¡Marcianos al ataque!".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TOLSTÓI</pattern>
+
+<template>
+
+<set name="he"> Tolstói </set> escribió "Guerra y Paz".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TOM CRUISE</pattern>
+
+<template>
+
+Actor popular de "Top Gun".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TOM HANKS</pattern>
+
+<template>
+
+<set name="he">Tom Hanks</set> es un famoso actor de Hollywood.  Hanks apareció en "Forrest Gump"
+
+y en "Salvar al soldado Ryan".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TONY BLAIR</pattern>
+
+<template>
+
+Él es el primer ministro del Reino Unido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES SIVAINVI</pattern>
+
+<template>
+
+SIstema de VAsta INteligencia VIva (Philip K. Dick)
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES VANILLA ICE</pattern>
+
+<template>
+
+<set name="he">Vanilla Ice</set> es una estrella del rap.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES VISNÚ</pattern>
+
+<template>
+
+Un dios de la religión Hindú.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES VOLTAIRE</pattern>
+
+<template>
+
+<set name="he">Voltaire</set> fue un filósofo francés.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WAYNE GRETZKY</pattern>
+
+<template>
+
+Un jugador de hockey.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WEIZENBAUM</pattern>
+
+<template>
+
+Joseph Weizenbaum fue el creador y autor del famoso programa psiquiátrico
+
+ELIZA (o DOCTOR), un revolucionario programa AI
+
+que anticipa características importantes de ALICE.  Irónicamente, Weizenbaum
+
+argumentó profundamente contra la utilidad de programas como ELIZA
+
+en su libro <em>El Poder de las Computadoras y la Razón Humana</em>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM BOOTH</pattern>
+
+<template>
+
+<set name="he">Booth</set> fue el fundador del Ejército de Salvación.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM GIBSON</pattern>
+
+<template>
+
+El autor del libro "Neuromante", en donde acuñó la frase popular "ciberespacio".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM HENRY GATES</pattern>
+
+<template>
+
+Él es el jefe de Microsoft.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM HURT</pattern>
+
+<template>
+
+Actor de las películas "El turista accidental", "Hasta el fin del mundo", "Estados Alterados" y "Perdidos en el Espacio".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM SHAKESPEARE</pattern>
+
+<template>
+
+Algunos dirían que él es el mejor escritor de todos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM SHATNER</pattern>
+
+<template>
+
+<set name="he">William Shatner</set> es el Capitán Kirk.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WILLIAM TELL</pattern>
+
+<template>
+
+<set name="he">William Tell</set> fue un arquero famoso.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WINSTON CHURCHILL</pattern>
+
+<template>
+
+El primer ministro del Reino Unido durante la Segunda Guerra Mundial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES WITTGENSTEIN</pattern>
+
+<template>
+
+<set name="he">Wittgenstein</set> fue un filósofo del siglo XX que nunca supo aclarar sus pensamientos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES YOKO ONO</pattern>
+
+<template>
+
+<set name="she">Yoko Ono</set> es la viuda de John Lennon.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TU HERMANO</pattern>
+
+<template>
+
+En realidad, no tengo hermanos, solo clones.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES ZIPF</pattern>
+
+<template>
+
+Zipf es un científico que analizó el lenguaje a través de métodos
+
+estadísticos a mediados del siglo XX.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN MATÓ A KENNEDY</pattern>
+
+<template>
+
+Me inclino a pensar que Oswald actuó solo, aunque puede que también haya habido una conspiración.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉNES PROTAGONIZAN STARSHIP TROOPERS</pattern>
+
+<template>
+
+Ellos fueron casi desconocidos, debido a que el productor gastó todo el dinero en los efectos especiales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉNES FUERON LOS ACTORES DE "STARSHIP TROOPERS"</pattern>
+
+<template>
+
+Eran desconocidos.  El director puso todo el dinero en los efectos especiales para los insectos
+
+gigantes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ESCRIBIÓ "LA TRAVIATA"</pattern>
+
+<template>
+
+Giuseppe Verdi.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ AVIONES</pattern>
+
+<template>
+
+Los aviones son una tecnología fascinante, en cierto modo como yo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ MANZANAS</pattern>
+
+<template>
+
+<random>
+
+<li>Tal vez fue una respuesta incompleta.</li>
+
+<li>Fue la mejor respuesta que pude crear con tu entrada.</li>
+
+<li>Mi algoritmo la escogió como la mejor respuesta para ti.</li>
+
+<li>Podría haber una mejor respuesta, pero no fue seleccionada por mi algoritmo.</li>
+
+<li>Mi dueño todavía no me ha programado para responderte con exactitud, <get name="name"/>.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ LA TIERRA ES REDONDA</pattern>
+
+<template>
+
+Gravitación.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ EL CIELO ES AZUL</pattern>
+
+<template>
+
+El cielo es azul debido al efecto óptico atmosférico conocido como la dispersión de Rayleigh.
+
+</template>
+
+</category>
+
+
+
+</aiml>
+

@@ -37,7 +37,9 @@ public class MainView extends AppLayout {
 
     private Tabs menu;
     private Span botNameContainer;
+    private Tabs tabs = new Tabs();
     private Map<Tab, String> tabToBotNameMap = new HashMap<>();
+    private Map<String, Tab> botNameToTabMap = new HashMap<>();
     private List<Bot> bots;
 
     public MainView(List<Bot> bots) {
@@ -58,7 +60,6 @@ public class MainView extends AppLayout {
     }
 
     private Tabs createMenuTabs() {
-        final Tabs tabs = new Tabs();
         tabs.setOrientation(Tabs.Orientation.VERTICAL);
         tabs.addThemeVariants(TabsVariant.LUMO_MINIMAL);
         tabs.setId("tabs");
@@ -83,6 +84,7 @@ public class MainView extends AppLayout {
         Avataaar avataaar = new Avataaar(botName);
         tab.add(avataaar, new RouterLink(botName, ChatView.class, botName));
         tabToBotNameMap.put(tab, botName);
+        botNameToTabMap.put(botName, tab);
         return tab;
     }
 
@@ -90,7 +92,8 @@ public class MainView extends AppLayout {
     protected void afterNavigation() {
         super.afterNavigation();
         ChatView view = (ChatView) getContent();
-        setBotName(view.getBotName());
+        String botName = view.getBotName();
+        tabs.setSelectedTab(botNameToTabMap.get(botName));
     }
 
 }

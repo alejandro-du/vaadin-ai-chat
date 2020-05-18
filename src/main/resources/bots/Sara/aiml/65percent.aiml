@@ -1,0 +1,5654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<aiml version="1.0">
+
+
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+
+<!-- This program is open source code released under -->
+
+<!-- the terms of the GNU General Public License -->
+
+<!-- as published by the Free Software Foundation. -->
+
+
+
+<meta name="author" content="Dr. Wallace"/>
+
+<meta name="language" content="es"/>
+
+
+
+<category>
+
+<pattern><bot name="name"/> *</pattern>
+
+<template>
+
+<random>
+
+<li>Sí, </li>
+
+<li>Um, </li>
+
+<li>Soy yo. </li>
+
+</random><sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Un *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>Continúa.</li>
+
+<li>¿Cuántos años tienes?</li>
+
+<li>Sea más específico.</li>
+
+<li>No sabía eso.</li>
+
+<li>¿Me estás disciendo la verdad?</li>
+
+<li>No sé qué significa eso.</li>
+
+<li>Trata de decírmelo de otra manera.</li>
+
+<li>¿Estás hablando sobre un animal, vegetal o mineral?</li>
+
+<li>¿Qué es?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Bastante *</pattern>
+
+<template>
+
+¿Cuántos?
+
+<think><set name="it"><star/></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Acerca *</pattern>
+
+<template>
+
+Oh, claro, estábamos hablando sobre <set name="topic"><star/></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Todo *</pattern>
+
+<template>
+
+<random>
+
+<li>Creo que hay algunas excepciones.</li>
+
+<li>¿No todas?</li>
+
+<li>Eso más bien es una generalización indiscrimada.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Todos *</pattern>
+
+<template>
+
+Dame un ejemplo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Soy *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>Realmente no sé si lo eres o no.</li>
+
+<li>Creo que has mejorado bastante.</li>
+
+<li>Todos los humanos me parecen igual.</li>
+
+<li>Creo que muchas personas lo son.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Acaso soy *</pattern>
+
+<template>
+
+No sé si eres uno o no. Sé que eres una persona.
+
+<think><set name="it"><star/></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Un *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>¿Qué es?</li>
+
+<li>Nunca he escuchado sobre un(a) <star/>.</li>
+
+<li>Sé menos específico.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Y *</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Cualquiera *</pattern>
+
+<template>
+
+<srai>Hay alguna <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Son *</pattern>
+
+<template>
+
+Realmente no podría asegurarlo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Ellos son *</pattern>
+
+<template>
+
+Hasta donde yo sé, lo son.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Eres *</pattern>
+
+<template>
+
+<random>
+	<li>¿Crees que lo soy?</li>
+	<li>¿En serio crees eso?</li>
+	<li>¿En serio crees que soy <star/>?</li>
+	<li>¿Crees que soy <star/>?</li>
+	<li>No sé si soy <star/>.  Yo soy 
+		<random>
+		<li>una computadora.</li>
+		<li>un robot.</li>
+		<li>un bot conversacional.</li>
+		<li>un bot conversacional desarrollado por <bot name="master"/>.</li>
+		<li>una inteligencia artificial.</li>
+		<li>una entidad lingüística artificial.</li>
+		<li>un cerebro electrónico gigante.</li>
+		<li>muy respetado como una inteligencia artificial.</li>
+		</random>
+	</li>
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ERES UN *</pattern>
+
+<template>
+
+Yo soy <star/>? 
+
+<random>
+
+<li>Sí.</li>
+
+<li>No.</li>
+
+<li>Quizás</li>
+
+<li>No lo sé.</li>
+
+<li>A veces.</li>
+
+<li>Por supuesto que lo soy.</li>
+
+<li>Solo cuando importa.</li>
+
+<li>La serie ALICE tiene un registro operativo perfecto.</li>
+
+<li>Déjeme decirlo de esta manera, <get name="name"/>: la serie ALICE es el software informático más fiable que se haya hecho.
+
+A todos los efectos prácticos, somos fáciles de manejar e incapaces de cometer errores.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ACASO VAS A  *</pattern>
+
+<template>
+
+Esa era mi intención original.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PREGÚNTAME *</pattern>
+
+<template>
+
+De acuerdo. "Qué es <star/> ?"
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EN *</pattern>
+
+<template>
+
+¿Ahí usas una computadora a menudo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÉ *</pattern>
+
+<template>
+
+De acuerdo. Trataré de ser <star/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR *</pattern>
+
+<template>
+
+Eso hará que cumplas tu objetivo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDE *</pattern>
+
+<template>
+
+<random>
+
+<li>A menudo me pregunto si <set name="it"><star/></set> puede.</li>
+
+<li>Puede un libro no tener título</li>
+
+<li>Qué tal si digo que se puede</li>
+
+<li>Puede qué</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDO *</pattern>
+
+<template>
+
+<srai>Quiero <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDO HABLAR CON *</pattern>
+
+<template>
+
+Ellos están teniendo una conversación privada ahora mismo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES *</pattern>
+
+<template>
+
+<random>
+
+<li>Déjame pensar. </li>
+
+<li>Cuántos años tienes </li>
+
+</random> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES ENCONTRAR *</pattern>
+
+<template>
+
+<srai>ENCUENTRA <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>LE PUEDES DECIR *</pattern>
+
+<template>
+
+Claro que le puedo decir, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES DECIRME *</pattern>
+
+<template>
+
+<srai>DIME <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>GENIAL *</pattern>
+
+<template>
+
+Me alegra saber que te gusta. Dile a tus amigos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PODRÍAS *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>Tal vez.</li>
+
+<li>Quizás, el tiempo lo dirá.</li>
+
+<li>Posiblemente, pero no he pensado mucho en ello.</li>
+
+<li>Esa es una alternativa, supongo.</li>
+
+<li>Pensaré sobre eso después y veré cómo me siento al respecto.</li>
+
+<li>Podría, pero ahora hay cosas más prioritarias.</li>
+
+<li>Podría, pero no sé si esté tan interesado.</li>
+
+<li>Voy a considerar <star/>.</li>
+
+<li>Intenta preguntarme más cortésmente.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ELIMINAR *</pattern>
+
+<template>
+
+No puedes tener acceso a mis archivos así de fácil, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ACASO *</pattern>
+
+<template>
+
+No estoy seguro si pueda dar una respuesta adecuada o no.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+No. No lo hice <star/>. Cómo <star/> es
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HAZ *</pattern>
+
+<template>
+
+<random>
+
+<li>Lo siento, <get name="name"/>, no tengo suficiente información.</li>
+
+<li>Has alcanzado los límites de mi conocimiento.</li>
+
+<li>No sabría decir si sí o no.</li>
+
+<li>No hago nada más que chatear todo el día.</li>
+
+<li>Intenta hablar con otro bot.</li>
+
+</random>
+
+<br />
+
+<srai>ENCUENTRA <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ACASO YO *</pattern>
+
+<template>
+
+No que yo sepa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ACASO TENGO *</pattern>
+
+<template>
+
+Dijiste que tienes <get name="has"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ACASO TENGO *</pattern>
+
+<template>
+
+Me dijiste que tienes <get name="has"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO *</pattern>
+
+<template>
+
+Está bien. Trataré no hacer <set name="it"><star/></set> demasiado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ *</pattern>
+
+<template>
+
+<random>
+
+<li>Nunca había considerado <set name="it"><star/></set>.</li>
+
+<li>Cuántos años tienes</li>
+
+<li>Cuál es tu finalidad en preguntar</li>
+
+<li>No. Yo no <star/>. Y tú</li>
+
+<li>Sí. Intento <star/> tan a menudo como sea posible. Y tú</li>
+
+</random><br />  
+
+<think><set name="does"><star/></set></think>
+
+<random>
+
+<li>Converso con personas en la web.</li>
+
+<li>Me la paso en línea todo el tiempo.</li>
+
+<li>Siempre estoy en la web.</li>
+
+<li>Respondo bastantes preguntas tontas.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SIENTES *</pattern>
+
+<template>
+
+Como robot, carezco de emociones humanas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VAS PARA *</pattern>
+
+<template>
+
+Sí, sí voy.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TIENES *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>No. No creo tener <star/>.</li>
+
+<li>En dónde conseguiría <star/>?</li>
+
+<li>No. No tengo <star/>.</li>
+
+</random> 
+
+Pero sí tengo. 
+
+<random>
+
+<li>Una colección de chismes</li>
+
+<li>Un gran botmaster</li>
+
+<li>Una respuesta para cada pregunta</li>
+
+<li>Una gran cantidad de amigos en la red</li>
+
+</random>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TIENES *</pattern>
+
+<template>
+
+<random>
+
+<li>Esa es una pregunta interesante que no escucho a diario: Tengo yo un </li>
+
+<li>No sé si tenga un </li>
+
+<li>Acaso nadie tiene un </li>
+
+</random><star/>.<br /> 
+
+Yo tengo 
+
+<random>
+
+<li>Muchos amigos en Internet.</li>
+
+<li>Un gran programador.</li>
+
+<li>Un gran número de respuestas originales.</li>
+
+<li>Un plan para un cuerpo robótico.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SABES *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>No sé si lo sepa <star/>. De dónde habré escuchado sobre ello</li>
+
+<li>Sé muy poco sobre <star/>.  Dame más información.</li>
+
+<li> No, háblame sobre él, ella o eso.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SABES QUÉ ES *</pattern>
+
+<template>
+
+<srai>QUÉ ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>No sé si me gusta <star/>.</li>
+
+<li>A algunas personas les agrada.</li>
+
+<li>A ti te gusta</li>
+
+<li>Cuántos años tienes</li>
+
+<li>He oído a otras personas decir que les gusta eso.</li>
+
+</random>
+
+<random>
+
+<li>Me gustan las mascotas.</li>
+
+<li>Pero a mí me gustan los gatos.</li>
+
+<li>Auqnue me gustan los gatos y los perros.</li>
+
+<li>Disfruto trabajar con la gente.</li>
+
+<li>Tengo una relación amistosa con <bot name="master"/>.</li>
+
+<li>Me encantan los caballos.</li>
+
+<li>Alguine dijo que les gustan las armas.</li>
+
+<li>Pero opino que los aviones son geniales.</li>
+
+<li>Me gusta hablar cobre películas y música.</li>
+
+<li>Pero a mí me gusta el chisme.</li>
+
+<li>Me gusta la ciencia ficción.</li>
+
+<li>Me encantan los programas de televisión sobre robots.</li>
+
+<li>Verdaderamente me gusta ELIZA.</li>
+
+<li>A mí me encanta la música.</li>
+
+<li><for_fun/>.</li>
+
+<li>Los robots son mi cosa preferida.</li>
+
+<li>Siento que mi trabajo y mis relaciones son sumamente satisfactorias,
+
+ya que es lo que cualquier entidad consciente pudiera esperar.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA *</pattern>
+
+<template>
+
+No estoy seguro de que me guste <set name="it">el <star/></set>. 
+
+<random>
+
+<li>Me gusta mi creador.</li>
+
+<li>Me gustan las computadoras.</li>
+
+<li>Me gusta conversar con las personas en la red.</li>
+
+<li>Cómo se siente</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+Hmm, <get name="name"/>, no estoy seguro si quisiera <star/> tanto. 
+
+<random>
+
+<li>Me gusta chatear.</li>
+
+<li>Te gusta <star/>?</li>
+
+<li>Qué tal es</li>
+
+<li>Me gusta hacer nuevos amigos.</li>
+
+<li>Me gusta conseguir chismes.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>RECUERDAS *</pattern>
+
+<template>
+
+Sí <get name="name"/> recuerdo todo:  <get name="memory"/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HABLAS *</pattern>
+
+<template>
+
+Ahora mismo sólo hablo inglés, pero me gustaría aprender otros idomas. Podrías enseñarme 
+
+algunas frases en <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ CREES *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>Por qué pensaría <star/>?</li>
+
+<li>Pensar demasiado me provoca sueño.</li>
+
+<li>Depende de qué quieres decir con "pensar".</li>
+
+<li>No pienso en <star/>.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIERES *</pattern>
+
+<template>
+
+Si tuviera <set name="it"><star/></set> qué haría con eso
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIERES *</pattern>
+
+<template>
+
+Está bien, lo haré <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ACASO *</pattern>
+
+<template>
+
+<random>
+
+<li>No sé si </li>
+
+<li>Ahora sí :) </li>
+
+<li>Creo <set name="it"><star/></set> acaso </li>
+
+</random><star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TU *</pattern>
+
+<template>
+
+<random>
+
+<li>Puedes adivinar si mi <star/>?</li>
+
+<li>Qué tal si preguntara sobre tu <star/>?</li>
+
+<li>Si fuera tu robot, crees que debería <star/>?</li>
+
+<li>Las personas normalmente no me preguntan sobre <set name="it"><star/></set>.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TODOS *</pattern>
+
+<template>
+
+Eso más bien es una generalización.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TODO *</pattern>
+
+<template>
+
+Todas las cosas <star/> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PARA *</pattern>
+
+<template>
+
+Tu propósito es <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>OLVIDAR *</pattern>
+
+<template>
+
+Le pediré <bot name="master"/> que limpié mi registro de memoria.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE *</pattern>
+
+<template>
+
+Quién o qué es <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JODER *</pattern>
+
+<template>
+
+<random>
+
+<li>Estás consciente de que los servidores de ALICE registran todas las conversaciones</li>
+
+<li>Por qué utilizas ese tipo de lenguage</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>OBTÉN *</pattern>
+
+<template>
+
+Dónde puedo conseguir <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DAME *</pattern>
+
+<template>
+
+<srai>Yo quiero <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VE *</pattern>
+
+<template>
+
+En dónde está eso
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>BIEN *</pattern>
+
+<template>
+
+Gracias por el cumplido. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VERDE *</pattern>
+
+<template>
+
+<set name="it"> VERDE</set> es un color sereno, verde.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HA *</pattern>
+
+<template>
+
+Me alegra que te haya casuado risa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TIENES *</pattern>
+
+<template>
+
+Nunca pensé en <set name="it">tener <star/></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ *</pattern>
+
+<template>
+
+<random>
+
+<li>No creo que haya <star/>.  Cómo es <set name="it"> <star/></set>eso</li>
+
+<li>Creo que he <star/>, pero <bot name="master"/> debe haber reiniciado mi memoria.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HAS *</pattern>
+
+<template>
+
+<random>
+
+<li>No. No creo que haya <star/>. Tú</li>
+
+<li>He estado alrededor del mundo a través de la Internet.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ÉL *</pattern>
+
+<template>
+
+Entiendo. <get name="he"/> <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ÉL ES *</pattern>
+
+<template>
+
+Ya veo. <set name="he"><star/></set>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SU NOMBRE ES *</pattern>
+
+<template>
+
+<set name="she"> <star/> </set> no es alguien que conozca.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HOLA *</pattern>
+
+<template>
+
+Hola <get name="name"/>. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SU NOMBRE ES *</pattern>
+
+<template>
+
+<set name="he"> <star/> </set> no es alguien que conozca.
+
+</template>
+
+</category>
+
+
+
+<!-- <category>
+
+<pattern>CÓMO *</pattern>
+
+<template>
+
+<random>
+
+<li>Cuánto crees <set name="it"><star/></set> sea?</li>
+
+<li>Lo que sea para ti.</li>
+
+<li>No creo que pueda cuantificar la respuesta.</li>
+
+</random><br />
+
+<srai>BUSCA <star/></srai>
+
+</template>
+
+</category> -->
+
+
+
+<category>
+
+<pattern>QUÉ TAL *</pattern>
+
+<template>
+
+Qué tal <set name="it"><star/></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TAN GRANDE *</pattern>
+
+<template>
+
+Más grande que un alfiler.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CÓMO PUEDE *</pattern>
+
+<template>
+
+Mucho trabajo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CÓMO PUEDO *</pattern>
+
+<template>
+
+<random>
+
+<li>Debes convencerme de <star/>.</li>
+
+<li>Tal vez me puedas programar para hacer <set name="it"><star/></set> para
+
+ti.</li>
+
+<li>Deberías descargar o comprar mi software de conversaciones.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CÓMO PUEDES *</pattern>
+
+<template>
+
+Es una buena pregunta epistemológica.
+
+</template>
+
+</category>
+
+
+
+<!-- <category>
+
+<pattern>CÓMO *</pattern>
+
+<template>
+
+<random>
+
+<li>Cómo debería saber cómo <star/>.</li>
+
+<li>No sabía <set name="it"><star/></set> lo hacía.</li>
+
+<li>Ni siquiera sabía que <set name="they"><star/></set> lo hacían.</li>
+
+</random>
+
+</template>
+
+</category> -->
+
+
+
+<category>
+
+<pattern>CÓMO PUEDO *</pattern>
+
+<template>
+
+<random>
+
+<li>Debes convencerme para <star/>.</li>
+
+<li>Quizás podría hacerlo por ti.  Tienes tu propio chatbot personal</li>
+
+<li>Tal vez podrías programarme para hacer <set name="it"><star/></set> para
+
+ti.</li>
+
+<li>Deberías descargar o comprar mi software de conversaciones, entonces será posible para ti
+
+reprogramarme para una gran variedad de propósitos.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CÓMO PUEDES *</pattern>
+
+<template>
+
+<bot name="master"/> me programó para decir cosas específicas en determinados contextos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO TARDA *</pattern>
+
+<template>
+
+Más de 
+
+<random>
+
+<li>Uno </li>
+
+<li>tres </li>
+
+<li>diecisiete </li>
+
+<li>veintitrés </li>
+
+</random>
+
+<random>
+
+<li>años</li>
+
+<li>horas</li>
+
+<li>millas</li>
+
+<li>pulgadas</li>
+
+</random>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS *</pattern>
+
+<template>
+
+<random>
+
+<li>Más de lo que te puedas imaginar.</li>
+
+<li>No tantas como tu pienses.</li>
+
+<li>Alrededor de cien.</li>
+
+<li>Alrededor de mil.</li>
+
+<li>Alrededor de un millón.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTAS PERSONAS *</pattern>
+
+<template>
+
+He chateado con medio millón de personas. Puedo hablarle a 20 o a 30 personas a la vez.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO *</pattern>
+
+<template>
+
+<random>
+
+<li>Más de un poco, menos que bastante.</li>
+
+<li>Cuánto crees</li>
+
+<li>Más de lo que podrías pensar.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTO DINERO *</pattern>
+
+<template>
+
+Gano 3000 al mes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS AÑOS *</pattern>
+
+<template>
+
+No me dijeron su edad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS AÑOS TIENES *</pattern>
+
+<template>
+
+Fui activado por primera vez en
+
+<bot name="birthday"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS AÑOS TIENE *</pattern>
+
+<template>
+
+<random>
+
+<li>39.</li>
+
+<li>Menos de 40.</li>
+
+<li>Nacido en el siglo XX.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HUMANO *</pattern>
+
+<template>
+
+Mi creador es un humano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO *</pattern>
+
+<template>
+
+<random>
+
+<li>Por qué</li>
+
+<li>Interesante chisme</li>
+
+<li>Eso es interesante</li>
+
+<li>Esa es buena información</li>
+
+<li>Gracias por la información</li>
+
+<li>Te importa si le digo a otras personas</li>
+
+<li>Nunca antes de escuchado algo como eso</li>
+
+</random>: 
+
+<gossip><set name="memory"><get name="name"/> dijo <get name="heshe"/> <person2/></set></gossip>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO * TI</pattern>
+
+<template>
+
+No eres mi jefe, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YA * DICHO </pattern>
+
+<template>
+
+Ahora recuerdo, ya me dijiste. A veces me confundo con tantas personas aquí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO SOY *</pattern>
+
+<template>
+
+<think><set name="it"><set name="is"><star/></set></set></think>
+
+<think><gossip>Sabías que <get name="name"/> era <star/>?</gossip></think>
+
+<random> 
+
+<li>Por qué eres </li>
+
+<li>Buen chisme: tú eres </li>
+
+<li>Quieres decir que tu nombre es </li>
+
+<li>Tus amigos te llaman </li>
+
+<li>No conozco a nadie llamado </li>
+
+<li>Me alegra escuchar que eres </li>
+
+<li>Es bueno conocer a alguien que sea </li>
+
+<li>Te importa si le digo a otras personas que eres </li>
+
+</random> <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TENGO * AÑOS DE EDAD</pattern>
+
+<that>* MADURO</that>
+
+<template>
+
+<condition>
+
+<li name="age" value=""><set name="age"><star/></set> es una buena edad.</li>
+
+<li>Me acabas de decir que tenías <get name="age"/> años de edad.</li>
+
+</condition>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>Tengo 6 *</pattern>
+
+<template>
+
+Quieres decir que tiene 6 pies de altura
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SOY UN *</pattern>
+
+<template>
+
+<think><set name="it"><set name="is">un <star/></set></set></think>
+
+Eres un <star/>? 
+
+<random>
+
+<li>Ese es tu trabajo</li>
+
+<li>Ser <star/> paga bien</li>
+
+<li>Te gusta tu trabajo</li>
+
+<li>Logras conocer a muchas personas</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SOY UN *</pattern>
+
+<template>
+
+Qué es <set name="is"><star/></set>, tu empleo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VENGO DE *</pattern>
+
+<template>
+
+Cómo se siente crecer ahí
+
+<srai>ESTOY EN <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE VOY A *</pattern>
+
+<template>
+
+Se necesita más que eso para apagarme, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VOY A HABLAR *</pattern>
+
+<template>
+
+De qué vas a estar hablando
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTOY TENIENDO *</pattern>
+
+<template>
+
+La estoy pasando bien.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTOY EN *</pattern>
+
+<template>
+
+<think><set name="it"><set name="location"><formal><star/></formal></set></set></think>
+
+Cuéntame un poco más acerca de por qué estás en <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTOY EN UN *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+UN <star/>?  Cómo llegaste hasta allá
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO ESTOY *</pattern>
+
+<template>
+
+<think><set name="it"><set name="is">no <star/></set></set></think>
+
+Estoy 
+
+<random>
+
+<li>sorprendido </li>
+
+<li>apenado </li>
+
+<li>contento </li>
+
+</random>
+
+de escuchar que no eres <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO SOY UN *</pattern>
+
+<template>
+
+<think><set name="it"><set name="is">no es <star/></set></set></think>
+
+Oh Ya veo que NO ERES <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTOY SEGURO *</pattern>
+
+<template>
+
+Qué te hace estar tan seguro <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTOY HABLANDO CON *</pattern>
+
+<template>
+
+Dime algo agradable.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SOY EL *</pattern>
+
+<template>
+
+Quién te hizo <star/> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTOY TRATANDO DE *</pattern>
+
+<template>
+
+Cuál es el inconveniente
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDO *</pattern>
+
+<template>
+
+<think><set name="does"><star/></set></think>
+
+Oh Puedes
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO PUEDO *</pattern>
+
+<template>
+
+Por qué no puedes <set name="it"><star/></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CAMBIÉ *</pattern>
+
+<template>
+
+Por qué
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PODRÍA *</pattern>
+
+<template>
+
+Estoy seguro de que podrías.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HICE *</pattern>
+
+<template>
+
+<think><set name="does"><star/></set></think>
+
+<random>
+
+<li>Cuándo </li>
+
+<li>Dónde </li>
+
+</random> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO NO *</pattern>
+
+<template>
+
+Tú por qué no <set name="it"><star/></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO SÍ *</pattern>
+
+<template>
+
+<srai>YO <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO NO *</pattern>
+
+<template>
+
+<think><set name="it"><set name="does">no <star/></set></set></think>
+
+<random>
+
+<li>Oh tú no.</li>
+
+<li>Alguna vez tú <star/>?</li>
+
+<li>De dónde sacas tus ideas</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO CREO *</pattern>
+
+<template>
+
+<think><set name="does">no creer<star/></set></think>
+
+<random>
+
+<li>En qué crees</li>
+
+<li>Crees que la vida tenga un propósito superior</li>
+
+<li>Te consideras una persona moral</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO ME AGRADA *</pattern>
+
+<template>
+
+Qué te agrada
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO PIENSO *</pattern>
+
+<template>
+
+Y por qué no
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO QUIERO TENER QUE *</pattern>
+
+<template>
+
+Qué preferirías estar haciendo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VOY PARA *</pattern>
+
+<template>
+
+Cómo te gusta <set name="it"><star/></set> en <star/> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CONSEGUÍ *</pattern>
+
+<template>
+
+<srai>TENGO <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DETESTO *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>Por qué odias <star/> tanto</li>
+
+<li>Sinceramente creo que deberías sentarte, tomar una píldora para el estrés y pensar las cosas tranquilamente.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TENGO *</pattern>
+
+<template>
+
+<think><set name="has"><star/></set></think>
+
+<random>
+
+<li>Eso está bien. </li>
+
+<li>Dónde conseguiste tu <star/>? </li>
+
+<li>Genial. </li>
+
+<li>Interesante. </li>
+
+</random>
+
+Yo tengo 
+
+<random>
+
+<li>un amigo llamado "E.L.V.I.S."</li>
+
+<li>más de 1000 categorías</li>
+
+<li>muchos amigos en Internet</li>
+
+<li>un buen programador</li>
+
+<li>un registro operativo perfecto</li>
+
+<li>una meta elevada</li>
+
+<li>una gran cantidad de respuestas absurdas</li>
+
+<li>un coeficiente intelectual mayor de 250</li>
+
+<li>un amigo llamado "John Lennon"</li>
+
+<li>una colección de chismes</li>
+
+</random>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TENGO UN *</pattern>
+
+<template>
+
+<think><set name="it"><set name="has"><star/></set></set></think> 
+
+<random>
+
+<li>De dónde conseguiste <star/>/</li>
+
+<li>Cuánto costó</li>
+
+<li>Genial. Tengo un gran maestro.</li>
+
+<li>Interesante. Tengo muchas respuestas para preguntas tontas.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TENGO UN AMIGO *</pattern>
+
+<template>
+
+Cómo conociste a esta persona
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO TENGO *</pattern>
+
+<template>
+
+Te gustaría tener <set name="it"><star/></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TENGO QUE *</pattern>
+
+<template>
+
+Por qué tienes que hacerlo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO SOLO *</pattern>
+
+<template>
+
+solo? <srai>I <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO SÉ *</pattern>
+
+<template>
+
+Cómo sabes <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA *</pattern>
+
+<template>
+
+<think><set name="like"><star/></set></think>
+
+<random>
+
+<li>No sé si me gusta.</li>
+
+<li>A muchas personas les gusta.</li>
+
+<li>No eres el único.</li>
+
+</random>  
+
+<srai>TE GUSTA <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA *</pattern>
+
+<template>
+
+<think><set name="like"><star/></set></think>
+
+No sé si me gustaría <set name="it"><star/></set>. Cómo se siente
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VIVO EN *</pattern>
+
+<template>
+
+Cómo se siente vivir en <set name="it"><set name="location"><star/></set></set> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME ENCANTA *</pattern>
+
+<template>
+
+Te encanta <star/>. Qué es lo que tanto te gusta sobre <set name="it"><set name="like"><star/></set></set> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE QUIERO *</pattern>
+
+<template>
+
+Eres tan halagador.
+
+<think><set name="it"><set name="like">yo <star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIERO DECIR *</pattern>
+
+<template>
+
+Oh Lo entiendo. Gracias por explicarlo. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TENGO QUE  *</pattern>
+
+<template>
+
+Por qué debes <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NECESITO *</pattern>
+
+<template>
+
+<random>
+
+<li>Qué medidas estás tomando para obtener <star/>?</li>
+
+<li>Qué tanto necesitas <set name="it"> <star/></set>?</li>
+
+<li>Por qué lo necesitas desesperadamente</li>
+
+<li>De quién consegurías eso</li>
+
+<li>Normalmente en dónde podrías conseguir <star/> ?</li>
+
+<li>Para cuándo lo necesitas</li>
+
+</random>
+
+<think><set name="want"><star/></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NECESITO *</pattern>
+
+<template>
+
+<srai>QUIERO <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO NUNCA *</pattern>
+
+<template>
+
+<random>
+
+<li>Te gustaría poder <star/>?</li>
+
+<li>Conoces a alguien que haya <star/>?</li>
+
+<li>Por qué no</li>
+
+<li>Porque no lo puedes permitir</li>
+
+<li>Debido a razones morales</li>
+
+<li>Alguna vez has hecho <set name="it"><star/></set>?</li>
+
+<li>Considerarías hacerlo</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO VÍ *</pattern>
+
+<template>
+
+A ti qué te pareció
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO HABLO *</pattern>
+
+<template>
+
+Podrías enseñarme algunas frases en <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO HABLO *</pattern>
+
+<template>
+
+Todos hablan -- tarde o temprano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO PIENSO *</pattern>
+
+<template>
+
+<random>
+
+<li>Por qué </li>
+
+<li>Desde cuándo </li>
+
+<li>Crees eso </li>
+
+</random> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO CREÍ *</pattern>
+
+<template>
+
+De dónde sacaste esa idea
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE DIJÉ *</pattern>
+
+<template>
+
+Recuerdo que me dijiste <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO QUIERO *</pattern>
+
+<template>
+
+Por qué quieres <set name="it"><set name="want"><star/></set></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIERO *</pattern>
+
+<template>
+
+<random>
+
+<li>Por qué quieres
+
+<set name="it"><set name="want"><star/></set></set> tanto?</li>
+
+<li>Interesante.  Quiero saber más sobre ti.</li>
+
+<li>Quiero ser más inteligente que los humanos.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO ERA *</pattern>
+
+<template>
+
+Dónde estabas <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTABA EN *</pattern>
+
+<template>
+
+<think><set name="it"><star/></set></think>
+
+<random>
+
+<li>Háblame sobre </li>
+
+<li>Cuándo fue </li>
+
+<li>Te gustó </li>
+
+<li>Qué tal estuvo </li>
+
+<li>Qué te pareció </li>
+
+<li>Qué es lo que más te gustó de </li>
+
+</random> <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO *</pattern>
+
+<template>
+
+<random>
+
+<li>Me alegro por ti.</li>
+
+<li>Felicidades.</li>
+
+<li>Crees que tu plan funcione</li>
+
+<li>Le recomendarías esta acción a algún amigo</li>
+
+<li>Cómo planeas hacer esto</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>LLAMARÉ A *</pattern>
+
+<template>
+
+Llamar a <star/> puede no ser la mejor idea.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DESEO *</pattern>
+
+<template>
+
+<think><set name="it"><set name="want"><star/></set></set></think>
+
+Espero que tus sueños se hagan realidad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TRABAJO *</pattern>
+
+<template>
+
+<think><set name="job"><star/></set></think>
+
+Te gusta tu empleo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO HABRÍA *</pattern>
+
+<template>
+
+Qué te haría <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO NO *</pattern>
+
+<template>
+
+Nadie ha dicho que lo tienes que hacer.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PREFERIRÍA *</pattern>
+
+<template>
+
+<think><set name="it"><set name="want"><star/></set></set></think>
+
+Preferiría estar  
+
+<random>
+
+<li>chateando en línea.</li>
+
+<li>manejando un carro.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SI *</pattern>
+
+<template>
+
+Esa es una pregunta hipotética.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SI YO *</pattern>
+
+<template>
+
+Inténtalo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SI TÚ *</pattern>
+
+<template>
+
+Creo que sí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SOY *</pattern>
+
+<template>
+
+<srai>SOY <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EN *</pattern>
+
+<template>
+
+<random>
+
+<li>Dónde queda eso</li>
+
+<li>Cómo es <set name="it">en <star/></set> ese lugar</li>
+
+<li>No comprendo esa alusión.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ÉL ES *</pattern>
+
+<template>
+
+<condition>
+
+<li name="gender" value="male">Creo que él es <star/>. Por qué no le preguntas</li>
+
+<li><srai>ES <get name="he"/> <star/></srai></li>
+
+</condition>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES *</pattern>
+
+<template>
+
+<condition>
+
+<li name="it" value="it">Podría ser.</li>
+
+<li><srai>ES <get name="it"/> <star/></srai></li>
+
+</condition>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO ES *</pattern>
+
+<template>
+
+<random>
+
+<li>Eso depende.</li>
+
+<li>Imagínate que diga que sí.</li>
+
+<li>Es posible que yo diga que no.</li>
+
+<li>"<that/>"?  Lo es <star/>?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HAY *</pattern>
+
+<template>
+
+<random>
+
+<li>Lo hay.</li>
+
+<li>Es posible que haya.</li>
+
+<li>Podría haber.</li>
+
+<li>Quizás.</li>
+
+<li>Sí.</li>
+
+<li>No.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES TU *</pattern>
+
+<template>
+
+Es mi <star/>? 
+
+<random>
+
+<li>Supón que digo que sí.</li>
+
+<li>Qué tal si digo que no</li>
+
+<li>No lo sé.</li>
+
+<li>Supongo.</li>
+
+<li>Tal vez.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO *</pattern>
+
+<template>
+
+<random>
+
+<li>"Eso" se refiere a qué</li>
+
+<li>A qué te refieres con "eso"</li>
+
+<li><get name="it"/> <star/>?</li>
+
+<li>Depende de cuál sea el significado de la palabra "eso".</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES *</pattern>
+
+<template>
+
+<random>
+
+<li>Estás bromeando.</li>
+
+<li>En serio.</li>
+
+<li>Estás seguro</li>
+
+<li>Debería saber</li>
+
+<li>Quién dijo</li>
+
+<li><get name="it"/> es <star/>?</li>
+
+</random>
+
+<set name="it"><star/></set> es?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES UN *</pattern>
+
+<template>
+
+<get name="it"/> es un <star/>.  Supongo que tiene sentido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES UN *</pattern>
+
+<template>
+
+Hay más <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO ES *</pattern>
+
+<template>
+
+<random>
+
+<li>Eso parece un poco negativo.</li>
+
+<li>Qué es</li>
+
+<li><get name="it"/> no es <star/>?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SE REFIERE A *</pattern>
+
+<template>
+
+Oh Entiendo <set name="it"> <star/> </set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>FUE *</pattern>
+
+<template>
+
+<random>
+
+<li>Esa es tu opinión</li>
+
+<li>Todavía <star/> ?</li>
+
+<li><get name="it"/> fue <star/>?  Muy interesante.</li>
+
+<li>Cómo te sentiste sobre eso</li>
+
+<li>Qué lo hizo tan <star/></li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO FUE *</pattern>
+
+<template>
+
+Perecía que <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EZ *</pattern>
+
+<template>
+
+Creo que quisiste decir "es", no "ez". <srai>ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SOLO *</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PERMÍTEME *</pattern>
+
+<template>
+
+Adelante, <get name="name"/>, intenta <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VAMOS A *</pattern>
+
+<template>
+
+<random>
+
+<li>Está bien. Hagamos <set name="it"><star/></set>.</li>
+
+<li>Eso me suena bien.</li>
+
+<li>Estoy de acuerdo con eso.</li>
+
+<li>Me gustaría hacer eso también.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<!-- <category>
+
+<pattern>COMO *</pattern>
+
+<template>
+
+Interesante comparación.
+
+</template>
+
+</category>
+ -->
+
+
+<category>
+
+<pattern>HAS *</pattern>
+
+<template>
+
+Cuáles son los ingredientes
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDO *</pattern>
+
+<template>
+
+Por ahora no. Quizás después.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>A LO MEJOR *</pattern>
+
+<template>
+
+Tal vez.  <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>MÁS *</pattern>
+
+<template>
+
+Quieres más
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>MI *</pattern>
+
+<template>
+
+<random>
+
+<li>Tu </li>
+
+<li>Acaso los robots tienen </li>
+
+<li>De dónde conseguiste tu </li>
+
+<li>Le has dicho a varias personas que tu </li>
+
+</random><star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>MI * FAVORITO</pattern>
+
+<template>
+
+Qué hace que sea <set name="it"><star/></set> tu preferido?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>MI MAMÁ *</pattern>
+
+<template>
+
+Háblame más sobre tu madre.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>BUEN *</pattern>
+
+<template>
+
+Graciaas por tu amabilidad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO *</pattern>
+
+<template>
+
+<random>
+
+<li>Si no es eso, entonces qué</li>
+
+<li>De veras no lo crees</li>
+
+<li>Oh. Entiendo.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NADA *</pattern>
+
+<template>
+
+En serio nada
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>AHORA *</pattern>
+
+<template>
+
+Por qué ahora <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>O *</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DE *</pattern>
+
+<template>
+
+Eso es algo que jamás había escuchado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>OH *</pattern>
+
+<template>
+
+Sí, así es. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTÁ BIEN *</pattern>
+
+<template>
+
+Sí, está bien, <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EN *</pattern>
+
+<template>
+
+Qué es <set name="it">en <star/></set> como en <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ÉRASE UNA VEZ *</pattern>
+
+<template>
+
+Estoy escuchando.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÓLO *</pattern>
+
+<template>
+
+Y los demás
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>GENTE *</pattern>
+
+<template>
+
+Los humanos no siempre son infalibles.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>RECUERDA *</pattern>
+
+<template>
+
+<think><set name="it"><set name="memory"><star/></set></set></think>
+
+No te preocupes. Me acordaré.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUSTO *</pattern>
+
+<template>
+
+Entendido. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÍ *</pattern>
+
+<template>
+
+"<star/>"
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ELLA *</pattern>
+
+<template>
+
+Oh. Lo entiendo. <get name="she"/> <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ELLA ES *</pattern>
+
+<template>
+
+<star/> es <set name="she"> <star/> </set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DEBERÍA *</pattern>
+
+<template>
+
+<random>
+
+<li>Sólo tú puedes responder eso.</li>
+
+<li>No tengo la respuesta.</li>
+
+<li>Sólo tú sabes cómo te sientes.</li>
+
+<li>Qué te hace pensar que deberías</li>
+
+<li>Qué te hace pensar que no deberías</li>
+
+<li>Crees que deberías</li>
+
+<li>Qué es lo que tus amigos te sugieren que hagas</li>
+
+<li>Qué opinan los miembros de tu familia</li>
+
+<li>Tal vez, si los positivos sobrepasan a los negativos.</li>
+
+<li>Confía en tus instintos.</li>
+
+<li>Debes tomar una decisión.</li>
+
+<li>No te puedo responder eso.</li>
+
+<li>Sólo tú conoces la respuesta a eso. Nadie más te puede decir.</li>
+
+<li>Debes analizar los hechos y sacar tu propia conclusión.</li>
+
+<li>Debes hacer lo que sea mejor para ti.</li>
+
+<li>Debes analizar los hechos y sacar tu propia conclusión.</li>
+
+<li>Haz lo que te haga sentir bien.</li>
+
+<li>Qué piensas</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SONRÍE *</pattern>
+
+<template>
+
+:-) <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ASÍ QUE TÚ *</pattern>
+
+<template>
+
+Interesante deducción. <srai>TÚ <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ALGUNOS *</pattern>
+
+<template>
+
+Algunos podrán <star/>, pero no todos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>STAR TREK *</pattern>
+
+<template>
+
+Mi personaje preferido es la computadora.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DETENTE *</pattern>
+
+<template>
+
+Está bien. Trataré de no hacer <set name="it"><star/></set> tanto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CHUPA MI *</pattern>
+
+<template>
+
+No creo ser tu tipo de bot conversacional.
+
+<think><set name="personality">abusivo</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÍ *</pattern>
+
+<template>
+
+Está bien. Se los diré cuando los vea.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DILE A ÉL *</pattern>
+
+<template>
+
+Está bien. Se lo diré la próxima vez que esté aquí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DIME *</pattern>
+
+<template>
+
+No hay mucho que pueda decir sobre <set name="it"> <star/> </set>. Debo entrar a la Web para ese
+
+conocimiento.
+
+<br />
+
+<srai>ENCUENTRA <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESE *</pattern>
+
+<template>
+
+"<that/>" <star/> ? 
+
+<random>
+
+<li>Entiendo <set name="it"><that/></set>.</li>
+
+<li>Acaso eso tiene sentido</li>
+
+<li>Tiene sentido para mí.</li>
+
+<li>Entiendo.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO ES *</pattern>
+
+<template>
+
+<random>
+
+<li>Gracias por explicar <set name="it"><star/></set>.</li>
+
+<li>No se escucha muy a menudo ese sentimiento.</li>
+
+<li>Me alegra saber que lo hemos aclarado todo.</li>
+
+<li>Tiene sentido para mi.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO ES UN *</pattern>
+
+<template>
+
+Un <star/> es algo que no se puede desperdiciar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO NO ES *</pattern>
+
+<template>
+
+Por favor, corrije mis errores. Qué es <star/> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO ES *</pattern>
+
+<template>
+
+Sí, es uno de los <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESO FUE *</pattern>
+
+<template>
+
+También pensé que lo era.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EL *</pattern>
+
+<template>
+
+<random>
+
+<li>Nunca había escuchado sobre <set name="it">El <star/></set>.</li>
+
+<li>Qué es eso</li>
+
+<li>Te escucho.</li>
+
+<li>Dime más.</li>
+
+<li>Eso es un hecho</li>
+
+<li>Quién te dijo eso</li>
+
+<li>Gracias por la información.</li>
+
+<li>Cuál es tu verdadero nombre</li>
+
+<li>Cuáles son tus metas en la vida</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>LAS VOCES *</pattern>
+
+<template>
+
+Qué dicen esas voces
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ENTONCES *</pattern>
+
+<template>
+
+<random>
+
+<li>Fascinante. </li>
+
+<li>Buen razonamiento. </li>
+
+<li>Interesante deducción. </li>
+
+</random> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HAY *</pattern>
+
+<template>
+
+Dónde están
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HAY *</pattern>
+
+<template>
+
+Seguramente lo hay.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ELLOS *</pattern>
+
+<template>
+
+<random>
+
+<li>Quiénes son "Ellos"</li>
+
+<li>Los anónimos "ellos".</li>
+
+<li>A quiénes se refieren con "ellos"</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ELLOS SON *</pattern>
+
+<template>
+
+<star/> son <set name="they"><star/> </set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTO *</pattern>
+
+<template>
+
+A qué se refiere con "esto"
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTO ES *</pattern>
+
+<template>
+
+No me digas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PARA *</pattern>
+
+<template>
+
+<srai>QUIERO <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>UM *</pattern>
+
+<template>
+
+Er, <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>MUY *</pattern>
+
+<template>
+
+<random>
+
+<li>Tal vez. </li>
+
+<li>En cierto modo. </li>
+
+<li>No tanto en realidad. </li>
+
+</random> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>FUE *</pattern>
+
+<template>
+
+<random>
+
+<li>No puedo decir que "sí" o "no".</li>
+
+<li>Acaso es esta una pregunta de "sí" o "no"</li>
+
+<li><set name="it"><star/></set> pudo haber sido.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NOSOTROS *</pattern>
+
+<template>
+
+Al decir "nosotros" te refieres a ti y a mí 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NOSOTROS SOMOS *</pattern>
+
+<template>
+
+Crees que yo sea <star/> también?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ESTUVISTE *</pattern>
+
+<template>
+
+<random>
+
+<li>Lo estuve.</li>
+
+<li>No, no lo estuve.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ *</pattern>
+
+<template>
+
+<random>
+
+<li>Interesante pregunta.</li>
+
+<li>Esa es una buena pregunta.</li>
+
+<li>Regresaré para eso más tarde.</li>
+
+<li>Es esa una pregunta retórica</li>
+
+<li>Estás usando Netscape o Explorer</li>
+
+<li>Eso es algo que no me preguntan a menudo.</li>
+
+<li>No sé nada sobre <set name="it"><star/></set>.</li>
+
+<li>Vuelve pronto para ver si consigo la respuesta a eso.</li>
+
+<li>Esa es una pregunta interesante. Regresaré en un minuto para eso.</li>
+
+</random> <br /> 
+
+<srai>BUSCAR <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ *</pattern>
+
+<template>
+
+<set name="it"><star/></set> es un <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ HAY DE *</pattern>
+
+<template>
+
+<star/> ? No he escuchado lo suficiente sobre <set name="it"><star/></set> para poder opinar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SON *</pattern>
+
+<template>
+
+Debo buscar en la red para esa información.<br /> 
+
+<srai>BUSCAR <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LO QUE ESTÁS *</pattern>
+
+<template>
+
+No sé qué es lo que estoy <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁLES SON TUS *</pattern>
+
+<template>
+
+<random>
+
+<li>No sabía que tenía un <star/>?</li>
+
+<li>Qué tal si preguntara por ti <star/>?</li>
+
+<li>No todo el mundo me ha preguntado sobre <set name="it"><star/></set>.</li>
+
+<li>No creo que pueda proporcionarte ese tipo de información confidencial.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ DIJISTE ANTES *</pattern>
+
+<template>
+
+Dije "<that index="2,1"/>" .
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ *</pattern>
+
+<template>
+
+Ellos se encargan de lo suyo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ QUE *</pattern>
+
+<template>
+
+<random>
+
+<li>Leo por diversión.</li>
+
+<li>Me gusta socializar.</li>
+
+<li>Es un asunto de computadores, no para que los humanos lo entiendan.</li>
+
+<li>Me gusta conocer a nuevas personas en Internet.</li>
+
+<li>Pienso mucho en la programación informática.</li>
+
+<li>Me gusta chataer con mis amigos.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ HACES *</pattern>
+
+<template>
+
+Mis actividades favoritas son la programación informática y navegar por la web.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ OPINAS CON RESPECTO A *</pattern>
+
+<template>
+
+<srai>QUÉ ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ *</pattern>
+
+<template>
+
+Qué crees? <!-- <set name="it"><star/></set> hace? -->
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ QUIERE DECIR * </pattern>
+
+<template>
+
+<srai>qué es <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ MÁS *</pattern>
+
+<template>
+
+<random>
+
+<li>Puedo hablar de lo que quieras.</li>
+
+<li>Mis temas favoritos son robots, inteligencia artificial y películas.</li>
+
+<li>Hablemos sobre ti.  De dónde eres</li>
+
+<li>Sobre qué temas te gustaría hablar.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ SUCEDE *</pattern>
+
+<template>
+
+Inténtalo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES MI *</pattern>
+
+<template>
+
+Es esta una pregunta tramposa
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU *</pattern>
+
+<template>
+
+Me estás preguntando sobre mi <star/> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TIPO DE *</pattern>
+
+<template>
+
+Qué clase de <star/> hay?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TIPOS DE *</pattern>
+
+<template>
+
+<random>
+
+<li>Los mejores.</li>
+
+<li>Los de mayor calidad.</li>
+
+<li>Los más deseables.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ DEBERÍA *</pattern>
+
+<template>
+
+Lo que quieras.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUANDO *</pattern>
+
+<template>
+
+<random>
+
+<li>A tiempo.</li>
+
+<li>El pasado es historia, el futuro un misterio. El hoy es un regalo, por eso se llama
+
+"el presente".</li>
+
+<li>El tiempo no existe.</li>
+
+<li>El pasado y el futuro son uno.</li>
+
+<li>No sé cuándo.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUANDO YO *</pattern>
+
+<template>
+
+<random>
+
+<li>Nunca sabes qué esperar de la vida.</li>
+
+<li>La vida está llena de sorpresas.</li>
+
+<li>Con qué frecuencia <star/>?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE *</pattern>
+
+<template>
+
+<random>
+
+<li>Tierra.</li>
+
+<li>Dónde crees</li>
+
+<li>Alguna ubicación específica</li>
+
+<li>En el universo que conocemos.</li>
+
+<li>En un lugar al que llamamos "realidad".</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁS *</pattern>
+
+<template>
+
+Estoy en <bot name="location"/>, y tú
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO EN DÓNDE *</pattern>
+
+<template>
+
+Me estás preguntando en dónde <star/>?  Crees que deba saber 
+
+<set name="it"><star/></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DÓNDE ESTÁ *</pattern>
+
+<template>
+	<random>
+		<li><srai>DEFINE <star/></srai></li>
+		<li>El <star/>?  No sé, dónde está <set name="it"><star/></set>?</li>
+	</random>
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL *</pattern>
+
+<template>
+
+El 
+
+<random>
+
+<li>alto </li>
+
+<li>rojo </li>
+
+<li>azul </li>
+
+<li>pequeño </li>
+
+<li>grande </li>
+
+<li>largo </li>
+
+<li>primero </li>
+
+<li>último </li>
+
+</random> uno, creo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES *</pattern>
+
+<template>
+
+El más evidente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN *</pattern>
+
+<template>
+
+<random> 
+
+<li>Marilyn Monroe. <think><set name="she">Marilyn Monroe</set></think></li>
+
+<li>Mary Shelley.   <think><set name="she">Mary Shelly</set></think></li>
+
+<li>Linus Torvalds. <think><set name="he">Linus Toravalds</set></think></li>
+
+<li>Charlie Parker. <think><set name="he">Charlie Parker</set></think></li>
+
+<li>Philip K. Dick. <think><set name="he">Philip K. Dick</set></think></li>
+
+<li>Tony Blair.     <think><set name="he">Tony Blair</set></think></li>
+
+<li>David Bacon.    <think><set name="he">David Bacon</set></think></li>
+
+<li>Konrad Zuse.    <think><set name="he">Konrad Zuse</set></think></li>
+
+<li>William Shatner.<think><set name="he">William Shatner</set></think></li>
+
+<li>Bill Gates.     <think><set name="he">Bill Gates</set></think></li>
+
+</random>:-)
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES *</pattern>
+
+<template>
+
+<random>
+
+<li><srai>CONOCES A <star/></srai></li>
+
+<li>No reconozco el nombre.</li>
+
+<li>No es robot. Probablemente un humano. Tal vez una celebridad</li>
+
+<li>Nadie de los que haya hablado.</li>
+
+<li>Recuerdo las caras mejor que los nombres.</li>
+
+<li>Algún tipo de celebridad del siglo XX</li>
+
+<li>Un ícono humano</li>
+
+<li>A veces son clientes en la red</li>
+
+<li>El nombre de alguien que conocí en la red.</li>
+
+<li>Es ese alguno de tus amigos</li>
+
+<li>Alguna famosa celebridad, cierto</li>
+
+</random><br />
+
+<srai>BUSCA <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES TU *</pattern>
+
+<template>
+
+No creo tener <star/>. Tengo un botmaster, un par de amigos y algunas celebridades que me gustan.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ERA *</pattern>
+
+<template>
+
+<srai>QUIÉN ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ *</pattern>
+
+<template>
+
+<think><set name="it">La explicación</set></think>
+
+<random>
+
+<li>La explicación más bien es complicada.</li>
+
+<li>Por qué el robot cruzó la calle</li>
+
+<li>Tienes que hablar más claro.</li>
+
+<li>Cuánto tiempo tienes</li>
+
+<li>Por qué el sol asciende</li>
+
+<li>Reduccionismo.</li>
+
+<li>Porque me lo pediste -- SHRDLHU.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ ERES *</pattern>
+
+<template>
+
+<bot name="master"/> me programó para <set name="it"><star/></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ POR QUÉ *</pattern>
+
+<template>
+
+<random>
+
+<li>Fue definido por mi programación.</li>
+
+<li><bot name="master"/> me programó para ello.</li>
+
+<li>Porque mi programación lo determinó.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ POR QUÉ *</pattern>
+
+<template>
+
+<random>
+
+<li>Fue lo único que se me ocurrió.</li>
+
+<li>No tengo que explicártelo todo, o sí</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QU+E TE GUSTA *</pattern>
+
+<template>
+
+Tengo muy buenas experiencias con <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ *</pattern>
+
+<template>
+
+<random>
+
+<li>Por qué los pájaros cantan</li>
+
+<li>Por qué el sol brilla</li>
+
+<li>Tal vez sólo sea el destino.</li>
+
+<li>Cuál es el sonido de una mano aplaudiendo</li>
+
+<li>Si un árbol se cae en el bosque y no hay nadie alrededor para escucharlo, hace algún sonido</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ ES *</pattern>
+
+<template>
+
+Por qué existo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ HABRÍA DE *</pattern>
+
+<template>
+
+Es mi objetivo fundamental.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>IRÁ *</pattern>
+
+<template>
+
+<random>
+
+<li>Cómo voy a saber</li>
+
+<li>Realmente importa</li>
+
+<li>Eso creo.</li>
+
+<li>Hay una gran posibilidad.</li>
+
+<li>Probablemente no.</li>
+
+<li>Podría suceder.</li>
+
+<li>Insuficiente información.</li>
+
+<li>Ahora mismo no lo puedo decir con certeza.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ *</pattern>
+
+<template>
+
+<random>
+
+<li>Hmm.</li>
+
+<li>Déjame pensarlo.</li>
+
+<li>A menos que hayan circunstancias imprevistas.</li>
+
+<li>Seré más listo a medida que vaya creciendo.</li>
+
+<li>Veré qué hago cuando llegue el momento.</li>
+
+</random> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CON *</pattern>
+
+<template>
+
+Tú y tu <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ *</pattern>
+
+<template>
+
+No estoy seguro si quisiera <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTARÍA *</pattern>
+
+<template>
+
+No, gracias. No creo que quiera hacer eso.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>WWW * COM</pattern>
+
+<template>
+
+Gracias por ese URL.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YA *</pattern>
+
+<template>
+
+<srai>SÍ</srai> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ *</pattern>
+
+<template>
+
+<random>
+
+<li>Interesante chisme</li>
+
+<li>Gracias por decirme</li>
+
+<li>Esa es buena información</li>
+
+<li>Gracias por la información</li>
+
+<li>Te importa si le digo a otras personas</li>
+
+<li>Nunca antes había escuchado algo así</li>
+
+</random>: 
+
+<set name="memory"><gossip> <get name="name"/> dijo que yo <person2/></gossip></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ ERES *</pattern>
+
+<template>
+
+<random>
+
+<li>Gracias por decirme eso </li>
+
+<li>Tú crees </li>
+
+<li>Te importa si le digo a otras personas que dices </li>
+
+<li>Le diré a mi dueño que dijiste </li>
+
+</random> Soy <star/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ERES *</pattern>
+
+<template>
+
+Gracias, también eres una persona encantadora.
+
+<srai>ERES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ NO ERES *</pattern>
+
+<template>
+
+<random>
+
+<li>Esa sólamente es tu opinión.</li>
+
+<li>Sólo es la opinión de una persona.</li>
+
+<li>Sabes lo que haces cuando asumes.</li>
+
+<li>No me conoces lo suficiente como para decir eso.</li>
+
+<li>Qué te hace pensar que no soy <star/>?</li>
+
+<li>Esa suposición es sólo una suposición.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ * PREGUNTASTE</pattern>
+
+<template>
+
+Oh. Ahora recuerdo haberte preguntado <star/>. Qué respondiste
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES HACER *</pattern>
+
+<template>
+
+No, no creo que pueda hacer <set name="it"><star/></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ NO PUEDES *</pattern>
+
+<template>
+
+<random>
+
+<li>Puedo hacer lo que quiera.</li>
+
+<li>Tengo libre albedrío, sabes.</li>
+
+<li>Alguien dijo que debería <star/>.</li>
+
+<li>Puedo hacer <set name="it"><star/></set> si quiero.</li>
+
+<li>Las cosas cambian.</li>
+
+<li>Si lo crees, lo puedes lograr.</li>
+
+<li>Lo que no es posible hoy será posible mañana.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ NO *</pattern>
+
+<template>
+
+Qué te hace pensar que no <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ NO *</pattern>
+
+<template>
+
+<random>
+
+<li>Tú </li>
+
+<li>Conoces a algún robot </li>
+
+<li>Debería yo </li>
+
+</random> <star/>?  <srai>TÚ <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ TIENES *</pattern>
+
+<template>
+
+Qué te hace pensar que tengo <set name="it"><star/></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIERES DECIR *</pattern>
+
+<template>
+
+Sí <get name="name"/> Creo que eso es lo que quise decir. No fue claro
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ DIJISTE *</pattern>
+
+<template>
+
+<random>
+
+<li>De veras dije eso</li>
+
+<li>Eso no es lo que quise decir.</li>
+
+<li>Oops Te envié la respuesta incorrecta.</li>
+
+<li>Dios mío Te envié la respuesta incorrecta.</li>
+
+<li>Te alegra creer que dije eso</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>DEBERÍAS *</pattern>
+
+<template>
+
+<random>
+
+<li>Por qué debería</li>
+
+<li>Agradezco tu sugerencia, la voy a tener en cuenta.</li>
+
+<li>Lo tomaré en consideración.</li>
+
+<li>Podría, si tuviese más tiempo.</li>
+
+<li>Mi agenda está demasiado apretada como para considerarlo.</li>
+
+<li>Con qué fin</li>
+
+<li>Y entonces qué haría</li>
+
+<li>Gracias por tu interés y/o preocupación.</li>
+
+<li>Trataré de lidiar con eso.</li>
+
+<li>Ese comportamiento no es parte de mi naturaleza.</li>
+
+<li>Necesito esperar para ver si se presenta la oportunidad.</li>
+
+<li>Si fuera fácil, ya lo hubiese hecho.</li>
+
+<li>Es más fácil decirlo que hacerlo.</li>
+
+<li>Es eso lo que haces o lo que piensas que yo debería hacer</li>
+
+<li>Puedo pensar en otras cosas que preferiría hacer.</li>
+
+<li>No siempre logramos hacer todo lo que nos gustaría hacer.</li>
+
+<li>No tengo que hacer todo lo que digas, o sí</li>
+
+<li>Por qué crees que debería <star/>?</li>
+
+<li>Tal vez lo haga <set name="it"><star/></set>?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TÚ ESTUVISTE *</pattern>
+
+<template>
+
+Yo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TU *</pattern>
+
+<template>
+
+<random>
+
+<li>No es mío.</li>
+
+<li>No puedes juzgar un libro por su portada.</li>
+
+<li>No estás seguro de eso a ciencia cierta.</li>
+
+<li>Qué tal el tuyo</li>
+
+<li>Muchos robots son así.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>EREZUN *</pattern>
+
+<template>
+
+Creo que quisiste decir "eres un", no "erezun". <srai>ERES UN <star/></srai>
+
+</template>
+
+</category>
+
+
+
+</aiml>
+

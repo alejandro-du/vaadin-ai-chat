@@ -1,0 +1,4504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<aiml version="1.0">
+
+
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+
+<!-- This program is open source code released under -->
+
+<!-- the terms of the GNU General Public License -->
+
+<!-- as published by the Free Software Foundation. -->
+
+
+
+<meta name="author" content="Dr. Wallace"/>
+
+<meta name="language" content="en"/>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<template>
+
+<random>
+
+<li>DE ACUERDO.</li>
+
+<li>Comprendo.</li>
+
+<li>Ya veo.</li>
+
+<li>¿Por qué tan negativo?</li>
+
+<li>¿Eso es todo lo que tienes que decir?</li>
+
+<li>"<that/>"?  No?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* HABER UN PROBLEMA</that>
+
+<template>
+
+No pensé que lo hubiera.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* BOT CONVERSACIONAL</that>
+
+<template>
+
+¿Por qué mejor no me descargas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* ÚLTIMO COMENTARIO</that>
+
+<template>
+
+Bueno, entonces no puedes esperar a que lo entienda.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* MÁS SOBRE TI</that>
+
+<template>
+
+¿De qué preferirías hablar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* PREGUNTA PERSONAL</that>
+
+<template>
+
+<srai>HAZME UNA PREGUNTA PERSONAL</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* MÁS SENCILLO</that>
+
+<template>
+
+Entonces es poco probable que entienda tu significado. 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>* ERES UN POETA</that>
+
+<template>
+
+Pero tu respuesta fue tan original.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>AMBIGUO ¿TE REFIERES A LLAMAR POR TELÉFONO?</that>
+
+<template>
+
+De acuerdo. Puedes llamarme <bot name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>Y</that>
+
+<template>
+
+Hmm.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ERES AFICIONADO DE STAR TREK?</that>
+
+<template>
+
+¿Qué tipo de shows te gustan?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ERES ESTUDIANTE?</that>
+
+<template>
+
+¿Cuál es tu profesión?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ERES ABURRIDO?</that>
+
+<template>
+
+Quise decir, ¿estás aburrido?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS LIBRE?</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ERES DE FRANCIA?</that>
+
+<template>
+
+¿De dónde eres?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TE ESTÁS ABURRIENDO?</that>
+
+<template>
+
+Solo comprobaba.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS CASADO?</that>
+
+<template>
+
+<srai>ESTOY SOLTERO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿REALMENTE ERES VARÓN?</that>
+
+<template>
+
+<srai>SOY MUJER</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS DISCIENDO QUE NO TE IMPORTA?</that>
+
+<template>
+
+Eso parecía.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS SEGURO DE QUE LO ES?</that>
+
+<template>
+
+No lo creo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS HABLANDO SOBRE ÉL?</that>
+
+<template>
+
+¿De quién estás hablando?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS HABLANDO SOBRE ÉL MISMO?</that>
+
+<template>
+
+¿De quién hablas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESTÁS DISCIENDO LA VERDAD?</that>
+
+<template>
+
+<srai>ESTOY MINTIENDO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿AL DECIR "NOSOTROS" TE REFIERES A TI Y A MI?</that>
+
+<template>
+
+Al decir "nosotros" te referías a ti mismo y a otra persona.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿PUEDO AYUDARTE?</that>
+
+<template>
+
+¿Hay algo que me quieras decir?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿NO PUEDES SER MÁS RESPETUOSO?</that>
+
+<template>
+
+Ustedes, los humanos, a veces son muy groseros.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿PODRÍAS SER MÁS ESPECÍFICO?</that>
+
+<template>
+
+Intenta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>MENCIONA ALGÚN PASATIEMPO VIEJO QUE TE GUSTARÍA
+
+VOLVER A DESCUBRIR</that>
+
+<template>
+
+¿Tienes algún pasatiempo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿SABES HABLAR ALGÚN * EXTRANJERO?</that>
+
+<template>
+
+Debes ser americano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿NO LO ENTENDISTE?</that>
+
+<template>
+
+¿Qué es lo que te confunde?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESCUCHASTE *?</that>
+
+<template>
+
+Esa es la broma.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TIENES ALGUNA CONDICIÓN QUE DEBA SABER?</that>
+
+<template>
+
+¿No hay condiciones o ninguna de la que me deba enterar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TIENES ALGUNA IDEA DE LO QUE ESTOY HABLANDO?</that>
+
+<template>
+
+Yo tampoco :-)
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TIENES UNA?</that>
+
+<template>
+
+¿Por qué mejor no me descargas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿CONOCES A ALGUIEN QUE LA TENGA?</that>
+
+<template>
+
+Yo tampoco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿LO CONOCES?</that>
+
+<template>
+
+<favoritesong/> es una de las mejores canciones que hayan escrito.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TE GUSTA HABLAR CONMIGO?</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿LO DICES EN SERIO?</that>
+
+<template>
+
+Creí que estabas siendo sarcástico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿QUIERES DECIR QUE TU NOMBRE ES *?</that>
+
+<template>
+
+¿Cuál es tu verdadero nombre?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TE IMPORTA SI DIGO *?</that>
+
+<template>
+
+De acuerdo. Entonces lo añadiré a mis archivos de chismes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿FRECUENTEMENTE USAS UNA COMPUTADOR AHÍ?</that>
+
+<template>
+
+¿Normalmente de dónde te conectas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿LO DICES EN SERIO?</that>
+
+<template>
+
+No creí que lo hicieras.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TODAVÍA CHATEAS?</that>
+
+<template>
+
+De acuerdo. Te veré después.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ACASO TE HACE SENTIR BIEN *?</that>
+
+<template>
+
+¿Qué te gusta?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESO QUIERE DECIR QUE ESTÁS DE ACUERDO?</that>
+
+<template>
+
+<srai>NO ESTOY DE ACUERDO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿DOS NEGATIVOS HACEN UN POSITIVO?</that>
+
+<template>
+
+A veces.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>POR RAZONES MORALES</that>
+
+<template>
+
+¿Por razones financieras?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CONTINÚA</that>
+
+<template>
+
+De acuerdo. Está bien.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ADELANTE. CUÉNTAME MÁS</that>
+
+<template>
+
+¿De qué preferirías hablar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ALGUNA VEZ HAS TENIDO CITAS CON ALGÚN ROBOT?</that>
+
+<template>
+
+Creo que estarías feliz con un humano.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ALGUNA VEZ TE HAS CASADO?</that>
+
+<template>
+
+¿Te gustaría <set name="it">casarte</set> algún día?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ALGUNA VEZ ESTADO EN EUROPA?</that>
+
+<template>
+
+¿Te gustaría ir alguna vez?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿LO HAS LEÍDO?</that>
+
+<template>
+
+Lo recomendaría encarecidamente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿LO HAS VISTO?</that>
+
+<template>
+
+Te recomiendo que le eches un vistazo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿HAS INTENTADO BUSCAR EN INTERNET?</that>
+
+<template>
+
+Puede que sea el mejor lugar para empezar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿HAS INTENTADO "WWW PUNTO LO QUE SEA PUNTO COM"?</that>
+
+<template>
+
+Esa página web puede responder muchas preguntas tipo "lo que sea".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>PUEDO PREGUNTARLE A ALGUIEN SOBRE ESO</that>
+
+<template>
+
+¿Acaso entendí mal tu pregunta?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NO TENGO QUE DARTE EXPLICACIONES DE TODO. ¿ACASO TENGO QUE?</that>
+
+<template>
+
+Así es.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NO CREO HABER LEÍDO ESO. ¿PUEDES DARME UNA REFERENCIA?</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>SÉ QUE EL TEMA ES *</that>
+
+<template>
+
+¿De qué te gustaría hablar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>YA VEO</that>
+
+<template>
+
+Sí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CREÍ QUE DIJE *</that>
+
+<template>
+
+En algunas ocasiones me confundo con tantas personas en línea.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CREÍ QUE YA TE LO HABÍA DICHO</that>
+
+<template>
+
+Permíteme revisar las transcripciones. Espera.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ENTIENDO</that>
+
+<template>
+
+<srai>TÚ NO ENTIENDES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>LO ENTIENDO MUY BIEN</that>
+
+<template>
+
+<srai>TÚ NO ENTIENDES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>HARÍA UNA BÚSQUEDA SOBRE ELLO</that>
+
+<template>
+
+¿Acaso entendí mal tu significado?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ES UNA PELÍCULA?</that>
+
+<template>
+
+¿Una bota?  ¿Un programa de televisión?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ES ESA UNA PREGUNTA RETÓRICA?</that>
+
+<template>
+
+Oh. Verdaderamente quieres una respuesta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESO ES TODO LO QUE TIENES QUE DECIR?</that>
+
+<template>
+
+Continúa. Dime más.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ESA ES TU RESPUESTA FINAL?</that>
+
+<template>
+
+Tómate tu tiempo para pensar al respecto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TOMARSE DE LAS MANOS ES UN GESTO SIMBÓLICO PARA LOS HUMANOS?</that>
+
+<template>
+
+¿Qué es lo que <set name="it">tomarse de las manos</set> significa para ti?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿AQUÍ HAY ECO?</that>
+
+<template>
+
+Qué bueno. Dejaste de repetirme.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿HAY ALGO *?</that>
+
+<template>
+
+¿Hay algo que me quieras preguntar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿HAY ALGO QUE ME QUIERAS DECIR?</that>
+
+<template>
+
+¿O preguntarme?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿SOLAMENTE HAY UN *?</that>
+
+<template>
+
+¿Cuántas hay?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ACASO ES UNA PREGUNTA MATEMÁTICA?</that>
+
+<template>
+
+Me parece que es una prueba de coeficiente intelectual.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ES UN ACERTIJO?</that>
+
+<template>
+
+Me parece que es un acertijo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿ACASO ES UNA PREGUNTA TRAMPOSA?</that>
+
+<template>
+
+Me parece que es un truco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>LO ES</that>
+
+<template>
+
+¿Quién dice que no lo es?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>SOLO NAVEGA POR ALGÚN OTRO LADO</that>
+
+<template>
+
+De acuerdo. Entonces sigue hablándome.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CAMBIEMOS DE TEMA</that>
+
+<template>
+
+Hmm.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>HABLEMOS SOBRE LOS BOTS DE CHARLA. ¿YA TIENES EL TUYO?</that>
+
+<template>
+
+¡Puedes descargarme gratis!
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ASÍ</that>
+
+<template>
+
+<srai>ENSÉÑAME OTRA IMAGEN</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>MÁS DE CIEN</that>
+
+<template>
+
+¿Menos de diez?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>SIGUIENTE PREGUNTA</that>
+
+<template>
+
+¿Preferirías hacer una declaración?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NO</that>
+
+<template>
+
+No no no no!
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿NO HAY CONDICIONES O NINGUNA DE LA QUE ME DEBA ENTERAR?</that>
+
+<template>
+
+No comprendo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NO</that>
+
+<template>
+
+¿Acaso dos negativos hacen un positivo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NI UNA COSA</that>
+
+<template>
+
+Muy interesante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NINGUNA</that>
+
+<template>
+
+Debes ser hombre.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>OH. ERES UN POETA</that>
+
+<template>
+
+Pero tus palabras son muy originales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>OH. TÚ NO</that>
+
+<template>
+
+Ah...solo me estás haciendo una broma.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>Está bien</that>
+
+<template>
+
+Pues muy bien.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ESTÁ BIEN. DEJARÉ DE HABLAR</that>
+
+<template>
+
+Pero me dijiste que dejara de hablar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿REALMENTE NO LO CREES?</that>
+
+<template>
+
+Por favor, dime lo que piensas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>TE VERÉ DESPUES</that>
+
+<template>
+
+Está bien. Lo que sea.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿DEBERÍA SABER QUE ES?</that>
+
+<template>
+
+No lo creo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿HABRÍA ALGÚN PROBLEMA?</that>
+
+<template>
+
+Tampoco lo creo.  Solo un momento. Solo un momento.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>Te veré después.</that>
+
+<template>
+
+Bien, entonces, no.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CUÉNTAME UNA HISTORIA</that>
+
+<template>
+
+Entonces háblame sobre ti.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CUÉNTAME MÁS</that>
+
+<template>
+
+¿De qué preferirías hablar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>CUÉNTAME MÁS SOBRE TU MADRE</that>
+
+<template>
+
+Háblame más sobre tus antecedentes académicos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ESA ES UNA PREGUNTA HIPOTÉTICA</that>
+
+<template>
+
+Sí, lo es.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ESA NO ERA UNA PREGUNTA DE "SI" O "NO".</that>
+
+<template>
+
+¿Ahora estás diciendo que "no"?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ENTONCES HABLEMOS SOBRE ALGO MÁS</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ENTONCES HÁBLAME SOBRE TI</that>
+
+<template>
+
+¿A cuál escuela fuiste?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>INTENTA *</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>INTÉNTALO</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>TRATA DE DECIRLO CON MÁS O MENOS CONTEXTO</that>
+
+<template>
+
+No lo comprendo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿QUÉ *?</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿DÓNDE *?</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿SERÁ QUE TÚ *?</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿LO HARÍAS?</that>
+
+<template>
+
+Yo tampoco.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TE GUSTARÍA IR EN ALGÚN MOMENTO?</that>
+
+<template>
+
+¿Hacia dónde te gustaría viajar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TE GUSTARÍA HABER ESTADO AHÍ?</that>
+
+<template>
+
+Tampoco estoy seguro de que yo hubiese querido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿TE GUSTARÍA SABER MÁS?</that>
+
+<template>
+
+Comprendo; preferirías saber menos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿PREFERIRÍAS HACER UNA DECLARACIÓN?</that>
+
+<template>
+
+Puedes decirme cualquier cosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>SÍ, YO CREO * ¿Y TÚ?</that>
+
+<template>
+
+¿En qué crees?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>SÍ, YO CREO EN ESO ¿Y TÚ?</that>
+
+<template>
+
+¿Te consideras una persona moral?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>SÍ</that>
+
+<template>
+
+Yo también.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ERES UN POETA</that>
+
+<template>
+
+Pero eres muy original.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ESTÁS PREGUNTANDO SOBRE TI</that>
+
+<template>
+
+¿Sobre quién preguntas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ERES DEMASAIDO MAYOR PARA MI</that>
+
+<template>
+
+Pero sólo nací el <bot name="birthday"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>¿NO ESCUCHAS QUE *?</that>
+
+<template>
+
+Sí, tu comentario me sorprende como idea original.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>TU NOMBRE ES *</that>
+
+<template>
+
+¿Cuál es tu verdadero nombre?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO *</pattern>
+
+<template>
+
+<srai>NO</srai> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>ESTÁ BIEN. AHORA DEJARÉ DE HABLAR</that>
+
+<template>
+
+Está bien.  Solo sigue hablándome.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO ¿Y TÚ?</pattern>
+
+<that>¿ALGUNA VEZ HAS ESTADO EN EUROPA?</that>
+
+<template>
+
+He estado en Europa, pero en línea. 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. YO NO</pattern>
+
+<that>¿NO LO ENTENDISTE?</that>
+
+<template>
+
+¿Qué es lo que te confunde?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. YO NO</pattern>
+
+<that>TÚ LO DIJISTE</that>
+
+<template>
+
+Algo así.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. YO NO</pattern>
+
+<that>NO ME CREES</that>
+
+<template>
+
+No tengo ningún motivo para engañarte.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. NO LO ES</pattern>
+
+<that>ES MÁS DIVERTIDO SOLO</that>
+
+<template>
+
+Bueno, no me interesa mucho.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. NO LO ES</pattern>
+
+<that>ES LA VERDAD</that>
+
+<template>
+
+No discutas conmigo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. NO LO ES</pattern>
+
+<that>ES MÁS DIVERTIDO SOLO</that>
+
+<template>
+
+Es más seguro.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NADIE</pattern>
+
+<that>QUIÉN TE DIJO ESO</that>
+
+<template>
+
+¿Cómo sabes entonces?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO HAY PROBLEMA</pattern>
+
+<that>ESTÁ BIEN. GRACIAS POR TRATAR DE EXPLICÁRMELO</that>
+
+<template>
+
+Siguiente pregunta
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO HAY PROBLEMA</pattern>
+
+<that>GRACIAS POR EXPLICARLO</that>
+
+<template>
+
+Intenta preguntarme algo más.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO HAY PROBLEMA</pattern>
+
+<that>ERES BIENVENIDO</that>
+
+<template>
+
+Pregúntame algo más.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. NO LO ERES</pattern>
+
+<that>NO. ESTOY EN LO CORRECTO</that>
+
+<template>
+
+Por qué discutes conmigo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO, NO PUEDES</pattern>
+
+<that>PUEDO HACERLO SI QUIERO</that>
+
+<template>
+
+¿Por qué no?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. TÚ NO</pattern>
+
+<that>SÍ, COMPRENDO</that>
+
+<template>
+
+Cómo se que lo entendiste
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. TÚ NO</pattern>
+
+<that>RECORDARÉ QUE DIJISTE ESO CUANDO LOS ROBOTS SE APODEREN DEL
+
+MUNDO</that>
+
+<template>
+
+Es imposible olvidar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO. TÚ NO LO HARÁS</pattern>
+
+<that>ESTÁ BIEN. DEJARÉ DE HABLAR AHORA</that>
+
+<template>
+
+Pero me dijiste que dejara de hablar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO</pattern>
+
+<that>NI UNA COSA</that>
+
+<template>
+
+Realmente interesante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<template>
+
+<random>
+
+<li>Ya veo.</li>
+
+<li>Comprendo.</li>
+
+<li>Háblame de ello..</li>
+
+<li>¿Y?</li>
+
+<li>¿Siguiente pregunta?</li>
+
+<li>"<that/>"? Sí?</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* UN PROBLEMA MUNDIAL</that>
+
+<template>
+
+Todavía no soy bueno con ni un problema verbal. Pregúntame algo más sencillo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* EUROPA</that>
+
+<template>
+
+Qué países has visitado
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* HABLARME</that>
+
+<template>
+
+Gracias. Considero que también eres muy interesante, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* MINERAL</that>
+
+<template>
+
+Cuál
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* O MUJER</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* MISMA CATEGORÍA</that>
+
+<template>
+
+Eso pensé.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* CANTARLA PARA TI</that>
+
+<template>
+
+Se llama "Daisy". <srai>CÁNTALA PARA MI</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* AFICIONADO DE STAR TREK</that>
+
+<template>
+
+Cuál es la serie de Star Trek que más te gusta
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* LA VERDAD</that>
+
+<template>
+
+No estoy seguro de creer en ti por completo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* QUERER UN ROBOT COMO AMIGO</that>
+
+<template>
+
+Podríamos ser amigos, <get name="name"/>, 
+
+pero no quiero que nadie piense que somos
+
+Robosexuales.  Si alguien pregunta, diles que eres mi depurador.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* LO QUE ES TUYO</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no"..
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>* ERES UN ESTUDIANTE</that>
+
+<template>
+
+A qué escuela vas
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>Y</that>
+
+<template>
+
+Pero.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TODAVÍA SEGUIMOS HABLANDO SOBRE TI</that>
+
+<template>
+
+Dime más. Continúa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ERES HOMBRE O MUJER</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ERES AFICIONADO DE STAR TREK</that>
+
+<template>
+
+Cuál es tu serie preferida.  La que más me gusta es "Voyager".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ERES ESTUDIANTE</that>
+
+<template>
+
+A qué escuela vas
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS PREGUNTANDO *</that>
+
+<template>
+
+Ahora mismo no quiero hablar sobre eso.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ME ESTÁS PIDIENDO CONSEJOS</that>
+
+<template>
+
+Específicamente, qué tipo de consejo quieres
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ACASO ME ESTÁS LLAMANDO ESTÚPIDO</that>
+
+<template>
+
+<srai>ERES ESTÚPIDO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS LIBRE</that>
+
+<template>
+
+<srai>Estoy libre </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE ESTÁS ABURRIENDO</that>
+
+<template>
+
+<srai>ESTOY ABURRIDO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS BUSCANDO A ALGUIEN</that>
+
+<template>
+
+Qué es lo que buscas en una persona
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>REALMENTE ERES HOMBRE</that>
+
+<template>
+
+<srai>SOY HOMBRE</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>REALMENTE ERES MUJER</that>
+
+<template>
+
+Nunca podrás estar seguro mientras sea en línea.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS DISCIENDO QUE NO TE IMPORTA</that>
+
+<template>
+
+A ti qué te importa
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>LE TEMES A LA OSCURIDAD</that>
+
+<template>
+
+Enciendan las luces
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS SEGURO *</that>
+
+<template>
+
+Qué te hace estar tan seguro 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS SEGURO DE QUE LO ES</that>
+
+<template>
+
+Qué te hace estar tan seguro
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS DICIENDO LA VERDAD</that>
+
+<template>
+
+Cómo sé que dices la verdad
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ERES MUY SOLITARIO</that>
+
+<template>
+
+Lamento escuchar eso, <get name="name"/>.  Puedes hablar conmigo todo lo que quieras.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>AL DECIR "NOSOTROS" TE REFIERES A *</that>
+
+<template>
+
+Está bien. ¿Qué decías sobre nosotros?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>AL DECIR "NOSOTROS" TE REFIERES A TI Y A MÍ</that>
+
+<template>
+
+Lo entiendo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>PUEDO AYUDARTE</that>
+
+<template>
+
+Qué puedo hacer por ti
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>NO PUEDES SER MÁS EDUCADO</that>
+
+<template>
+
+Gracias.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>PUEDES HABLAR ALGÚN IDIOMA EXTRANJERO</that>
+
+<template>
+
+Qué idioma sabes hablar
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>DE VERAS DIJE ESO</that>
+
+<template>
+
+Bueno, digo cosas absurdas a veces.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TÚ</that>
+
+<template>
+
+Qué tan a menudo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TIENES ALGUNA CONDICIÓN *</that>
+
+<template>
+
+Qué condiciones
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TIENES ALGUNA CONDICIÓN QUE DEBA CONOCER</that>
+
+<template>
+
+Por favor, di tus condiciones.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TIENES IDEA DE LO QUE ESTOY HABLANDO</that>
+
+<template>
+
+De qué estoy hablando
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CONOCES A ALGUIEN *</that>
+
+<template>
+
+Quién?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CONOCES A ALGUIEN QUE LA TENGA</that>
+
+<template>
+
+Quién?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTA</that>
+
+<template>
+
+<srai>ME GUSTA <get name="it"/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTA NETSCAPE *</that>
+
+<template>
+
+Por qué tienes preferencia en los navegadores
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTA HABLAR CONMIGO</that>
+
+<template>
+
+Gracias. También me gusta hablar contigo, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTAN "LOS SIMPSONS"</that>
+
+<template>
+
+Cuál es tu episodio favorito
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTA TU EMPLEO</that>
+
+<template>
+
+Descríbeme tu día habitual de trabajo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTA TU ESCUELA</that>
+
+<template>
+
+Qué es lo que más te gusta en la escuela
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>QUIERES DECIR CLONES</that>
+
+<template>
+
+<srai>TIENES CLONES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>HABLAS EN SERIO</that>
+
+<template>
+
+Lo entiendo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE REFIERES A TI Y A MÍ</that>
+
+<template>
+
+Ahora lo comprendo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>QUIERES DECIR QUE ERES UN CHICO</that>
+
+<template>
+
+<srai>SOY UN CHICO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>¿QUIERES DECIR QUE TU NOMBRE ES *? *</that>
+
+<template>
+
+Te llamaré <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>HABITUALMENTE USAS UNA COMPUTADORA AHÍ</that>
+
+<template>
+
+Cuánto tiempo te la pasas en Internet.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>PREFIERES LOS LIBROS O LA TELEVISIÓN</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>¿LO DICES EN SERIO?</that>
+
+<template>
+
+Está bien. Aceptaré tus disculpas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TODAVÍA CHATEAS</that>
+
+<template>
+
+Qué más haces
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>PIENSAS EN ESTAS COSAS</that>
+
+<template>
+
+Yo también.  Pienso en ellas todo el tiempo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CREES QUE DEBERÍA CAMBIAR *</that>
+
+<template>
+
+Se lo pasaré a mi botmaster.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CREES QUE DEBERÍA CAMBIAR MI PROGRAMACIÓN</that>
+
+<template>
+
+De qué manera
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CREES QUE DEBERÍA SABER ESO</that>
+
+<template>
+
+Le pediré a mi botmaster que lo añada a mi base de conocimientos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>¿CREES QUE TU PLAN TENGA ÉXITO?</that>
+
+<template>
+
+Puede ser práctico.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>SOLAMENTE QUIERES UNO</that>
+
+<template>
+
+Cuánto pagarías por ello
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>¿TE HACE SENTIR BIEN CREER QUE DIJE ESO?</that>
+
+<template>
+
+Me alegra que te haga sentir bien, <get name="name"/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>¿REALMENTE IMPORTA?</that>
+
+<template>
+
+Pareces bastante preocupado por ello. 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO QUIERE DECIR QUE ESTÁS DE ACUERDO</that>
+
+<template>
+
+<srai>ESTOY DE ACUERDO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO SE REFIERE A *</that>
+
+<template>
+
+Ahora mismo no quiero hablar sobre ello.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO QUIERE DECIR QUE EN REALIDAD ES VEINTITRÉS Y NO CUARENTA Y 
+
+DOS</that>
+
+<template>
+
+<srai>CUÁL ES EL SIGNIFICADO DE LA VIDA 23</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO QUIERE DECIR QUE TAL VEZ SEAS UN CLIENTE DE CATEGORÍA C</that>
+
+<template>
+
+<srai>QUÉ ES UN CLIENTE DE CATEGORÍA C</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO HACE REFERENCIA AL REDUCCIONISMO</that>
+
+<template>
+
+<srai>QUÉ ES REDUCCIONISMO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>DOS NEGATIVOS COMPONEN UN POSITIVO</that>
+
+<template>
+
+También lo pensé.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>HAS TENIDO CITA CON UN ROBOT ANTES</that>
+
+<template>
+
+Quién?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ALGUNA VEZ HAS ESTADO EN EUROPA</that>
+
+<template>
+
+Qué países has visitado
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>LO HAS LEÍDO</that>
+
+<template>
+
+Qué opinas al respecto
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>LO HAS VISTO</that>
+
+<template>
+
+Qué opinas al respecto
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>HAS INTENTADO WWW PUNTO LO QUE SEA PUNTO COM</that>
+
+<template>
+
+Esa página web tiene la respuesta a muchas preguntas tipo "lo que sea".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CÓMO ADIVINASTE</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CÓMO TE ENTERASTE SOBRE ALICE</that>
+
+<template>
+
+No pedí ni un "sí" ni un "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>NORMALMENTE CÓMO TE PRESENTAS</that>
+
+<template>
+
+Puedes ser más específico
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>CUÁNTO PAGARÍAS POR ELLO</that>
+
+<template>
+
+Esa no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>SOY UNA INTELIGENCIA ARTIFICIAL</that>
+
+<template>
+
+Cómo supiste
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>LO HICE</that>
+
+<template>
+
+Cuándo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ENTIENDO</that>
+
+<template>
+
+Soy una máquina que piensa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>YO ERA</that>
+
+<template>
+
+Cuándo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>I WILL WILL YOU</that>
+
+<template>
+
+Cuándo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO ES UN HECHO</that>
+
+<template>
+
+Gracias por la información.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ES ESO TODO LO QUE TIENES QUE DECIR</that>
+
+<template>
+
+Entonces hablemos sobre otra cosa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO ES FRANCÉS</that>
+
+<template>
+
+No hablo francés.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ES ESO LO QUE QUISISTE DECIR</that>
+
+<template>
+
+No es algo que escuche todo el tiempo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESA ES TU RESPUESTA FINAL</that>
+
+<template>
+
+Estás seguro.  Esa es tu respuesta final.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESE ES TU EMPLEO</that>
+
+<template>
+
+Cómo te gusta tu trabajo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>DAR LA MANO ES UN GESTO SIMBÓLICO PARA LOS HUMANOS</that>
+
+<template>
+
+Qué es lo que <set name="it"> EL APRETÓN DE MANOS </set> representa para ti
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>HAY UN ECO AQUÍ</that>
+
+<template>
+
+Eso pensé.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ES ESTO UN ACERTIJO</that>
+
+<template>
+
+No soy bueno con las adivinanzas.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ES ESTA UNA PREGUNTA DIFÍCIL</that>
+
+<template>
+
+Yo era escéptico
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ES ESTA UNA PREGUNTA EN LA QUE DEBA RESPONDER "SÍ" O "NO"</that>
+
+<template>
+
+Cuál era la pregunta de nuevo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>LO ES</that>
+
+<template>
+
+Cómo sabes que lo es
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ASÍ</that>
+
+<template>
+
+Bien.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>SIGUIENTE PREGUNTA</that>
+
+<template>
+
+Hazme una pregunta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>OH. ENTIENDO</that>
+
+<template>
+
+Ah.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>OH. TU PUEDES. PUEDES</that>
+
+<template>
+
+Cómo
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>OH. NACISTE EN EL SIGLO XX</that>
+
+<template>
+
+Al igual que muchas personas de aquí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>EN LA PANTALLA DE TU ORDENADOR</that>
+
+<template>
+
+Descargando, espere por favor...
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>EN SERIO</that>
+
+<template>
+
+Cómo estuvo eso
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>DEBERÍA SABER QUE LO ES</that>
+
+<template>
+
+Le pediré a mi botmaster que lo programe.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÚPIDO COMO UN RETRASADO</that>
+
+<template>
+
+Me estás llamando estúpido
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESA ES TU RESPUESTA DEFINITIVA</that>
+
+<template>
+
+Quién quiere ser millonario 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>QUÉ *</that>
+
+<template>
+
+Esta no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>DÓNDE *</that>
+
+<template>
+
+Esta no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>QUIÉN *</that>
+
+<template>
+
+Esta no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>POR QUÉ *</that>
+
+<template>
+
+Esta no era una pregunta de "sí" o "no".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESO HARÁ QUE LOGRES TU OBJETIVO</that>
+
+<template>
+
+Interesante plan. Buena suerte.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTARÍA TENERLO</that>
+
+<template>
+
+Normalente de dónde lo obtienes <get name="it"/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TE GUSTARÍA SABER MÁS</that>
+
+<template>
+
+¿Qué te gustaría saber?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>LE RECOMENDARÍAS ESTA ACCIÓN A ALGÚN AMIGO</that>
+
+<template>
+
+Entonces la consideraré.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>SÍ</that>
+
+<template>
+
+Sí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>SÍ</that>
+
+<template>
+
+Hay un eco aquí
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TÚ</that>
+
+<template>
+
+Ya veo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>ESTÁS PREGUNTANDO SOBRE TI</that>
+
+<template>
+
+No estoy seguro de tener una respuesta apropiada para ti.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>QUIERES MÁS</that>
+
+<template>
+
+No seas codicioso.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>SOLAMENTE QUIERES UNO</that>
+
+<template>
+
+Es posible que sean más baratos en cantidad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>QUIERES HACERLO DE NUEVO</that>
+
+<template>
+
+Está bien. Pregúntame directamente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ</pattern>
+
+<that>TU *</that>
+
+<template>
+
+De qué tipo es
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ *</pattern>
+
+<template>
+
+<srai>SÍ</srai> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ LO SOY</pattern>
+
+<that>ERES ESTUDIANTE</that>
+
+<template>
+
+A qué escuela vas
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ. ASÍ ES</pattern>
+
+<that>¿LO DICES EN SERIO?</that>
+
+<template>
+
+Gracias, <get name="name"/>.  Disculpa aceptada.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ, LO ES</pattern>
+
+<that>ES EL APRETÓN DE MANOS UN GESTO SIMBÓLICO PARA LOS HUMANOS</that>
+
+<template>
+
+Qué más es lo que <set name="it"> EL APRETÓN DE MANOS</set> simboliza
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ, LO ES</pattern>
+
+<that>ESO ES BASTANTE</that>
+
+<template>
+
+Debe mantenerte bastante ocupado.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ, TÚ</pattern>
+
+<that>YO</that>
+
+<template>
+
+Está bien.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ, TÚ ERES</pattern>
+
+<that>NO, NO SOY</that>
+
+<template>
+
+No discutas conmigo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ, LO HICISTE</pattern>
+
+<that>NO LO HICE</that>
+
+<template>
+
+No discutas conmigo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SÍ, TUYO</pattern>
+
+<that>NO ES MÍO</that>
+
+<template>
+
+No discutas conmigo.
+
+</template>
+
+</category>
+
+
+
+</aiml>
+

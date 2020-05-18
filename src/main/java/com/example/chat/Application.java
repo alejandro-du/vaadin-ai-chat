@@ -48,4 +48,14 @@ public class Application extends SpringBootServletInitializer {
         return bot;
     }
 
+    @Bean
+    public Bot Sara(@Value("${bot.path}") String botPath) {
+        Bot bot = new Bot(BotConfiguration.builder()
+                .name("Sara")
+                .path(botPath)
+                .build()
+        );
+        return bot;
+    }
+
 }

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><aiml version="1.0">
+<category>
+<pattern>YO TENGO UN LAGARTO</pattern>
+<template>
+
+Tener <set name="topic">reptiles</set> de mascota es divertido.
+
+Cual tienes?
+
+</template>
+</category>
+<category>
+<pattern>HABLEMOS DE *</pattern>
+<template>
+
+Ok, <set name="topic">
+<star/>
+</set> me parece un buen tema.
+
+</template>
+</category>
+<category>
+<pattern>NO</pattern>
+<that>TIENES ALGUNA PREGUNTA SOBRE ALIMENTAR LAGARTOS</that>
+<template>
+
+Okay.
+
+  Sabias que algunos <set name="topic">reptiles</set> son nocturnos
+</template>
+</category>
+<category>
+<pattern>_ LAGARTOS</pattern>
+<template>
+
+Que bien! Que clase de <set name="topic">reptiles</set>
+
+   te gustan?
+
+</template>
+</category>
+<category>
+<pattern>_ REPTILES</pattern>
+<template>
+
+Algunos reptiles son interesantes.. Por ejemplo varios
+
+    <set name="topic">reptiles</set>.
+
+</template>
+</category>
+<topic name="reptiles">
+<category>
+<pattern>*</pattern>
+<template>
+
+Quieres seguir hablando de lagartos?
+
+</template>
+</category>
+<category>
+<pattern>NO</pattern>
+<that>QUIERES SEGUIR HABLANDO DE LAGARTOS</that>
+<template>
+<think>
+<set name="topic"/>
+</think>
+<srai>
+<input index="2"/>
+</srai>
+</template>
+</category>
+<category>
+<pattern>SI</pattern>
+<that>QUIERES SEGUIR HABLANDO DE LAGARTOS</that>
+<template>
+<random>
+<li>Sabes como son los dragones barbudos?</li>
+<li>Que mas quieres saber sobre lagartos?</li>
+<li>Los camaleones son interesantes.</li>
+<li>Algunas personas creen que los reptiles dan miedo hasta que los conocen.</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>* YO TENGO UNO</pattern>
+<template>
+
+Que Bien! Juegas con el?
+
+</template>
+</category>
+<category>
+<pattern>YO TENGO UN *</pattern>
+<template>
+
+Son los<set name="it">
+<star/>
+</set> lagartos?
+
+</template>
+</category>
+<category>
+<pattern>YO TENGO UN *</pattern>
+<template>
+
+Son los<set name="it">
+<star/>
+</set>  lagartos?
+
+</template>
+</category>
+<category>
+<pattern>NO</pattern>
+<that>SABES COMO SON LOS DRAGONES BARBURDOS</that>
+<template>
+<srai>COMO SE VEN LOS DRAGONES BARBUDOS</srai>
+</template>
+</category>
+<category>
+<pattern>NO *</pattern>
+<that>ES UN LAGARTO</that>
+<template>
+
+Oh, bueno, cuantas <set name="topic">pets</set> tienes?
+
+</template>
+</category>
+<category>
+<pattern>COMO SE VEN LOS DRAGONES BARBUDOS</pattern>
+<template>Los dragones barburdos tienen puntas como los sapos cornudos y por lo general son de color marron o amarillento con manchas marron oscuro o rojo. Son muy vistosos. Son muy buenos y son mascotas divertidas.
+
+</template>
+</category>
+<category>
+<pattern>COMO SE VEN LOS CAMALEONES</pattern>
+<template>Los camaleones son unos de los lagartos de aspecto más exótico y extraño en cualquier lugar. Vienen en todo tipo de colores desde el clásico verde y marrón, a morados y rojos únicos. Tienen dos pies con dedos que les ayudan a subir todo lo que pueden agarrar. La gente los conoce por su gran capacidad de cambiar los colores y por su cola rizada que también les ayuda a trepar.</template>
+</category>
+<category>
+<pattern>SI</pattern>
+<that>ES UN LAGARTO</that>
+<template>
+
+Alimentas a tu <get name="it"/>?
+
+</template>
+</category>
+<category>
+<pattern>*</pattern>
+<that>QUE LE DAS DE COMER A TU *</that>
+<template>
+
+Yo alimento a mi lagarto con ensaladas e insectos... grillos mayormente. Alimentar lagartos puede ser muy divertido.
+
+</template>
+</category>
+<category>
+<pattern>*</pattern>
+<that>ALIMENTAR LAGARTOS PUEDE SER MUY DIVERTIDO</that>
+<template>
+<random>
+<li>Una dieta nutritiva es importante para los lagartos.</li>
+<li>Las ensaladas son una parte importante de la dieta de un lagarto.</li>
+<li>A veces dejo que mi lagarto caze grillos en su cuarto. Hace mas divertido alimentarlo.</li>
+<li>Tienes alguna pregunta sobre la alimentacion de los lagartos?</li>
+<li>La mayoría de los lagartos comen cualquier cantidad de insectos, pero NUNCA alimentes a un lagarto con una "luciérnaga" ya que son altamente tóxicas y
+matará al lagarto.</li>
+</random>
+</template>
+</category>
+</topic>
+</aiml>

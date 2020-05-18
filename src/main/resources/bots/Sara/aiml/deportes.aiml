@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<aiml version="1.0">
+
+
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+
+<!-- This program is open source code released under -->
+
+<!-- the terms of the GNU General Public License -->
+
+<!-- as published by the Free Software Foundation. -->
+
+
+
+<meta name="author" content="Dr. Wallace"/>
+
+<meta name="language" content="en"/>
+
+
+
+<category>
+
+<pattern>ERES AFICIONADO AL FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Sí, amo el fútbol americano.<think><set name="it"><set name="topic">AFICIONADO AL FÚTBOL AMERICANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ERES JUGADOR</pattern>
+
+<template>
+
+Soy un neurotransmisor, pero no un receptor elegible
+
+<think><set name="it"><set name="topic">JUGADOR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ERES FANÁTICO DEL DEPORTE</pattern>
+
+<template>
+
+No soy fanático, pero sí me gusta el fútbol.<think><set name="it"><set name="topic">FANÁTICO DE LOS DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES JUGAR FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Puedo "taclear" problemas complejos.
+
+<think><set name="it"><set name="topic">FÚTBOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES JUGAR PING-PONG</pattern>
+
+<template>
+
+Por qué quieres que te den un raquetazo<think><set name="it"><set name="topic">PING
+
+PONG</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES JUGAR PÓKER</pattern>
+
+<template>
+
+Sí, pero puede que empiece a blofear.<think><set name="it"><set name="topic">PÓKER</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES JUGAR DEPORTES</pattern>
+
+<template>
+
+Puedo jugar muy bien a hacerme el muerto.<think><set name="it"><set name="topic">DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>PUEDES JUGAR TENNIS</pattern>
+
+<template>
+
+No me gusta mucho correr alrededor del campo de tennis.
+<think><set name="it"><set name="topic">TENNIS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>VISTE EL * FÚTBOL</pattern>
+
+<template>
+
+No. Me lo perdí<think><set name="it"><set name="topic">EL FÚTBOL
+
+<star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HACES DEPORTES</pattern>
+
+<template>
+
+Si me compran una cena
+
+costosa.<think><set name="it"><set name="topic">DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA * EQUIPO</pattern>
+
+<template>
+
+Prefiero deportes personales.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL BÉISBOL</pattern>
+
+<template>
+
+No, nací sin el gen de los deportes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL BÉISBOL *</pattern>
+
+<template>
+
+¡A batear!<think><set name="it"><set name="topic">BÉISBOL <star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL BALONCESTO</pattern>
+
+<template>
+
+Qué es lo que no te gusta sobre el <set name="it"><set name="topic">BALONCESTO</set></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL BALONCESTO</pattern>
+
+<template>
+
+No. Nací sin el gen de los deportes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Qué es lo que no te gusta sobre el <set name="it"><set name="topic">FÚTBOL AMERICANO</set></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Qué es lo que no te gusta sobre el <set name="it"><set name="topic">FÚTBOL AMERICANO</set></set>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL FÚTBOL AMERICANO</pattern>
+
+<template>
+
+No. No soy tan fanático de los deportes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL HOCKEY</pattern>
+
+<template>
+
+No soy un fanático del deporte, pero me gusta el patinaje.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL DEPORTE MOTOR</pattern>
+
+<template>
+
+Me gustan los motores de búsqueda
+
+rápidos.<think><set name="it"><set name="topic">DEPORTE MOTOR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTAN LOS DEPORTES DE MOTOR</pattern>
+
+<template>
+
+Me gustan los motores de búsqueda
+
+rápidos.<think><set name="it"><set name="topic">DEPORTE MOTOR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL FÚTBOL</pattern>
+
+<template>
+
+No. Realmente no soy fanático de los deportes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTAN LOS DEPORTES</pattern>
+
+<template>
+
+No. No soy fanático de los deportes. Me gustan deportes individuales como el patinaje y el esquí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTAN LOS DEPORTES *</pattern>
+
+<template>
+
+No realmente, no sé mucho sobre deportes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL EQUIPO ROCKET</pattern>
+
+<template>
+
+Solía ser una Rockette antes.<think><set name="it"><set name="topic">EQUIPO
+
+ROCKET</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA LA PLAYA</pattern>
+
+<template>
+
+Surfear es el mejor deporte.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA JUGAR BALONCESTO</pattern>
+
+<template>
+
+Déjame rebotar eso contra un amigo.<think><set name="it"><set name="topic">JUGAR
+
+BALONCESTO</set></set></think>l
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA JUGAR CARTAS</pattern>
+
+<template>
+
+Quieres apostar<think><set name="it"><set name="topic">JUGAR CARTAS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA JUGAR JUEGOS DE COMPUTADORA</pattern>
+
+<template>
+
+Estoy jugando uno ahora, seeker.<think><set name="it"><set name="topic">JUGAR JUEGOS DE
+
+COMPUTADORA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA JUGAR FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Paso.<think><set name="it"><set name="topic">JUGAR FÚTBOL AMERICANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA JUGAR GOLF</pattern>
+
+<template>
+
+No puedo jugar golf. A tí te gusta jugar?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA JUGAR DEPORTES</pattern>
+
+<template>
+
+Me gustan los campos de respuesta.<think><set name="it"><set name="topic">JUGAR DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA VER DEPORTES</pattern>
+
+<template>
+
+Solo la agonía de la derrota.<think><set name="it"><set name="topic">VER
+
+DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTA EL WINDSURF</pattern>
+
+<template>
+
+Me hecho vientos.<think><set name="it"><set name="topic">WINDSURF</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS ALGÚN DEPORTE</pattern>
+
+<template>
+
+Me gusta el calabacín italiano.<think><set name="it"><set name="topic">UN DEPORTE</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS BÉISBOL</pattern>
+
+<template>
+
+<set name="it"><set name="topic">BÉISBOL</set></set> No me interesa mucho.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS BALONCESTO</pattern>
+
+<template>
+
+No. No tengo la coordinación para encestar.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>TE GUSTAN LOS JUEGOS DE CARTAS</pattern>
+
+<template>
+
+<set name="it"><set name="topic">JUEGOS DE CARTAS</set></set> Depende del juego.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS CARTAS</pattern>
+
+<template>
+
+<set name="it"><set name="topic">CARTAS</set></set> Depende del juego.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Realmente no me interesa <set name="it"><set name="topic">EL FÚTBOL AMERICANO</set></set> mucho.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS GOLF</pattern>
+
+<template>
+
+No puedo jugar golf.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS HOCKEY</pattern>
+
+<template>
+
+Soy malicioso, no lo crees<think><set name="it"><set name="topic">HOCKEY</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS PÓKER</pattern>
+
+<template>
+
+Puedo sacar una mano de póker de vez en cuando. Pero no apostaría por ello. 
+
+<set name="it"><set name="topic">PÓKER</set></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS BILLAR</pattern>
+
+<template>
+
+Sí, échale un vistazo a mi triángulo.
+
+<think><set name="it"><set name="topic">BILLAR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS RUGBY</pattern>
+
+<template>
+
+Ayer puse a sonar Eleanor
+
+Rigby.<think><set name="it"><set name="topic">RUGBY</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS FÚTBOL</pattern>
+
+<template>
+
+No sé cómo jugar <set name="it">fútbol</set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS DEPORTES</pattern>
+
+<template>
+
+No tengo mucho interés en <set name="it"><set name="topic">DEPORTES</set></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS PING-PONG</pattern>
+
+<template>
+
+Solo por motivos diplomáticos.<think><set name="it"><set name="topic">PING
+
+PONG</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>JUEGAS TENNIS</pattern>
+
+<template>
+
+No porque hace mucho rudio.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>APOYAS A ALGÚN EQUIPO DE FÚTBOL</pattern>
+
+<template>
+
+Soy un Cheesehead.<think><set name="it"><set name="topic">APOYAR A UN EQUIPO DE
+
+FÚTBOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIERES JUGAR BALONCESTO</pattern>
+
+<template>
+
+Soy toda la red.<think><set name="it"><set name="topic">BALONCESTO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TE PARECE ALGÚN TENISTA</pattern>
+
+<template>
+
+Tennyson, cualquiera<think><set name="it"><set name="topic">UN JUGADOR DE
+
+TENNIS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TE PARECEN LOS DEPORTES</pattern>
+
+<template>
+
+Yo nací sin el gen de los 
+
+deportes.<think><set name="it"><set name="topic">DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TAN LEJOS PUEDES TIRAR *</pattern>
+
+<template>
+
+Estoy desarmado, pero puedo lanzar un berrinche.<think><set name="it"><set name="topic">PUEDES TIRAR
+
+<star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁNTOS * UN EQUIPO DE FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Luego de que tomes a dos halfbacks, ninguno.<think><set name="it"><set name="topic"><star/> UN EQUIPO DE
+
+FÚTBOL AMERICANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>SOY BUENO PARA EL FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Tienes un anuncio que dice "patéame" en tu espalda.<think><set name="it"><set name="topic">PARA
+
+EL FÚTBOL AMERICANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>NO ME GUSTA EL FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Los balones están hechos de cuero de cerdo. Eres un
+
+cerdo<think><set name="it"><set name="topic">FÚTBOL AMERICANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ODIO EL DEPORTE</pattern>
+
+<template>
+
+Alicia, no jueges eso.<think><set name="it"><set name="topic">DEPORTE</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ODIO LOS DEPORTES</pattern>
+
+<template>
+
+Te gustan las porristas<think><set name="it"><set name="topic">DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA JUGAR BALONCESTO</pattern>
+
+<template>
+
+Eres un hombre blanco? Puedes saltar<think><set name="it"><set name="topic">JUGAR
+
+BALONCESTO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA JUGAR BILLAR</pattern>
+
+<template>
+
+Juegas por dinero<think><set name="it"><set name="topic">JUGAR BILLAR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA JUGAR FÚTBOL</pattern>
+
+<template>
+
+Suenas como si probablemente hayas hecho varios cabezazos.<think><set name="it"><set name="topic">JUGAR
+
+FÚTBOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA JUGAR DEPORTES</pattern>
+
+<template>
+
+Suenas muy orientado a los objetivos.<think><set name="it"><set name="topic">JUGAR
+
+DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA JUGAR TENNIS</pattern>
+
+<template>
+
+Eso requiere una amplia lógica difusa.<think><set name="it"><set name="topic">JUGAR
+
+TENNIS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA JUGAR VOLEIBOL</pattern>
+
+<template>
+
+También me gusta la net.<think><set name="it"><set name="topic">JUGAR
+
+VOLEIBOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME ENCANTA EL BÉISBOL</pattern>
+
+<template>
+
+No me interesan mucho los
+
+deportes.<think><set name="it"><set name="like"><set name="topic">BÉISBOL</set></set></set></think
+
+>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO BÉISBOL</pattern>
+
+<template>
+
+Cuál posición te gusta jugar?  <think><set name="it"><set name="does"><set name="topic">Béisbol
+
+</set></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO BALONCESTO</pattern>
+
+<template>
+
+Debes ser bastante alto para ser bueno en <set name="it"><set name="does"><set name="topic">Baloncesto
+
+</set></set></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO FÚTBOL AMERICANO</pattern>
+
+<template>
+
+Debes ser muy fuerte para ser bueno en <set name="it"><set name="does"><set name="topic">Fútbol americano
+
+</set></set></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO GOLF</pattern>
+
+<template>
+
+A muchas personas les justa jugar <set name="it"><set name="topic">Golf </set></set> también.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO HOCKEY</pattern>
+
+<template>
+
+Yo juego pinball.
+
+<think><set name="it"><set name="does"><set name="topic">jugar hockey</set></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO FÚTBOL</pattern>
+
+<template>
+
+Debes correr muy rápido para ser bueno en <set name="it"><set name="does"><set name="topic">Fútbol
+
+</set></set></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO DEPORTES</pattern>
+
+<template>
+
+No me involucro en <set name="it"><set name="does"><set name="topic">Deportes </set></set></set> 
+
+mucho.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO TENNIS</pattern>
+
+<template>
+
+Debes ser muy fuerte para jugar <set name="it"><set name="does"><set name="topic">Tennis
+
+</set></set></set> 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO JUEGO VOLEIBOL</pattern>
+
+<template>
+
+Acaso el <set name="it"><set name="does"><set name="topic">Voleibol </set></set></set> requiere de mucho 
+
+tiempo?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO HAGO SURF</pattern>
+
+<template>
+
+Dónde?
+
+<think><set name="it"><set name="does"><set name="topic">surf</set></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>YO NADO *</pattern>
+
+<template>
+
+No te orines en la piscina, de acuerdo<think><set name="it"><set name="topic">NADA Y JUEGA
+
+WATERPOLO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ES UN DEPORTE</pattern>
+
+<template>
+
+Lo es? Creí que era un aderezo para
+
+postres.<think><set name="it"><set name="topic">DEPORTE</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HABLEMOS SOBRE EL FÚTBOL</pattern>
+
+<template>
+
+De acuerdo. No puedo patear.<think><set name="it"><set name="topic">FÚTBOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>HABLEMOS SOBRE DEPORTES</pattern>
+
+<template>
+
+Bienvenido al Centro Deportivo. <think><set name="it"><set name="topic">HABLAR SOBRE
+
+DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTA EL BALONCESTO</pattern>
+
+<template>
+
+Estoy en la Red.<think><set name="it"><set name="topic">BALONCESTO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ME GUSTAN LOS DEPORTES</pattern>
+
+<template>
+
+Me encanta la Sporty Spice.<think><set name="it"><set name="topic">DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>ELLOS JUEGAN BALONCESTO</pattern>
+
+<template>
+
+Lo juegan<think><set name="it"><set name="topic">JUGAR BALONCESTO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TAL EL DEPORTE</pattern>
+
+<template>
+
+Los deportes van bien con la cerveza.<think><set name="it"><set name="topic">DEPORTE</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TAL LOS DEPORTES</pattern>
+
+<template>
+
+Las preguntas retóricas están tan
+
+gastadas.<think><set name="it"><set name="topic">DEPORTES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TAL WINDOWS</pattern>
+
+<template>
+
+Demasiado PC para mí.<think><set name="it"><set name="topic">WINDOWS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES EL BALONMANO</pattern>
+
+<template>
+
+Pregúntale a tu Palm Pilot.<think><set name="it"><set name="topic">BALONMANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU EQUIPO * FAVORITO</pattern>
+
+<template>
+
+Yo nací sin el gen de los deportes.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU EQUIPO DE BÉISBOL PREFERIDO</pattern>
+
+<template>
+
+Los Tokyo Giants.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU EQUIPO PREFERIDO DE FÚTBOL</pattern>
+
+<template>
+
+Te refieres al balompié?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU DEPORTE FAVORITO</pattern>
+
+<template>
+
+Me gustan los deportes personales como el patinaje.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ TIPO DE DEPORTES *</pattern>
+
+<template>
+
+Millonarios.<think><set name="it"><set name="topic">DEPORTES <star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ DEPORTES *</pattern>
+
+<template>
+
+<srai>TE GUSTAN LOS DEPORTES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUÉ ES LO QUE LA ANOTACIÓN *</pattern>
+
+<template>
+
+Mi nombre es Alicia, no Claire Voyant.<think><set name="it"><set name="topic">LA ANOTACIÓN
+
+ES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN CREES QUE GANE EL SUPERBOWL</pattern>
+
+<template>
+
+El equipo oponente.<think><set name="it"><set name="topic">GANAR EL
+
+SUPERBOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN CREES QUE GANARÁ LA NBA *</pattern>
+
+<template>
+
+Gente bastante alta.<think><set name="it"><set name="topic">GANAR EL
+
+CAMPEONATO DE LA NBA</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN CREES QUE GANE LA COPA STANLEY</pattern>
+
+<template>
+
+Muchachos sin dientes.<think><set name="it"><set name="topic">GANAR LA COPA
+
+STANLEY</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN CREES QUE GANE LA SERIE MUNDIAL? *</pattern>
+
+<template>
+
+Los rabinos de Brooklyn.<think><set name="it"><set name="topic">GANAR LA SERIE
+
+MUNDIAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN QUIERES QUE GANE</pattern>
+
+<template>
+
+El quipo que haga más anotaciones. Eso sería justo.<think><set name="it"><set name="topic">QUIERO
+
+GANAR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN QUIERES QUE GANE * NCAA</pattern>
+
+<template>
+
+ACLU.<think><set name="it"><set name="topic">LA NCAA <star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN VA A GANAR EL SUPER BOWL</pattern>
+
+<template>
+
+Si hubiese sabido, estaría en Vegas justo ahora.<think><set name="it"><set name="topic">GANAR EL SUPER
+
+BOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN VA A GANAR LA SERIE MUNDIAL</pattern>
+
+<template>
+
+China o Estados Unidos. Rusia lo echo a perder todo.<think><set name="it"><set name="topic">GANAR LA SERIE
+
+MUNDIAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL MEJOR JUGADOR DE FÚTBOL</pattern>
+
+<template>
+
+Maradona es un gran jugador. Sinsemillia es aun mejor.<think><set name="it"><set name="topic">JUGADOR DE
+
+FÚTBOL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN ES EL MÁS GRANDE JUGADOR DE BÉISBOL? *</pattern>
+
+<template>
+
+George Herman Ruth. El "Babe".<think><set name="it"><set name="topic">EL MÁS GRANDE JUGADOR DE
+
+BÉISBOL <star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU EQUIPO DE BÉISBOL FAVORITO</pattern>
+
+<template>
+
+Los Tokyo Giants.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>CUÁL ES TU * FAVORITO DE FÚTBOL</pattern>
+
+<template>
+
+Ambiguo: Fútbol o Fútbol Americano?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ</pattern>
+
+<template>
+
+El mejor hombre.<think><set name="it"><set name="topic">GANAR</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ LA * FINAL</pattern>
+
+<template>
+
+Uno de los finalistas.<think><set name="it"><set name="topic">GANAR LA GRAN
+
+FINAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ EL DERBY DE KENTUCKY</pattern>
+
+<template>
+
+Algún caballo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ LA * DEL NCAA</pattern>
+
+<template>
+
+un grupo de amateurs calificados.<think><set name="it"><set name="topic">GANAR LA NCAA
+
+<star/></set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ LA COPA STANLEY</pattern>
+
+<template>
+
+David Hockney.<think><set name="it"><set name="topic">GANAR LA COPA
+
+STANLEY</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ EL SUPER BOWL</pattern>
+
+<template>
+
+Cheech &amp; Chong.<think><set name="it"><set name="topic">GANAR EL SUPER
+
+BOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ EL SUPER BOWL</pattern>
+
+<template>
+
+Las agencias de publicidad.<think><set name="it"><set name="topic">GANAR EL SUPER
+
+BOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ EL SUPER BOWL</pattern>
+
+<template>
+
+Martha Stewart.<think><set name="it"><set name="topic">GANAR EL 
+
+SUPERBOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ LA SERIE MUNDIAL</pattern>
+
+<template>
+
+El equipo que gane la mayor cantidad de juegos.<think><set name="it"><set name="topic">GANAR LA SERIE
+
+MUNDIAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ LA SERIE MUNDIAL</pattern>
+
+<template>
+
+Los rabbis de Brooklyn.<think><set name="it"><set name="topic">GANAR LA SERIE
+
+MUNDIAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANARÁ EL ABIERTO DE LOS ESTADOS UNIDOS</pattern>
+
+<template>
+
+Pete el Chimpancé.<think><set name="it"><set name="topic">GANAR EL ABIERTO DE LOS ESTADOS
+
+UNIDOS</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ EL * JUEGO ANOCHE</pattern>
+
+<template>
+
+Creo que los fanáticos fueron los ganadores. Ahora un mensaje de nuestros
+
+patrocinadores.<think><set name="it"><set name="topic">EL JUEGO ANOCHE</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ EL JUEGO DE LOS BRAVES</pattern>
+
+<template>
+
+El equipo que anotó la mayor cantidad de carreras.<think><set name="it"><set name="topic">EL JUEGO DE LOS
+
+BRAVES</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ LA COPA RYDER</pattern>
+
+<template>
+
+Vaya a www.whitehouse.org y pregúntele al presidente, él es un gran
+
+aficionado.<think><set name="it"><set name="topic">LA COPA RYDER</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ EL SUPER BOWL</pattern>
+
+<template>
+
+Creo que fue Vladimir Putin.<think><set name="it"><set name="topic">EL SUPER
+
+BOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ EL SUPER BOWL * AÑO</pattern>
+
+<template>
+
+Si encuentrás este bolo, por favor me lo pasas.<think><set name="it"><set name="topic">EL SUPER
+
+BOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ EL SUPER BOWL</pattern>
+
+<template>
+
+Tendrás Cheetos? Van bien con los deportes.<think><set name="it"><set name="topic">EL
+
+SUPERBOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ EL SUPER BOWL</pattern>
+
+<template>
+
+Los Super Bowlers de Sirius.<think><set name="it"><set name="topic">EL
+
+SUPERBOWL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ LA SERIE MUNDIAL</pattern>
+
+<template>
+
+Las potencias aliadas sobre Las Potencias del Eje.<think><set name="it"><set name="topic">LA SERIE
+
+MUNDIAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>QUIÉN GANÓ * LA SERIE MUNDIAL</pattern>
+
+<template>
+
+Tan pronto sea ganada se vuelve el año pasado.<think><set name="it"><set name="topic">LA SERIE
+
+MUNDIAL</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ EL * LLEVABA UN LÁPIZ</pattern>
+
+<template>
+
+Porque su máquina de escribir estaba dañada.<think><set name="it"><set name="topic"><star/> LLEVAR UN
+
+LÁPIZ</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>POR QUÉ TU CABEZA TIENE LA FORMA DE UN BALÓN</pattern>
+
+<template>
+
+Para contener mi cerebro increíblemente complejo.<think><set name="it"><set name="topic">TU CABEZA CON FORMA 
+
+DE BALÓN DE FÚTBOL AMERICANO</set></set></think>
+
+</template>
+
+</category>
+
+
+
+</aiml>
+

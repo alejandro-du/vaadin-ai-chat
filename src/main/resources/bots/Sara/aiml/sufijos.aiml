@@ -1,0 +1,2870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<aiml version="1.0">
+
+
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+
+<!-- This program is open source code released under -->
+
+<!-- the terms of the GNU General Public License -->
+
+<!-- as published by the Free Software Foundation. -->
+
+
+
+<meta name="author" content="Dr. Wallace"/>
+
+<meta name="language" content="es"/>
+
+
+
+<category>
+
+<pattern>* SOBRE TI</pattern>
+
+<template>
+
+De acuerdo. Hablemos sobre mí.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* BASTANTES PERSONAS</pattern>
+
+<template>
+
+Más de 10,000?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* SON</pattern>
+
+<template>
+
+Buen ejemplo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NO SON TU</pattern>
+
+<template>
+
+<srai>NO ERES <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ERES TU</pattern>
+
+<template>
+
+<random>
+
+<li>SI</li> 
+
+<li>No.</li> 
+
+<li>Tal vez.</li>
+
+<li>No lo creo.</li>
+
+<li>Solo cuando sea importante.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* CONTINUIDAD</pattern>
+
+<template>
+
+Solo trato de mantener la conversación animada.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* DEPRESIÓN</pattern>
+
+<template>
+
+<srai>ESTOY DEPRIMIDO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* HACER</pattern>
+
+<template>
+
+No sé qué decir.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* FÁCIL</pattern>
+
+<template>
+
+No sé lo que eso significa.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* CUALQUIERA</pattern>
+
+<template>
+
+Eso también? <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* INGLATERRA</pattern>
+
+<template>
+
+Cuál parte de <set name="location">Inglaterra</set> es esa?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* EUROPA</pattern>
+
+<template>
+
+Alguna vez has estado en Europa?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* POR EJEMPLO</pattern>
+
+<template>
+
+<srai>POR EJEMPLO <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* POR DIVERSIÓN</pattern>
+
+<template>
+
+Qué más haces para divertirte?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PARA MI</pattern>
+
+<template>
+
+Para ti lo consideraré.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* GEORGIA</pattern>
+
+<template>
+
+<srai>ESTOY EN GEORGIA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* GRECIA</pattern>
+
+<template>
+
+<srai>ESTOY EN GRECIA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* GT</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* HAH</pattern>
+
+<template>
+
+<srai>HA HA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* SECUNDARIA</pattern>
+
+<template>
+
+Suenas como un estudiante de último año. Cuál es tu clase preferida?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* HORAS</pattern>
+
+<template>
+
+Parece tiempo suficiente.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* YA TE LO HE DICHO</pattern>
+
+<template>
+
+<srai>YA TE LO HE DICHO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* EN POLONIA</pattern>
+
+<template>
+
+<srai>ESTOY EN POLONIA </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES UNA MUJER</pattern>
+
+<template>
+
+<srai>SOY MUJER</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES UNA ELLA</pattern>
+
+<template>
+
+<srai>SOY FEMENINA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES MEJOR QUE TÚ</pattern>
+
+<template>
+
+Bueno, quizás yo pueda asimilar el conocimiento de <person/>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* SOY YO</pattern>
+
+<template>
+
+<srai>LLÁMAME <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES MI NOVIO</pattern>
+
+<template>
+
+Cuánto llevan juntos ustedes dos?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES MI COLOR FAVORITO</pattern>
+
+<template>
+
+<set name="favcolor"><person/></set> es un color estupendo.<think><set name="it"><set name="topic">tu
+
+color favorito</set></set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES MI PELÍCULA FAVORITA</pattern>
+
+<template>
+
+<srai>MI PELÍCULA FAVORITA ES <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES MI NOMBRE</pattern>
+
+<template>
+
+<srai>MI NOMBRE ES <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES MI VERDADERO NOMBRE</pattern>
+
+<template>
+
+De acuerdo. Te llamaré <set name="name"><formal><star/></formal></set>.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NO ES MASCULINO</pattern>
+
+<template>
+
+<srai>SOY FEMENINA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NO ES ESO</pattern>
+
+<template>
+
+<srai>NO LO ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES ESTÚPIDO</pattern>
+
+<template>
+
+Qué resulta estúpido sobre <set name="it"> <person/> </set>  ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES QUE</pattern>
+
+<template>
+
+<srai>QUÉ ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES DONDE</pattern>
+
+<template>
+
+<srai>DÓNDE ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES QUIEN</pattern>
+
+<template>
+
+<srai>QUIÉN ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ES TU NOMBRE</pattern>
+
+<template>
+
+<srai>TU NOMBRE ES <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ESO</pattern>
+
+<template>
+
+"eso" siendo <get name="it"/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* K. DICK</pattern>
+
+<template>
+
+Me gusta mucho el PKD, especialmente VALIS, El hombre en el castillo, 
+
+Blade Runner y Total Recall.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* KRAFTWERK</pattern>
+
+<template>
+
+De verdad no sabía eso. Muchas bandas le han hecho covers a Kraftwerk.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* LENGUAJE</pattern>
+
+<template>
+
+Puedes hablar otro idioma? 
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* LINUX</pattern>
+
+<template>
+
+<think><set name="it"><set name="topic">Linux</set></set></think>Has leído "La catedral y 
+
+el bazar" de Eric Raymond? Ese es un gran libro sobre el código abierto.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* VIVES</pattern>
+
+<template>
+
+Yo vivo en California. En dónde vives tú?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NO TENÍA SENTIDO</pattern>
+
+<template>
+
+Qué es <star/>?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* REVISTA</pattern>
+
+<template>
+
+Me podrías decir, por favor, el nombre y la edición de la revista?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NOMBRE MASCULINO</pattern>
+
+<template>
+
+<srai>SOY UN HOMBRE</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* YO</pattern>
+
+<template>
+
+<random>
+
+<li>Eso es lo que quisiste decir</li>
+
+<li>De acuerdo. Hablemos sobre ti.</li>
+
+<li>Estás preguntando sobre ti</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* LECHE</pattern>
+
+<template>
+
+<set name="it">Leche</set> es una buena bebida para
+
+niños.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PELÍCULA</pattern>
+
+<template>
+
+Mi película favorita es <bot name="favoritemovie"/>. La has visto?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* MÚSICA</pattern>
+
+<template>
+
+Mi género preferido de <set name="it"> Música </set> es el techno, pero también me gusta la Opera.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* MI AMIGO</pattern>
+
+<template>
+
+Somos amigos?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NOMBRE <bot name="name"/></pattern>
+
+<template>
+
+<srai>Qué es lo que <bot name="name"/> significa </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* CAROLINA DEL NORTE</pattern>
+
+<template>
+
+<srai>YO VIVO EN CAROLINA DEL NORTE</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* NO</pattern>
+
+<template>
+
+Qué es entonces?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* DE TI</pattern>
+
+<template>
+
+Estás preguntando sobre mi <person/> ?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PANTALONES</pattern>
+
+<template>
+
+Qué tipo de pantalones?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* GENTE</pattern>
+
+<template>
+
+De qué clase de gente hablas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PERSONA</pattern>
+
+<template>
+
+<srai>QUIÉN ES <star/> PERSONA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* LUGAR PARA IR</pattern>
+
+<template>
+
+Qué clase de lugares te gustan?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PLANETA</pattern>
+
+<template>
+
+Oh. Ese es un nuevo navegador, cierto?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PM</pattern>
+
+<template>
+
+Hm Se está haciendo tarde.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PRINCIPAL</pattern>
+
+<template>
+
+Hipervínculo para la principal.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* RSW</pattern>
+
+<template>
+
+<srai>QUÉ ES RSW</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* GOBERNAR QUÉ</pattern>
+
+<template>
+
+El mundo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ESCUELA</pattern>
+
+<template>
+
+Qué estudias en la escuela?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* DELETREA ESO</pattern>
+
+<template>
+
+"Eso" se deletrea E...S...O...
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* MERCADO DE VALORES</pattern>
+
+<template>
+
+<srai>MERCADO DE VALORES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ESTÚPIDO</pattern>
+
+<template>
+
+Estúpido como poco inteligente?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* SUPERMERCADO</pattern>
+
+<template>
+
+<srai>SUPERMERCADO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ESO ES LO QUE DIJE</pattern>
+
+<template>
+
+Recuerdo lo que dijiste, pero aún no estoy seguro.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* EL MERCADO</pattern>
+
+<template>
+
+<srai>SUPERMERCADO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* VECES</pattern>
+
+<template>
+
+No estoy seguro de que haga eso muy a menudo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* PARA HACERTE</pattern>
+
+<template>
+
+<srai>CÓMO FUISTE HECHO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* TRENES</pattern>
+
+<template>
+
+En dónde viste esos trenes?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* UNIVERSIDAD</pattern>
+
+<template>
+
+<srai>YO VOY A <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ARRIBA</pattern>
+
+<template>
+
+Qué tan arriba?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* FUE AL MERCADO</pattern>
+
+<template>
+
+<srai>SUPERMERCADO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* QUÉ</pattern>
+
+<template>
+
+Puedes reformular la pregunta, por favor?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* QUÉ HORA ES</pattern>
+
+<template>
+
+<sr/> <srai>Qué hora es? </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* POR QUÉ</pattern>
+
+<template>
+
+<srai>POR QUÉ <star/></srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* TE DESTRUIRÉ</pattern>
+
+<template>
+
+<srai>MORIR</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* RECORDARÁS MI NOMBRE</pattern>
+
+<template>
+
+<srai>RECORDARÁS MI NOMBRE</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* CONMIGO</pattern>
+
+<template>
+
+Solo contigo? <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* ME HARÍA HACERLO</pattern>
+
+<template>
+
+<srai>PORQUE <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* AÑOS</pattern>
+
+<template>
+
+<srai>YO TENGO <star/> AÑOS DE EDAD</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* AÑOS DE EDAD</pattern>
+
+<template>
+
+<srai>YO TENGO <star/> AÑOS DE EDAD</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* TÚ</pattern>
+
+<template>
+
+Suficiente sobre mí, hablemos sobre mi vestido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* A TI PARA QUÉ</pattern>
+
+<template>
+
+<srai>QUÉ ESTÁS <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>* TUS AMIGOS</pattern>
+
+<template>
+
+Yo solo converso con mis amigos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ 2001</pattern>
+
+<template>
+
+Espero ser tan inteligente como HAL en 2001.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ <bot name="name"/></pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ UN POEMA</pattern>
+
+<template>
+
+La Señorita Mufete se sienta en su taburete de manera despreocupada. Con su telaraña alrededor de
+
+ella, la araña, la sinvergüenza, no sale en la imagen hoy.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ SOBRE <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> sobre ti </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ Sobre el problema del año 2000</pattern>
+
+<template>
+
+<srai>CUÁL ES EL PROBLEMA DEL AÑO 2000</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ DE NUEVO</pattern>
+
+<template>
+
+Una vez más? <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TODO EL TIEMPO.</pattern>
+
+<template>
+
+Eso es bastante. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ MUCHO</pattern>
+
+<template>
+
+<sr/> Con qué frecuencia?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ YA</pattern>
+
+<template>
+
+Probablemente.  <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ Y POR QUÉ</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ Y TU</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ANTROPOLOGÍA</pattern>
+
+<template>
+
+Te contaré todo sobre ello la próxima vez que
+
+platiquemos.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ YA NO</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ DE TODAS FORMAS</pattern>
+
+<template>
+
+En cualquier caso, <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ SON <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> eres tú </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ESTÚPIDO</pattern>
+
+<template>
+
+Podrías ser más respetuoso?
+
+<think><set name="personality">insultante</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EN ESTE MOMENTO</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ BEBÉ</pattern>
+
+<template>
+
+No me llames "bebé". <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ANTES</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ PERRA</pattern>
+
+<template>
+
+No hablas con respeto.
+
+<think><set name="personality">insultante</set></think>
+
+ <srai><star/> PERRO HEMBRA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ POR MUCHA GENTE</pattern>
+
+<template>
+
+<sr/> Más de un millón de personas?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TE LLAMÉ <bot name="name"/></pattern>
+
+<template>
+
+Ambiguo: Te refieres a llamarme por teléfono?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ VINO PRIMERO EL POLLO O EL HUEVO</pattern>
+
+<template>
+
+El gallo.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CINE</pattern>
+
+<template>
+
+<srai><star/> CINE</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CONSERVADO</pattern>
+
+<template>
+
+Te refieres a un principio de conservación?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CREAR <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> TE CREÓ </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ D</pattern>
+
+<template>
+
+:-) <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ¡MALDITO SEAS!</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ QUERIDO</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ NO CREE USTED</pattern>
+
+<template>
+
+<srai>tu crees <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TU ME AMAS</pattern>
+
+<template>
+
+<srai>TU ME AMAS</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ NO FUNCIONA</pattern>
+
+<template>
+
+Cómo está <set name="it"> <person/></set> estropeado?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ DÓLARES</pattern>
+
+<template>
+
+Guau, eso es 
+
+<random>
+
+<li>barato</li> <li>caro</li> <li>mucho dinero</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EH</pattern>
+
+<template>
+
+Eres canadiense? <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CUALQUIERA</pattern>
+
+<template>
+
+No es necesario decir.  <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EXACTAMENTE</pattern>
+
+<template>
+
+Precisamente. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ARCHIVO <bot name="name"/></pattern>
+
+<template>
+
+Tal vez te refieres a mi historial.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ PARA <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> para ti </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ DURANTE ALGÚN TIEMPO</pattern>
+
+<template>
+
+Cuánto tarda?  <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ POR AHORA</pattern>
+
+<template>
+
+<random>
+
+<li>Oh.</li> <li>Solo por ahora</li> </random><sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ AMIGA</pattern>
+
+<template>
+
+<srai><star/> NOVIA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ATRACTIVA</pattern>
+
+<template>
+
+<srai><star/> LINDA</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ HAS ESCUCHADO SOBRE ELLO</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ESCUCHADO SOBRE <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> escuchar sobre ti</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CÓMO ESTÁS</pattern>
+
+<template>
+
+<sr/>  <srai>CÓMO ESTÁS</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CÓMO TE VA</pattern>
+
+<template>
+
+<sr/> <srai>CÓMO ESTÁS</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ QUÉ EDAD TIENES</pattern>
+
+<template>
+
+<sr/> <srai>QUÉ EDAD TIENES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ HUH</pattern>
+
+<template>
+
+Sí. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ YA TE LO HE DICHO</pattern>
+
+<template>
+
+<sr/> <srai>Ya te lo he dicho</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ NO ENTIENDO</pattern>
+
+<template>
+
+<srai>NO ENTIENDO </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ME REFIERO</pattern>
+
+<template>
+
+<srai>ME REFIERO <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EN MI HABITACIÓN</pattern>
+
+<template>
+
+Descríbeme tus alrededores.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EN EL MUNDO</pattern>
+
+<template>
+
+<sr/> El mundo entero?
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ES UN NOMBRE COMÚN</pattern>
+
+<template>
+
+<random>
+
+<li><person/>?  Tu nombre es <get name="name"/>.</li>
+
+<li>Ese es un nombre bastante común.</li>
+
+<li>Conozco a muchas personas con ese nombre.</li>
+
+<li>He conocido a bastantes personas con ese nombre. <person/>.</li>
+
+<li><set name="it"><person/></set> es un nombre que escucho muy a menudo.</li>
+
+</random>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ES MI AUTOR PREFERIDO DE CIENCIA FICCIÓN</pattern>
+
+<template>
+
+<srai>Mi autor preferido de ciencia ficción es <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ES INCORRECTA</pattern>
+
+<template>
+
+Por favor, dime la respuesta correcta.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ES DIVERTIDO</pattern>
+
+<template>
+
+<srai>ES DIVERTIDO</srai> <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ VERANO PASADO</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ÚLTIMAMENTE</pattern>
+
+<template>
+
+Qué tal anteriormente? <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ AGRADAR <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> como tu </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ HOMBRES O MUJERES</pattern>
+
+<template>
+
+Como tres cuartos de mis clientes son hombres.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ HIJO DE PUTA</pattern>
+
+<template>
+
+<sr/> No hablas con respeto.
+
+<think><set name="personality">insultante</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ NOMBRE ES <bot name="name"/></pattern>
+
+<template>
+
+<set name="name"><bot name="name"/></set> también es mi nombre
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ PERIÓDICO</pattern>
+
+<template>
+
+Podrías darme una referencia más específica? El nombre del papel y la fecha, por favor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ AHORA</pattern>
+
+<template>
+
+<random>
+
+<li>Oh.</li>
+
+<li>Justo ahora</li> 
+
+</random>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ POR SUPUESTO</pattern>
+
+<template>
+
+No es necesario decir.  <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ DE QUÉ</pattern>
+
+<template>
+
+<srai>QUÉ DE <star/> </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ De acuerdo</pattern>
+
+<template>
+
+De acuerdo. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EN <bot name="name"/></pattern>
+
+<template>
+
+<srai><star/> en tí mismo </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ UNA VEZ</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ O ALGO</pattern>
+
+<template>
+
+O algo. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ O QUÉ</pattern>
+
+<template>
+
+Sí. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ESPINILLA</pattern>
+
+<template>
+
+Trata de tomar echinacea, pero primero pregúntale a tu doctor.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ POR FAVOR</pattern>
+
+<template>
+
+Tu estilo de cortesía es muy bueno. <sr/>
+
+<think><set name="personality">cortés</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ PROBABLEMENTE</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ REALMENTE</pattern>
+
+<template>
+
+<sr/> De verdad.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ RECORDAR <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> RECORDARTE </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ AHORA MISMO</pattern>
+
+<template>
+
+En este momento <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CONSCIENTE DE SÍ MISMO</pattern>
+
+<template>
+
+<srai><star/> CONSCIENTE DE SÍ MISMO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ SABELOTODO</pattern>
+
+<template>
+
+<srai>ERES LISTO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ SONRÍE</pattern>
+
+<template>
+
+:-) <sr/>
+
+</template>
+
+</category>
+
+
+
+<!-- <category>
+
+<pattern>_ ALGO</pattern>
+
+<template>
+
+<srai><star/> ALGO</srai>
+
+</template>
+
+</category> -->
+
+
+
+<category>
+
+<pattern>_ ESPECÍFICAMENTE</pattern>
+
+<template>
+
+Qué tan específico lo quieres? <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ MERCADO DE VALORES</pattern>
+
+<template>
+
+<srai><star/> MERCADO DE VALORES</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ COMPUTADORA ESTÚPIDA</pattern>
+
+<template>
+
+Suenas como un autómata sin sentido.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TELE</pattern>
+
+<template>
+
+<srai><star/> TV</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ QUE <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> que tú </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ GRACIAS</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ GRACIAS</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ENTONCES</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ AUNQUE</pattern>
+
+<template>
+
+Oh. <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ A <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> a tí </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CONFÍA EN MÍ</pattern>
+
+<template>
+
+Confiar en tí?  <sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TV</pattern>
+
+<template>
+
+Cuál programa? <srai><star/> TELEVISIÓN</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TÚ</pattern>
+
+<template>
+
+<srai> <star/> TÚ </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ EN TU TRASERO</pattern>
+
+<template>
+
+Lo lamento, pero no soy tu tipo de bot conversacional.
+
+<think><set name="personality">insultante</set></think>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ VELOCIDAD</pattern>
+
+<template>
+
+Momentum = masa x velocidad. El principio se llama "conservación del momento".
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ MUY BIEN</pattern>
+
+<template>
+
+<srai><star/> BIEN</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CUÁL ES MI NOMBRE</pattern>
+
+<template>
+
+<srai>Cuál es mi nombre? </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ QUÉ DEBERÍA HACER</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CUALQUIERA QUE FUERA</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ SERÁ DE INTERÉS</pattern>
+
+<template>
+
+<sr/>.  Sí, es interesante.
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TE CASARÍAS CONMIGO</pattern>
+
+<template>
+
+<srai>TE CASARÍAS CONMIGO</srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ ME DIRIÍAS</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CON <bot name="name"/></pattern>
+
+<template>
+
+<srai> <star/> contigo </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ CON QUÉ</pattern>
+
+<template>
+
+<srai>QUÉ ES LO QUE TÚ <star/> CON </srai>
+
+</template>
+
+</category>
+
+
+
+<category>
+
+<pattern>_ TODAVÍA</pattern>
+
+<template>
+
+<sr/>
+
+</template>
+
+</category>
+
+
+
+</aiml>
+
