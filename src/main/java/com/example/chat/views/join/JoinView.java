@@ -23,7 +23,7 @@ public class JoinView extends VerticalLayout {
     public JoinView() {
         addClassName(getClass().getSimpleName());
 
-        H1 title = new H1("Vaadin AI Chat");
+        H1 title = new H1("AI Chat");
         title.addClassName(getClass().getSimpleName() + "-title");
 
         TextField nickname = new TextField();
@@ -45,7 +45,7 @@ public class JoinView extends VerticalLayout {
             Notification.show("Enter a nickname");
         } else {
             VaadinSession.getCurrent().setAttribute("nickname", nickname);
-            UI.getCurrent().navigate(ChatView.class, "Alice");
+            UI.getCurrent().navigate(ChatView.class, "Alice2");
         }
     }
 

@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
  * The main view is a top-level placeholder for other views.
  */
 @JsModule("./styles/shared-styles.js")
-@PWA(name = "Vaadin chat", shortName = "Vaadin chat")
+@PWA(name = "Vaadin AI chat", shortName = "Vaadin AI chat")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
 @Push
 public class MainView extends AppLayout {
