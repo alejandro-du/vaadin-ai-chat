@@ -2,11 +2,20 @@ package com.example.chat;
 
 import org.alicebot.ab.Bot;
 import org.alicebot.ab.configuration.BotConfiguration;
+import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.event.EventListener;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.util.Arrays;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 
 /**
  * The entry point of the Spring Boot application.
@@ -14,48 +23,35 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 
+    private final String botPath;
+
+    public Application(@Value("${bot.path}") String botPath) {
+        this.botPath = botPath;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @Bean
-    public Bot Alice(@Value("${bot.path}") String botPath) {
-        Bot bot = new Bot(BotConfiguration.builder()
-                .name("Alice")
-                .path(botPath)
-                .build()
-        );
-        return bot;
+    public ScheduledExecutorService executorService() {
+        return Executors.newScheduledThreadPool(10);
     }
 
-    @Bean
-    public Bot Alice2(@Value("${bot.path}") String botPath) {
-        Bot bot = new Bot(BotConfiguration.builder()
-                .name("Alice2")
-                .path(botPath)
-                .build()
-        );
-        return bot;
-    }
+    @EventListener
+    public void createBots(ApplicationReadyEvent event) {
+        File[] directories = new File(botPath + "/bots")
+                .listFiles((FileFilter) FileFilterUtils.directoryFileFilter());
 
-    @Bean
-    public Bot Pandora(@Value("${bot.path}") String botPath) {
-        Bot bot = new Bot(BotConfiguration.builder()
-                .name("Pandora")
-                .path(botPath)
-                .build()
-        );
-        return bot;
-    }
-
-    @Bean
-    public Bot Sara(@Value("${bot.path}") String botPath) {
-        Bot bot = new Bot(BotConfiguration.builder()
-                .name("Sara")
-                .path(botPath)
-                .build()
-        );
-        return bot;
+        if (directories != null) {
+            Arrays.stream(directories)
+                    .map(File::getName)
+                    .map(name -> new Bot(BotConfiguration.builder()
+                            .name(name)
+                            .path(botPath)
+                            .build()))
+                    .forEach(bot -> event.getApplicationContext().getBeanFactory().registerSingleton(bot.getName(), bot));
+        }
     }
 
 }

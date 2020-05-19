@@ -36,7 +36,7 @@ import java.util.stream.Collectors;
 public class MainView extends AppLayout {
 
     private Tabs menu;
-    private Span botNameContainer;
+    private Span botNameContainer = new Span(new Text(""));
     private Tabs tabs = new Tabs();
     private Map<Tab, String> tabToBotNameMap = new HashMap<>();
     private Map<String, Tab> botNameToTabMap = new HashMap<>();
@@ -51,7 +51,6 @@ public class MainView extends AppLayout {
 
         this.bots = bots;
         setPrimarySection(Section.DRAWER);
-        botNameContainer = new Span(new Text(""));
         addToNavbar(true, new DrawerToggle(), botNameContainer);
         menu = createMenuTabs();
         VerticalLayout menuContainer = new VerticalLayout(new Text("Bots:"), menu);
@@ -75,7 +74,9 @@ public class MainView extends AppLayout {
 
     private Tab[] getAvailableTabs() {
         return bots.stream()
-                .map(bot -> createTab(bot.getName()))
+                .map(Bot::getName)
+                .sorted()
+                .map(name -> createTab(name))
                 .collect(Collectors.toList()).toArray(new Tab[bots.size()]);
     }
 
@@ -94,6 +95,7 @@ public class MainView extends AppLayout {
         ChatView view = (ChatView) getContent();
         String botName = view.getBotName();
         tabs.setSelectedTab(botNameToTabMap.get(botName));
+        setBotName(botName);
     }
 
 }

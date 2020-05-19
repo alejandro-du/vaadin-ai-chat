@@ -29,6 +29,7 @@
     width: 19em;
     padding: 2em;
     background: var(--lumo-contrast-5pct);
+    box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
 }
 
 .JoinView-nickname {

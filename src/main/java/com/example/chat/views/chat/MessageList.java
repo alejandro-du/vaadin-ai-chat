@@ -1,5 +1,6 @@
 package com.example.chat.views.chat;
 
+import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Span;
@@ -25,7 +26,7 @@ public class MessageList extends Div {
         Span fromContainer = new Span(new Text(from));
         fromContainer.addClassName(getClass().getSimpleName() + "-name");
 
-        Div textContainer = new Div(new Text(text));
+        Div textContainer = new Div(new Html("<span>" + text + "</span>"));
         textContainer.addClassName(getClass().getSimpleName() + "-bubble");
 
         Div avatarContainer = new Div(avatar, fromContainer);
@@ -46,6 +47,10 @@ public class MessageList extends Div {
         remove(gap);
         add(gap);
         gap.getElement().callJsFunction("scrollIntoView");
+    }
+
+    public void clear() {
+        removeAll();
     }
 
 }
