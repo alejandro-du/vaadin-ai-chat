@@ -8,7 +8,7 @@ import org.vaadin.artur.Avataaar;
 
 public class MessageList extends Div {
 
-    private final int MESSAGE_LIMIT = 50;
+    private final int MESSAGE_LIMIT = 10;
     private Div gap = new Div();
 
     public MessageList() {
@@ -18,8 +18,7 @@ public class MessageList extends Div {
     }
 
     public void addMessage(String from, Avataaar avatar, String text, boolean isCurrentUser) {
-        if (getChildren().count() >= MESSAGE_LIMIT * 2) {
-            remove(getChildren().findFirst().get());
+        if (getChildren().count() >= MESSAGE_LIMIT + 1) {
             remove(getChildren().findFirst().get());
         }
 
