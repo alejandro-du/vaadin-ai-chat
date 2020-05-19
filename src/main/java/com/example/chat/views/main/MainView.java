@@ -13,6 +13,8 @@ import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.tabs.Tab;
 import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.tabs.TabsVariant;
+import com.vaadin.flow.router.AfterNavigationEvent;
+import com.vaadin.flow.router.AfterNavigationObserver;
 import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.server.VaadinSession;
@@ -33,7 +35,7 @@ import java.util.stream.Collectors;
 @PWA(name = "Vaadin AI chat", shortName = "Vaadin AI chat")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
 @Push
-public class MainView extends AppLayout {
+public class MainView extends AppLayout implements AfterNavigationObserver {
 
     private Tabs menu;
     private Span botNameContainer = new Span(new Text(""));
@@ -51,7 +53,7 @@ public class MainView extends AppLayout {
 
         this.bots = bots;
         setPrimarySection(Section.DRAWER);
-        addToNavbar(true, new DrawerToggle(), botNameContainer);
+        addToNavbar(new DrawerToggle(), botNameContainer);
         menu = createMenuTabs();
         VerticalLayout menuContainer = new VerticalLayout(new Text("Bots:"), menu);
         menuContainer.getStyle().set("margin-top", "2em");
@@ -83,14 +85,16 @@ public class MainView extends AppLayout {
     private Tab createTab(String botName) {
         final Tab tab = new Tab();
         Avataaar avataaar = new Avataaar(botName);
-        tab.add(avataaar, new RouterLink(botName, ChatView.class, botName));
+        RouterLink link = new RouterLink(botName, ChatView.class, botName);
+        link.getStyle().set("margin-left", ".1em");
+        tab.add(avataaar, link);
         tabToBotNameMap.put(tab, botName);
         botNameToTabMap.put(botName, tab);
         return tab;
     }
 
     @Override
-    protected void afterNavigation() {
+    public void afterNavigation(AfterNavigationEvent event) {
         super.afterNavigation();
         ChatView view = (ChatView) getContent();
         String botName = view.getBotName();

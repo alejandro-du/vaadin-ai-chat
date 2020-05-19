@@ -28,7 +28,7 @@ public class JoinView extends VerticalLayout {
 
         TextField nickname = new TextField();
         nickname.addClassName(getClass().getSimpleName() + "-nickname");
-        nickname.setPlaceholder("enter your nickname...");
+        nickname.setPlaceholder("Enter your nickname...");
 
         Button enter = new Button("Enter", event -> enter(nickname.getValue()));
         enter.addClassName(getClass().getSimpleName() + "-enter");
