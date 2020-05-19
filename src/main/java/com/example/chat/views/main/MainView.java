@@ -6,8 +6,8 @@ import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
-import com.vaadin.flow.component.dependency.JsModule;
-import com.vaadin.flow.component.html.Span;
+import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.tabs.Tab;
@@ -28,16 +28,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * The main view is a top-level placeholder for other views.
- */
-@JsModule("./styles/shared-styles.js")
+@CssImport("./styles/shared-styles.css")
 @PWA(name = "Vaadin AI chat", shortName = "Vaadin AI chat")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
 @Push
 public class MainView extends AppLayout implements AfterNavigationObserver {
 
-    private Tabs menu;
     private Span botNameContainer = new Span(new Text(""));
     private Tabs tabs = new Tabs();
     private Map<Tab, String> tabToBotNameMap = new HashMap<>();
@@ -54,19 +50,27 @@ public class MainView extends AppLayout implements AfterNavigationObserver {
         this.bots = bots;
         setPrimarySection(Section.DRAWER);
         addToNavbar(new DrawerToggle(), botNameContainer);
-        menu = createMenuTabs();
-        VerticalLayout menuContainer = new VerticalLayout(new Text("Bots:"), menu);
-        menuContainer.getStyle().set("margin-top", "2em");
-        addToDrawer(menuContainer);
+        createMenuTabs();
+        Image vaadinImage = new Image("images/vaadin.png", "Vaadin logo");
+        vaadinImage.addClassName("vaadin");
+        Anchor vaadin = new Anchor("https://vaadin.com", vaadinImage);
+        Div poweredBy = new Div(new Span(new Text("Powered by")), vaadin);
+        Div sourceCode = new Div(
+                new Anchor("https://github.com/alejandro-du/vaadin-ai-chat/tree/advanced", "Browse the source code")
+        );
+        Div footer = new Div(poweredBy, sourceCode);
+        footer.addClassName("footer");
+        VerticalLayout menu = new VerticalLayout(new H3("Bots:"), tabs, footer);
+        menu.addClassName("menu");
+        addToDrawer(menu);
     }
 
-    private Tabs createMenuTabs() {
+    private void createMenuTabs() {
         tabs.setOrientation(Tabs.Orientation.VERTICAL);
         tabs.addThemeVariants(TabsVariant.LUMO_MINIMAL);
         tabs.setId("tabs");
         tabs.add(getAvailableTabs());
         tabs.addSelectedChangeListener(event -> setBotName(tabToBotNameMap.get(event.getSelectedTab())));
-        return tabs;
     }
 
     private void setBotName(String botName) {
@@ -86,7 +90,7 @@ public class MainView extends AppLayout implements AfterNavigationObserver {
         final Tab tab = new Tab();
         Avataaar avataaar = new Avataaar(botName);
         RouterLink link = new RouterLink(botName, ChatView.class, botName);
-        link.getStyle().set("margin-left", ".1em");
+        link.addClassName("bot-link");
         tab.add(avataaar, link);
         tabToBotNameMap.put(tab, botName);
         botNameToTabMap.put(botName, tab);
