@@ -18,7 +18,7 @@ public class MessageList extends Div {
     }
 
     public void addMessage(String from, Avataaar avatar, String text, boolean isCurrentUser) {
-        if (getChildren().count() >= MESSAGE_LIMIT) {
+        if (getChildren().count() >= MESSAGE_LIMIT * 2) {
             remove(getChildren().findFirst().get());
             remove(getChildren().findFirst().get());
         }
