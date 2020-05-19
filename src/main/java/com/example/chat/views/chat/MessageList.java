@@ -8,7 +8,7 @@ import org.vaadin.artur.Avataaar;
 
 public class MessageList extends Div {
 
-    private final int MESSAGE_LIMIT = 10;
+    private final int MESSAGE_LIMIT = 50;
     private Div gap = new Div();
 
     public MessageList() {
